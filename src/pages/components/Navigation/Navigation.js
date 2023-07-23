@@ -197,12 +197,6 @@ const Navigation = () => {
                         >
                             Fhorge for Business
                         </Link>
-                        <Link
-                            to={'/'}
-                            className={`${((mode.myMode === 'dark') ? "textLight" : "textDark")}  ${location.pathname === '/my_learning' ? 'active' : ''}  navbar-item m-0 d-flex align-items-center no-decoration`}
-                        >
-                            My Learning
-                        </Link>
                     </div>
                     <div className="navbar-end">
                         <div className={`${((mode.myMode === 'dark') ? "textLight" : "textDark")} navbar-item`}>
@@ -216,19 +210,11 @@ const Navigation = () => {
                                         search
                                     </span>
                                 </span>
-                                <span className={`${((mode.myMode === 'light') ? "textDark" : "textLight")} ${location.pathname === '/sign-in' ? 'active' : ''} menuLink d-flex m-0 navBtn`} style={{ marginRight: '10px' }}>
-                                    <span className={`${((mode.myMode === 'light') ? "textDark" : "textLight")} material-symbols-outlined m-0`}>
-                                        notifications
-                                    </span>
-                                </span>
-                                <Link to={'/sign-in'} className={`${((mode.myMode === 'light') ? "textDark" : "textLight")} ${location.pathname === '/sign-in' ? 'active' : ''} menuLink d-flex m-0 navBtn`} style={{ marginRight: '10px' }}>
-                                    <span className={`${((mode.myMode === 'light') ? "textDark" : "textLight")} material-symbols-outlined m-0`}>
-                                        login
-                                    </span>
+                                <button to={'/sign-in'} className={`${((mode.myMode === 'light') ? "textDark" : "textLight")} btn  ${location.pathname === '/sign-in' ? 'active' : ''} menuLink d-flex m-0 navBtn`} style={{ marginRight: '10px' }}>
                                     <span className={`${((mode.myMode === 'light') ? "textDark" : "textLight")} m-0`}>
                                         Sign in
                                     </span>
-                                </Link>
+                                </button>
                                 <span
                                     className={`${((mode.myMode === 'light') ? "textDark" : "textLight")} menuLink modeChanger`}
                                     title={mode.myMode + " mode"}

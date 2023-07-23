@@ -5,7 +5,7 @@ import { Mode } from './providers/Mode';
 import Preloader from './Preloader';
 
 const App = () => {
-  const Dashboard = React.lazy(() => import('./pages/dashboard/Dashboard'));
+  const Home = React.lazy(() => import('./pages/home/Home'));
   return (
     <>
       <Mode>
@@ -15,7 +15,7 @@ const App = () => {
             path='/'
             element={
               <Suspense fallback={<Preloader />}>
-                <Dashboard />
+                <Home />
               </Suspense>
             }
           />
