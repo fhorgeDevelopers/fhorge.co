@@ -1,0 +1,35 @@
+.hero {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+.heroText {
+	min-height: 350px;
+	display: flex;
+	align-items: center;	
+	justify-content: center;
+	width: 70%;
+	margin-left: 20%;
+	font-size: 52px;
+}
+
+.heroText > div > h1 {
+	font-family: mullish;
+}
+
+.heroLabel {
+	font-weight: bolder;
+}
+
+@media only screen and (max-width: 769px) {
+	.heroText {
+		width: 100%;
+	}
+
+	.heroText > div > h1 {
+		font-family: mullish;
+		font-size: 60px;
+	}
+
+}
