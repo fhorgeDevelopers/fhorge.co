@@ -2,8 +2,10 @@ import React, { useEffect, useState } from 'react'
 import { useMode } from '../../../providers/Mode';
 import { Link, useLocation } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
+import { useCalls } from '../../../providers/Calls';
 
 const Navigation = () => {
+    const calls = useCalls();
     const mode = useMode();
     const [showMenu, setShowMenu] = useState(false);
     const location = useLocation();
