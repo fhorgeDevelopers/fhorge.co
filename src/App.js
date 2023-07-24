@@ -6,6 +6,7 @@ import Preloader from './Preloader';
 
 const App = () => {
   const Home = React.lazy(() => import('./pages/home/Home'));
+  const NotFound = React.lazy(() => import('./pages/notFound/NotFound'));
   return (
     <>
       <Mode>
@@ -16,6 +17,95 @@ const App = () => {
             element={
               <Suspense fallback={<Preloader />}>
                 <Home />
+              </Suspense>
+            }
+          />
+          <Route
+            exact
+            path='/build-your-career'
+            element={
+              <Suspense fallback={<Preloader />}>
+                <Home />
+              </Suspense>
+            }
+          />
+          <Route
+            exact
+            path='/earn-money'
+            element={
+              <Suspense fallback={<Preloader />}>
+                <Home />
+              </Suspense>
+            }
+          />
+          <Route
+            exact
+            path='/courses'
+            element={
+              <Suspense fallback={<Preloader />}>
+                <Home />
+              </Suspense>
+            }
+          />
+          <Route
+            exact
+            path='/courses/:category_id'
+            element={
+              <Suspense fallback={<Preloader />}>
+                <Home />
+              </Suspense>
+            }
+          />
+          <Route
+            exact
+            path='/courses/:category_id/:course_id'
+            element={
+              <Suspense fallback={<Preloader />}>
+                <Home />
+              </Suspense>
+            }
+          />
+          <Route
+            exact
+            path='/courses/query/:search_text'
+            element={
+              <Suspense fallback={<Preloader />}>
+                <Home />
+              </Suspense>
+            }
+          />
+          <Route
+            exact
+            path='/careers'
+            element={
+              <Suspense fallback={<Preloader />}>
+                <Home />
+              </Suspense>
+            }
+          />
+          <Route
+            exact
+            path='/careers/:category_id'
+            element={
+              <Suspense fallback={<Preloader />}>
+                <Home />
+              </Suspense>
+            }
+          />
+          <Route
+            exact
+            path='/careers/:category_id/:career_id'
+            element={
+              <Suspense fallback={<Preloader />}>
+                <Home />
+              </Suspense>
+            }
+          />
+          <Route
+            path='*'
+            element={
+              <Suspense fallback={<Preloader />}>
+                <NotFound />
               </Suspense>
             }
           />
