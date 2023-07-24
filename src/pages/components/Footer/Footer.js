@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useMode } from '../../../providers/Mode';
 import '../../../css/main.css'
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
 
@@ -34,35 +35,35 @@ const Footer = () => {
                                         <div class="footer_h3">FREE ONLINE COURSE CATEGORIES</div>
                                         <ul>
                                             <li>
-                                                <a href="/courses/it" title=" IT Courses">IT </a>
+                                                <Link to="/courses/it" title=" IT Courses">IT </Link>
                                             </li>
                                             <li>
-                                                <a href="/courses/health" title=" Health Courses">Health </a>
+                                                <Link to="/courses/health" title=" Health Courses">Health </Link>
                                             </li>
                                             <li>
-                                                <a href="/courses/language" title=" Language Courses">Language </a>
+                                                <Link to="/courses/language" title=" Language Courses">Language </Link>
                                             </li>
                                             <li>
-                                                <a href="/courses/business" title=" Business Courses">Business </a>
+                                                <Link to="/courses/business" title=" Business Courses">Business </Link>
                                             </li>
                                             <li>
-                                                <a href="/courses/management" title=" Management Courses">Management </a>
+                                                <Link to="/courses/management" title=" Management Courses">Management </Link>
                                             </li>
                                             <li>
-                                                <a href="/courses/personal-development" title=" Personal Development Courses">Personal Development </a>
+                                                <Link to="/courses/personal-development" title=" Personal Development Courses">Personal Development </Link>
                                             </li>
                                             <li>
-                                                <a href="/courses/marketing" title=" Sales &amp; Marketing Courses">Sales &amp;Marketing </a>
+                                                <Link to="/courses/marketing" title=" Sales &amp; Marketing Courses">Sales &amp;Marketing </Link>
                                             </li>
                                             <li>
-                                                <a href="/courses/engineering" title=" Engineering &amp; Construction Courses">Engineering &amp;Construction </a>
+                                                <Link to="/courses/engineering" title=" Engineering &amp; Construction Courses">Engineering &amp;Construction </Link>
+                                            </li>
+                                            {/* <li>
+                                                <Link to="/courses/education" title=" Teaching &amp; Academics Courses">Teaching &amp;Academics </Link>
                                             </li>
                                             <li>
-                                                <a href="/courses/education" title=" Teaching &amp; Academics Courses">Teaching &amp;Academics </a>
-                                            </li>
-                                            <li>
-                                                <a href="/vertical/english">English</a>
-                                            </li>
+                                                <Link to="/vertical/english">English</Link>
+                                            </li> */}
                                         </ul>
                                     </div>
                                 </div>
@@ -75,31 +76,22 @@ const Footer = () => {
                                         <div class="footer_h3">LEARN ABOUT Fhorge</div>
                                         <ul>
                                             <li>
-                                                <a href="/about/how-it-works">How Fhorge Works</a>
+                                                <Link to="/about/how-it-works">How Fhorge Works</Link>
                                             </li>
                                             <li>
-                                                <a href="/about/about-fhorge-courses">About Fhorge Courses</a>
+                                                <Link to="/about/about-fhorge-courses">About Fhorge Courses</Link>
                                             </li>
                                             <li>
-                                                <a href="/about/our-story">Our Story</a>
+                                                <Link to="/about/our-story">Our Story</Link>
                                             </li>
                                             <li>
-                                                <a href="/programmes">Fhorge Programmes</a>
+                                                <Link to="/programmes">Fhorge Programmes</Link>
                                             </li>
                                             <li>
-                                                <a href="/publishers">Our Course Creators</a>
+                                                <Link to="/publishers">Our Course Creators</Link>
                                             </li>
                                             <li>
-                                                <a href="/empower-us">Empower Fhorge</a>
-                                            </li>
-                                            <li>
-                                                <a href="/about/pricing">Pricing</a>
-                                            </li>
-                                            <li>
-                                                <a href="/index">Index</a>
-                                            </li>
-                                            <li>
-                                                <a href="/about/careers">Open Positions</a>
+                                                <Link to="/empower-us">Empower Fhorge</Link>
                                             </li>
                                         </ul>
                                     </div>
@@ -113,28 +105,19 @@ const Footer = () => {
                                         <div class="footer_h3">QUALITY FREE LEARNING</div>
                                         <ul>
                                             <li>
-                                                <a href="/certificate-courses">All Certificates</a>
+                                                <Link to="/certificate-courses">All Certificates</Link>
                                             </li>
                                             <li>
-                                                <a href="/diploma-courses">All Diplomas</a>
+                                                <Link to="/diploma-courses">All Diplomas</Link>
                                             </li>
                                             <li>
-                                                <a href="/hubs">Hubs</a>
+                                                <Link to="/about/accreditation">Accreditation</Link>
                                             </li>
                                             <li>
-                                                <a href="/about/accreditation">Accreditation</a>
+                                                <Link to="/graduate-outcomes">Graduate Outcomes</Link>
                                             </li>
                                             <li>
-                                                <a href="/graduate-outcomes">Graduate Outcomes</a>
-                                            </li>
-                                            <li>
-                                                <a href="/testimonials">Fhorge Testimonials</a>
-                                            </li>
-                                            <li>
-                                                <a title="Coronavirus Emergency - Free Course" href="/coronavirus">COVID19 Emergency Courses</a>
-                                            </li>
-                                            <li>
-                                                <a href="/about/gopremium">Premium Learning</a>
+                                                <Link to="/testimonials">Fhorge Testimonials</Link>
                                             </li>
                                         </ul>
                                     </div>
@@ -148,34 +131,19 @@ const Footer = () => {
                                         <div class="footer_h3">DISCOVER MORE</div>
                                         <ul>
                                             <li>
-                                                <a href="/mobile/online-learning-app">Get the App</a>
+                                                <Link to="/careers">Discover Careers</Link>
                                             </li>
                                             <li>
-                                                <a href="/careers">Discover Careers</a>
+                                                <Link to="/profile">Fhorge Profile</Link>
                                             </li>
                                             <li>
-                                                <a href="/profile">Fhorge Profile</a>
+                                                <Link to="/resume-builder">Build Your Resumé</Link>
                                             </li>
                                             <li>
-                                                <a href="/resume-builder">Build Your Resumé</a>
+                                                <Link to="/psychometric-test/personality">Free Personality Test</Link>
                                             </li>
                                             <li>
-                                                <a href="/psychometric-test/personality">Free Personality Test</a>
-                                            </li>
-                                            <li>
-                                                <a href="/psychometric-test/wellbeing">Free Well-being Check up</a>
-                                            </li>
-                                            <li>
-                                                <a href="/free-lms-programme">Fhorge for Business</a>
-                                            </li>
-                                            <li>
-                                                <a href="/e-learning-africa">eLearning Africa</a>
-                                            </li>
-                                            <li>
-                                                <a href="/media-centre">Media Centre</a>
-                                            </li>
-                                            <li>
-                                                <a href="/blog">Blog</a>
+                                                <Link to="/free-lms-programme">Fhorge for Business</Link>
                                             </li>
                                         </ul>
                                     </div>
@@ -189,16 +157,13 @@ const Footer = () => {
                                         <div class="footer_h3">EARN ON Fhorge</div>
                                         <ul>
                                             <li>
-                                                <a href="/publish/course-creator">Create Courses on Fhorge</a>
+                                                <Link to="/publish/course-creator">Create Courses on Fhorge</Link>
                                             </li>
                                             <li>
-                                                <a href="/affiliates/learn-to-earn">Affiliate Programme</a>
+                                                <Link to="/affiliates/learn-to-earn">Affiliate Programme</Link>
                                             </li>
                                             <li>
-                                                <a href="/referrals-programme/about">Refer a Friend</a>
-                                            </li>
-                                            <li>
-                                                <a href="/webinars">Upcoming Webinars</a>
+                                                <Link to="/referrals-programme/about">Refer a Friend</Link>
                                             </li>
                                         </ul>
                                     </div>
