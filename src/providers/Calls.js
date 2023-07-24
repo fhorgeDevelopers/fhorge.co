@@ -24,7 +24,7 @@ export const Calls = ({ children }) => {
         console.log(myJson);
       });
     }
-    }
+    
 
     useEffect(()=>{
     getNavCourses()
