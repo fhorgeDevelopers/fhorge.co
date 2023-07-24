@@ -8,7 +8,7 @@ export const Calls = ({ children }) => {
     const [navCourses, setNavCourses] = useState([]);
 
     const getNavCourses = () => {
-       fetch(`${hook.endpoint}/courses`
+       fetch(`${hook.endpoint}/careers`
     ,{
       headers : { 
         'Content-Type': 'application/json',
