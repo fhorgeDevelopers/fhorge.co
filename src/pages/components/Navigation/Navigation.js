@@ -11,7 +11,7 @@ const Navigation = () => {
     const [showCourseMenu, setShowCourseMenu] = useState(false);
     const [seeSearch, setSeeSearch] = useState(false);
     const [searchQuery, setSearchQuery] = useState('');
-    const screenWidth  = document.documentElement.clientWidth;
+    const screenWidth = document.documentElement.clientWidth;
 
     const toggleSearch = () => {
         if (seeSearch) {
@@ -57,7 +57,7 @@ const Navigation = () => {
     }
 
     const displayWindowSize = () => {
-        if(screenWidth < 769) {
+        if (screenWidth < 769) {
             setShowMenu(false)
         }
     }

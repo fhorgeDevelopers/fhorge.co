@@ -1,0 +1,1318 @@
+@font-face {
+    font-display: swap;
+    font-family: icomoon;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://cdn01.alison-static.net/public/html/site/css/fonts/icomoon.woff2?ryk3f312) format("woff2"),url(https://cdn01.alison-static.net/public/html/site/css/fonts/icomoon.ttf?ryk3f312) format("truetype"),url(https://cdn01.alison-static.net/public/html/site/css/fonts/icomoon.woff?ryk3f312) format("woff"),url(https://cdn01.alison-static.net/public/html/site/css/fonts/icomoon.svg?ryk3f312#icomoon) format("svg")
+}
+
+[class*=" icon-"],[class^=icon-] {
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: icomoon!important;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: none
+}
+
+.icon-srv2-tick .path1:before {
+    color: #fff;
+    content: "\e99c"
+}
+
+.icon-srv2-tick .path2:before {
+    color: #1783b1;
+    content: "\e99d";
+    margin-left: -1em
+}
+
+.icon-srv2-sub:before {
+    color: #777e83;
+    content: "\e998"
+}
+
+.icon-srv2-add:before {
+    color: #777e83;
+    content: "\e99a"
+}
+
+.icon-globe1:before {
+    color: #adcc7d;
+    content: "\e980"
+}
+
+.icon-minus-sign:before {
+    color: #1783b1;
+    content: "\e97e"
+}
+
+.icon-plus-sign:before {
+    color: #465159;
+    content: "\e97f"
+}
+
+.icon-carousel-arrow:before {
+    color: #0091c7;
+    content: "\e955"
+}
+
+.icon-display-list:before {
+    content: "\e951"
+}
+
+.icon-display-grid:before {
+    color: #fff;
+    content: "\e954"
+}
+
+.icon-learners-benefited:before {
+    color: #465159;
+    content: "\e95d"
+}
+
+.icon-a-z:before {
+    color: #5d676e;
+    content: "\e95c"
+}
+
+.icon-skills:before {
+    color: #5d676e;
+    content: "\e957"
+}
+
+.icon-education:before {
+    color: #5d676e;
+    content: "\e958"
+}
+
+.icon-work:before {
+    color: #5d676e;
+    content: "\e95a"
+}
+
+.icon-calander-icon:before {
+    color: #b3bdc0;
+    content: "\e939"
+}
+
+.icon-profile-envelope:before {
+    color: #fafafa;
+    content: "\e938"
+}
+
+.icon-selected-icon:before {
+    color: #0094c9;
+    content: "\e933"
+}
+
+.icon-cv-icon:before {
+    color: #fff;
+    content: "\e935"
+}
+
+.icon-dropdown:before {
+    color: #96999b;
+    content: "\e92f"
+}
+
+.icon-profile-pencil:before {
+    color: #b3bdc0;
+    content: "\e92b"
+}
+
+.icon-profile-location:before {
+    color: #b3bdc0;
+    content: "\e92d"
+}
+
+.icon-profile-languages:before {
+    color: #b3bdc0;
+    content: "\e92e"
+}
+
+.icon-affiliates-heart-3:before {
+    color: #ea1d2d;
+    content: "\e997"
+}
+
+.icon-bell-set:before {
+    content: "\e922"
+}
+
+.icon-bell-unset:before {
+    content: "\e923"
+}
+
+.icon-megaphone-alt1:before {
+    content: "\e983"
+}
+
+.icon-megaphone-alt:before {
+    color: #6ea21f;
+    content: "\e984"
+}
+
+.icon-logout-alt:before {
+    color: #5d676e;
+    content: "\e95e"
+}
+
+.icon-help-alt:before {
+    color: #5d676e;
+    content: "\e960"
+}
+
+.icon-account-settings-alt:before {
+    color: #5d676e;
+    content: "\e964"
+}
+
+.icon-get-certificates-alt:before {
+    color: #5d676e;
+    content: "\e967"
+}
+
+.icon-premium-alt:before {
+    color: #5d676e;
+    content: "\e968"
+}
+
+.icon-resume-alt:before {
+    color: #5d676e;
+    content: "\e96a"
+}
+
+.icon-dashboard-alt:before {
+    content: "\e96b"
+}
+
+.icon-for-you-alt:before {
+    color: #5d676e;
+    content: "\e96f"
+}
+
+.icon-pay-alt:before {
+    color: #5d676e;
+    content: "\e971"
+}
+
+.icon-ns-resume-builder:before {
+    content: "\e93e"
+}
+
+.icon-ns-certification:before {
+    color: #b3bdc0;
+    content: "\e911"
+}
+
+.icon-ns-continue-learning:before {
+    color: #b3bdc0;
+    content: "\e912"
+}
+
+.icon-ns-for-you:before {
+    color: #b3bdc0;
+    content: "\e915"
+}
+
+.icon-ns-help:before {
+    color: #b3bdc0;
+    content: "\e917"
+}
+
+.icon-ns-learner-record:before {
+    color: #b3bdc0;
+    content: "\e918"
+}
+
+.icon-ns-logout:before {
+    color: #b3bdc0;
+    content: "\e919"
+}
+
+.icon-ns-premium:before {
+    color: #b3bdc0;
+    content: "\e91a"
+}
+
+.icon-ns-settings:before {
+    color: #b3bdc0;
+    content: "\e91e"
+}
+
+.icon-rec-pencil:before {
+    color: #465159;
+    content: "\e90d"
+}
+
+.icon-view-all-careers-link:before {
+    color: #b3bdc0;
+    content: "\e903"
+}
+
+.icon-grid-view:before {
+    color: #5d676e;
+    content: "\e905"
+}
+
+.icon-list-view:before {
+    color: #5d676e;
+    content: "\e906"
+}
+
+.icon-filter_up:before {
+    color: #fff;
+    content: "\ea73"
+}
+
+.icon-filter_down:before {
+    color: #fff;
+    content: "\ea74"
+}
+
+.icon-seo-and-web-1:before {
+    content: "\ea6e"
+}
+
+.icon-discount:before {
+    content: "\ea6f"
+}
+
+.icon-tick-mark:before {
+    content: "\ea70"
+}
+
+.icon-student1:before {
+    content: "\ea71"
+}
+
+.icon-cart1:before {
+    content: "\ea72"
+}
+
+.icon-close-group:before {
+    content: "\ea67"
+}
+
+.icon-user-list:before {
+    content: "\ea68"
+}
+
+.icon-new-group:before {
+    content: "\ea69"
+}
+
+.icon-privileges:before {
+    content: "\ea6a"
+}
+
+.icon-statistics:before {
+    content: "\ea6b"
+}
+
+.icon-group-members:before {
+    content: "\ea6c"
+}
+
+.icon-group-details:before {
+    content: "\ea6d"
+}
+
+.icon-share-link:before {
+    color: #0094c9;
+    content: "\ea62"
+}
+
+.icon-pd-dashboard:before {
+    color: #aaa;
+    content: "\ea49"
+}
+
+.icon-pd-help:before {
+    color: #aaa;
+    content: "\ea4a"
+}
+
+.icon-pd-logout:before {
+    color: #0094c9;
+    content: "\ea4b"
+}
+
+.icon-pd-play-button:before {
+    color: #0094c9;
+    content: "\ea4c"
+}
+
+.icon-pd-settings:before {
+    color: #aaa;
+    content: "\ea4d"
+}
+
+.icon-nb-active-courses:before {
+    content: "\ea3d"
+}
+
+.icon-nb-career:before {
+    content: "\ea3e"
+}
+
+.icon-nb-categories:before {
+    content: "\ea3f"
+}
+
+.icon-nb-dashboard:before {
+    content: "\ea40"
+}
+
+.icon-nb-help:before {
+    content: "\ea41"
+}
+
+.icon-nb-logout:before {
+    content: "\ea44"
+}
+
+.icon-nb-menu:before {
+    content: "\ea45"
+}
+
+.icon-nb-resume:before {
+    content: "\ea46"
+}
+
+.icon-banner-book:before {
+    content: "\e99e"
+}
+
+.icon-briefcase:before {
+    content: "\e99f"
+}
+
+.icon-banner-coins:before {
+    content: "\e9a0"
+}
+
+.icon-hourglass:before {
+    color: #fff;
+    content: "\e937"
+}
+
+.icon-thick-arrow-right:before {
+    content: "\e936"
+}
+
+.icon-earn:before {
+    content: "\e930"
+}
+
+.icon-build:before {
+    content: "\e931"
+}
+
+.icon-nav-learning:before {
+    content: "\e932"
+}
+
+.icon-hp-learning-path:before {
+    content: "\ea2e"
+}
+
+.icon-cert:before {
+    content: "\e996"
+}
+
+.icon-hat:before {
+    content: "\e995"
+}
+
+.icon-clk:before {
+    content: "\e98b"
+}
+
+.icon-link:before {
+    content: "\e988"
+}
+
+.icon-price-tag:before {
+    content: "\e98a"
+}
+
+.icon-tick:before {
+    color: #465159;
+    content: "\e97d"
+}
+
+.icon-learners-1:before {
+    color: #465159;
+    content: "\e97a"
+}
+
+.icon-like:before {
+    content: "\e977"
+}
+
+.icon-nope:before {
+    content: "\e978"
+}
+
+.icon-accreditation:before {
+    content: "\ea76"
+}
+
+.icon-full-screen-arrows:before {
+    content: "\ea23"
+}
+
+.icon-careers:before {
+    content: "\ea12"
+}
+
+.icon-certification:before {
+    content: "\ea13"
+}
+
+.icon-comments:before {
+    content: "\ea14"
+}
+
+.icon-download-study-notes:before {
+    content: "\ea15"
+}
+
+.icon-duration-dark:before {
+    content: "\ea16"
+}
+
+.icon-email-study-notes:before {
+    content: "\ea17"
+}
+
+.icon-publisher-dark:before {
+    content: "\ea19"
+}
+
+.icon-responsive-dark:before {
+    content: "\ea1a"
+}
+
+.icon-students:before {
+    content: "\ea1b"
+}
+
+.icon-study-notes:before {
+    content: "\ea1c"
+}
+
+.icon-text-version-dark:before {
+    content: "\ea1d"
+}
+
+.icon-category-education:before {
+    content: "\ea77"
+}
+
+.icon-category-personal-development:before {
+    content: "\ea78"
+}
+
+.icon-category-engineering:before {
+    content: "\ea79"
+}
+
+.icon-category-management:before {
+    content: "\ea7a"
+}
+
+.icon-category-business:before {
+    content: "\e98c"
+}
+
+.icon-category-health:before {
+    content: "\e98d"
+}
+
+.icon-category-humanities:before {
+    content: "\e98e"
+}
+
+.icon-category-it:before {
+    content: "\e98f"
+}
+
+.icon-category-language:before {
+    content: "\e990"
+}
+
+.icon-category-lifestyle:before {
+    content: "\e991"
+}
+
+.icon-category-marketing:before {
+    content: "\e992"
+}
+
+.icon-category-math:before {
+    content: "\e993"
+}
+
+.icon-category-science:before {
+    content: "\e9e4"
+}
+
+.icon-chat:before {
+    content: "\e97c"
+}
+
+.icon-dollar:before {
+    content: "\e950"
+}
+
+.icon-arrow-wide:before {
+    color: #fff;
+    content: "\e929"
+}
+
+.icon-webinar-calendar:before {
+    content: "\e924"
+}
+
+.icon-webinar-clock:before {
+    content: "\e926"
+}
+
+.icon-arrow-thin-right:before {
+    content: "\e90e"
+}
+
+.icon-discount-tag:before {
+    content: "\ea75"
+}
+
+.icon-brain:before {
+    content: "\ea66"
+}
+
+.icon-calendar-bell:before {
+    color: #fff;
+    content: "\ea64"
+}
+
+.icon-happy-man:before {
+    content: "\ea5f"
+}
+
+.icon-finish:before {
+    content: "\ea5d"
+}
+
+.icon-quiz-man:before {
+    content: "\ea5e"
+}
+
+.icon-minimize:before {
+    content: "\ea5c"
+}
+
+.icon-group:before {
+    content: "\ea53"
+}
+
+.icon-calendar:before {
+    content: "\ea4f"
+}
+
+.icon-idea:before {
+    content: "\ea50"
+}
+
+.icon-students1:before {
+    content: "\ea51"
+}
+
+.icon-study:before {
+    content: "\ea52"
+}
+
+.icon-award:before {
+    content: "\ea4e"
+}
+
+.icon-skills-and-guidance:before {
+    content: "\ea3a"
+}
+
+.icon-specific-jobs:before {
+    content: "\ea3b"
+}
+
+.icon-envelope-o:before {
+    content: "\f003"
+}
+
+.icon-envelope-open-o:before {
+    content: "\f2b7"
+}
+
+.icon-whatsapp:before {
+    content: "\ea32"
+}
+
+.icon-home1:before {
+    content: "\f015"
+}
+
+.icon-thick-phone:before {
+    content: "\ea30"
+}
+
+.icon-instagram:before {
+    content: "\f16d"
+}
+
+.icon-quote-right:before {
+    content: "\ea0b"
+}
+
+.icon-thumbs-o-up:before {
+    content: "\f087"
+}
+
+.icon-thumbs-o-down:before {
+    content: "\f088"
+}
+
+.icon-angle-double-right:before {
+    content: "\e9d4"
+}
+
+.icon-chevrons-left:before {
+    content: "\ea07"
+}
+
+.icon-chevrons:before {
+    content: "\ea08"
+}
+
+.icon-en-devices:before {
+    content: "\e9fd"
+}
+
+.icon-en-follow:before {
+    content: "\e9fe"
+}
+
+.icon-en-levels:before {
+    content: "\e9ff"
+}
+
+.icon-en-listen:before {
+    content: "\ea00"
+}
+
+.icon-en-read:before {
+    content: "\ea01"
+}
+
+.icon-en-rich:before {
+    content: "\ea02"
+}
+
+.icon-en-speak:before {
+    content: "\ea03"
+}
+
+.icon-en-speakers:before {
+    content: "\ea04"
+}
+
+.icon-en-tabbed:before {
+    content: "\ea05"
+}
+
+.icon-en-write:before {
+    content: "\ea06"
+}
+
+.icon-eng-opportunity:before {
+    content: "\e9fb"
+}
+
+.icon-location2:before {
+    content: "\e9ef"
+}
+
+.icon-qualified:before {
+    content: "\e9f0"
+}
+
+.icon-proctored:before {
+    content: "\e9f1"
+}
+
+.icon-community:before {
+    content: "\e9f2"
+}
+
+.icon-support:before {
+    content: "\e9f3"
+}
+
+.icon-caregiving:before {
+    content: "\e9e5"
+}
+
+.icon-customer-service:before {
+    content: "\e9e6"
+}
+
+.icon-data:before {
+    content: "\e9e7"
+}
+
+.icon-financial:before {
+    content: "\e9e8"
+}
+
+.icon-healthcare:before {
+    content: "\e9e9"
+}
+
+.icon-marketing2:before {
+    content: "\e9ea"
+}
+
+.icon-nursing:before {
+    content: "\e9eb"
+}
+
+.icon-operations:before {
+    content: "\e9ec"
+}
+
+.icon-software:before {
+    content: "\e9ed"
+}
+
+.icon-teaching:before {
+    content: "\e9ee"
+}
+
+.icon-track:before {
+    content: "\e976"
+}
+
+.icon-graduate:before {
+    content: "\e9df"
+}
+
+.icon-vertical-download:before {
+    content: "\e914"
+}
+
+.icon-vertical-dropdown-icon:before {
+    color: #b3bdc0;
+    content: "\e94a"
+}
+
+.icon-vertical-notification-bell:before {
+    color: #0389b9;
+    content: "\e94b"
+}
+
+.icon-vertical-test-icon:before {
+    color: #5d676e;
+    content: "\e94c"
+}
+
+.icon-vertical-info-icon:before {
+    color: #b3bdc0;
+    content: "\e94d"
+}
+
+.icon-vertical-popular-filters-icon:before {
+    color: #5d676e;
+    content: "\e94f"
+}
+
+.icon-welliba-information-icon:before {
+    color: #0091c7;
+    content: "\e945"
+}
+
+.icon-welliba-graduation-hat:before {
+    color: #b3bdc0;
+    content: "\e949"
+}
+
+.icon-wechat:before,.icon-weixin:before {
+    content: "\f1d7"
+}
+
+.icon-quora-2:before {
+    content: "\e986"
+}
+
+.icon-youtube:before {
+    content: "\ea9d"
+}
+
+.icon-tiktok:before {
+    content: "\e901"
+}
+
+.icon-move:before {
+    content: "\ea37"
+}
+
+.icon-stumbleupon:before {
+    content: "\e93d"
+}
+
+.icon-reddit:before {
+    content: "\e9d2"
+}
+
+.icon-twitter2:before {
+    content: "\e944"
+}
+
+.icon-facebook-logo:before {
+    content: "\e9c7"
+}
+
+.icon-linkedin-logo2:before {
+    content: "\e9c9"
+}
+
+.icon-new-upload:before {
+    color: #0094c9;
+    content: "\ea34"
+}
+
+.icon-lightbulb:before {
+    content: "\ea2a"
+}
+
+.icon-rocket:before {
+    content: "\ea2b"
+}
+
+.icon-hub-awareness:before {
+    content: "\ea24"
+}
+
+.icon-hub-caregiving:before {
+    content: "\ea25"
+}
+
+.icon-hub-fitness:before {
+    content: "\ea26"
+}
+
+.icon-hub-nursing:before {
+    content: "\ea27"
+}
+
+.icon-hub-nutrition:before {
+    content: "\ea28"
+}
+
+.icon-hub-pharmacology:before {
+    content: "\ea29"
+}
+
+.icon-modules:before {
+    content: "\ea1f"
+}
+
+.icon-topics:before {
+    content: "\ea21"
+}
+
+.icon-start-topic:before {
+    content: "\ea20"
+}
+
+.icon-skills2:before {
+    content: "\ea0e"
+}
+
+.icon-tshirt:before {
+    content: "\e9dd"
+}
+
+.icon-ive-referred-my-friends:before {
+    content: "\e9d7"
+}
+
+.icon-new-filter:before {
+    content: "\e9c6"
+}
+
+.icon-broaden:before {
+    content: "\e9c3"
+}
+
+.icon-PDF-Filled:before {
+    content: "\e9c2"
+}
+
+.icon-Gift-Filled:before {
+    content: "\e9ba"
+}
+
+.icon-Graduation-Cap-Filled:before {
+    content: "\e9bb"
+}
+
+.icon-Literature-Filled:before {
+    content: "\e9bd"
+}
+
+.icon-info:before {
+    content: "\e9ab"
+}
+
+.icon-success:before {
+    content: "\e99b"
+}
+
+.icon-download:before {
+    content: "\e994"
+}
+
+.icon-marketing:before {
+    content: "\e979"
+}
+
+.icon-health:before {
+    content: "\e97b"
+}
+
+.icon-filter:before {
+    content: "\e981"
+}
+
+.icon-help:before {
+    content: "\e982"
+}
+
+.icon-linkedin-logo:before {
+    content: "\e975"
+}
+
+.icon-phone:before {
+    content: "\e972"
+}
+
+.icon-pin:before {
+    content: "\e973"
+}
+
+.icon-upload:before {
+    content: "\e943"
+}
+
+.icon-undo:before {
+    content: "\e965"
+}
+
+.icon-redo:before {
+    content: "\e966"
+}
+
+.icon-cross2:before {
+    content: "\ea0f"
+}
+
+.icon-checkmark:before {
+    content: "\ea10"
+}
+
+.icon-pencil:before {
+    content: "\ea36"
+}
+
+.icon-thumb-up:before {
+    content: "\e946"
+}
+
+.icon-thumb-down:before {
+    content: "\e947"
+}
+
+.icon-thick-chevron-down:before {
+    content: "\e9bf"
+}
+
+.icon-thick-chevron-up:before {
+    content: "\e9c0"
+}
+
+.icon-diploma-label:before {
+    content: "\e9aa"
+}
+
+.icon-chapter:before {
+    content: "\e9af"
+}
+
+.icon-module:before {
+    content: "\e9b3"
+}
+
+.icon-play:before {
+    content: "\e9b4"
+}
+
+.icon-upgrade:before {
+    content: "\e9a9"
+}
+
+.icon-crown:before {
+    content: "\e999"
+}
+
+.icon-video:before {
+    content: "\e987"
+}
+
+.icon-certificate:before {
+    content: "\e989"
+}
+
+.icon-book2:before {
+    content: "\e985"
+}
+
+.icon-checked:before {
+    content: "\e974"
+}
+
+.icon-minus:before {
+    content: "\e962"
+}
+
+.icon-plus:before {
+    content: "\e961"
+}
+
+.icon-check:before {
+    content: "\e93f"
+}
+
+.icon-cross3:before {
+    content: "\e948"
+}
+
+.icon-zoom-out:before {
+    content: "\e940"
+}
+
+.icon-zoom-in:before {
+    content: "\e941"
+}
+
+.icon-last-alert:before {
+    content: "\e963"
+}
+
+.icon-dots:before {
+    content: "\e969"
+}
+
+.icon-location:before {
+    content: "\e9d0"
+}
+
+.icon-invisble:before {
+    content: "\e9cf"
+}
+
+.icon-visible:before {
+    color: #b3bdc0;
+    content: "\e9ce"
+}
+
+.icon-filled-star:before {
+    content: "\e95f"
+}
+
+.icon-previous-icon:before {
+    content: "\e9cd"
+}
+
+.icon-triangle-for-languages:before {
+    content: "\e959"
+}
+
+.icon-search2:before {
+    content: "\e95b"
+}
+
+.icon-payments:before {
+    content: "\e956"
+}
+
+.icon-bio:before {
+    content: "\e953"
+}
+
+.icon-camera:before {
+    content: "\e952"
+}
+
+.icon-left-arrow:before {
+    content: "\e93b"
+}
+
+.icon-right-arrow:before {
+    content: "\e93c"
+}
+
+.icon-bell:before {
+    content: "\e928"
+}
+
+.icon-error:before {
+    content: "\e927"
+}
+
+.icon-path:before {
+    content: "\e920"
+}
+
+.icon-cross:before {
+    content: "\e925"
+}
+
+.icon-star:before {
+    content: "\e921"
+}
+
+.icon-student:before {
+    content: "\e90c"
+}
+
+.icon-course:before {
+    content: "\e91b"
+}
+
+.icon-gears:before {
+    content: "\e91c"
+}
+
+.icon-heart:before {
+    content: "\e91d"
+}
+
+.icon-money:before {
+    content: "\e91f"
+}
+
+.icon-faq:before {
+    content: "\e90f"
+}
+
+.icon-globe:before {
+    content: "\e910"
+}
+
+.icon-news:before {
+    content: "\e913"
+}
+
+.icon-search:before {
+    content: "\e90a"
+}
+
+.icon-envelope:before {
+    content: "\e909"
+}
+
+.icon-lock:before {
+    content: "\e908"
+}
+
+.icon-twitter:before {
+    content: "\e94e"
+}
+
+.icon-facebook:before {
+    content: "\e92a"
+}
+
+.icon-linkedin:before {
+    content: "\e902"
+}
+
+.icon-yahoo:before {
+    content: "\e904"
+}
+
+.icon-share:before {
+    content: "\e90b"
+}
+
+.icon-chevron-down:before {
+    content: "\e916"
+}
+
+.icon-circle-group:before {
+    content: "\e942"
+}
+
+.icon-bag:before {
+    content: "\e96c"
+}
+
+.icon-bell-line:before {
+    content: "\e96d"
+}
+
+.icon-cart:before {
+    content: "\e96e"
+}
+
+.icon-home:before {
+    content: "\e970"
+}
+
+.icon-geography:before {
+    content: "\e934"
+}
+
+.icon-time-lapse:before {
+    content: "\e900"
+}
+
+.icon-courses:before {
+    content: "\e907"
+}
+
+.icon-flashTesting:before {
+    content: "\e92c"
+}
+
+.icon-about:before {
+    content: "\e93a"
+}
+
+.icon-document-file-zip:before {
+    content: "\ea31"
+}
+
+.icon-checkmark2:before {
+    content: "\ea0c"
+}
+
+.icon-lock2:before {
+    content: "\ea0a"
+}
+
+.icon-printer:before {
+    content: "\e9c1"
+}
