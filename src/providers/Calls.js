@@ -17,7 +17,7 @@ export const Calls = ({ children }) => {
     }
     )
       .then(function(response){
-        alert(response)
+        alert(JSON.stringify(response))
         return response.json();
       })
       .then(function(myJson) {
