@@ -8,7 +8,22 @@ export const Calls = ({ children }) => {
     const [navCourses, setNavCourses] = useState([]);
 
     const getNavCourses = () => {
-
+       fetch(`${hook.endpoint}/courses`
+    ,{
+      headers : { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+       }
+    }
+    )
+      .then(function(response){
+        alert(response)
+        return response.json();
+      })
+      .then(function(myJson) {
+        console.log(myJson);
+      });
+    }
     }
 
     return (
