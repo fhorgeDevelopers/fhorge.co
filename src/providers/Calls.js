@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from "react";
+import React, { createContext, useContext, useState, useEffect } from "react";
 import { useHook } from "./Hook";
 
 const CallsContext = createContext(null);
@@ -26,6 +26,9 @@ export const Calls = ({ children }) => {
     }
     }
 
+    useEffect(()=>{
+    getNavCourses()
+  },[])
     return (
         <CallsContext.Provider value={{ navCourses }}>
             {children}
