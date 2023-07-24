@@ -207,8 +207,7 @@ const Footer = () => {
                         </div>
                         <button className={`${((mode.myMode === 'light') ? "darkNav" : "lightNav")} ${scrollNow ? 'scroll-to-top' : 'd-none'} `} onClick={() => scrollToTop()}>
                             <span class="material-symbols-outlined">
-                                {/* arrow_top */}
-                                ^
+                                expand_less
                             </span>
                         </button>
                     </div>

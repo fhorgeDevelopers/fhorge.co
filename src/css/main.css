@@ -6522,10 +6522,11 @@ footer .ft-wrap .scroll-to-top {
     color: #5d666d;
     font-size: 1.575em;
     height: 50px;
-    padding-top: 12px;
+    padding: 0;
     position: fixed;
     width: 50px;
     right: 50px;
+    line-height: 0;
 }
 
 footer .ft-wrap .scroll-to-top:hover {
