@@ -160,6 +160,7 @@ body {
 
 .navbar-burger {
   position: absolute;
+  z-index: 1000;
   right: 15px;
   top: 4px;
 }
