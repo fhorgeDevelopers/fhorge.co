@@ -14,6 +14,8 @@ const Navigation = () => {
     const [seeSearch, setSeeSearch] = useState(false);
     const [searchQuery, setSearchQuery] = useState('');
     const screenWidth = document.documentElement.clientWidth;
+    const overlay = document.getElementById('overlay');
+    const body = document.getElementsByTagName("body")[0];
 
     const toggleSearch = () => {
         if (seeSearch) {
@@ -35,8 +37,14 @@ const Navigation = () => {
     const toggleSubjectMenu = () => {
         if (showSubjectMenu) {
             setShowSubjectMenu(false)
+            overlay.style.display = 'none'
+            body.style.overflow = ""
+
         } else {
             setShowSubjectMenu(true)
+            overlay.style.display = 'block'
+            body.style.overflow = "hidden"
+
         }
         setShowCourseMenu(false)
     }
@@ -44,8 +52,13 @@ const Navigation = () => {
     const toggleCourseMenu = () => {
         if (showCourseMenu) {
             setShowCourseMenu(false)
+            overlay.style.display = 'none'
+            body.style.overflow = ""
+
         } else {
             setShowCourseMenu(true)
+            overlay.style.display = 'block'
+            body.style.overflow = "hidden"
         }
         setShowSubjectMenu(false)
     }
@@ -65,8 +78,20 @@ const Navigation = () => {
     }
 
     useEffect(() => {
+        console.log(calls.careers)
+    }, [calls.careers])
+
+    useEffect(() => {
         setShowMenu(false);
         displayWindowSize();
+        setShowSubjectMenu(false);
+        setShowCourseMenu(false);
+
+
+        const overlay = document.getElementById('overlay');
+        const body = document.getElementsByTagName("body")[0];
+        body.style.overflow = "";
+        overlay.style.display = 'none'
         window.addEventListener("resize", displayWindowSize);
     }, [location.pathname])
 
@@ -131,9 +156,9 @@ const Navigation = () => {
                                 className={`${((mode.myMode === 'dark') ? "textLight" : "textDark")} navbar-item m-0 d-flex align-items-center`}
                                 onClick={() => toggleSubjectMenu()}
                             >
-                                Subjects &nbsp;
+                                Explore Diplomas and Certificates
                                 <span className="material-symbols-outlined m-0">
-                                    {showSubjectMenu ? 'expand_less' : 'expand_more'}
+                                    {showSubjectMenu ? 'arrow_drop_up' : 'arrow_drop_down'}
                                 </span>
                             </span>
                             <section className={`${((mode.myMode === 'dark') ? "textLight" : "textDark")} ${showSubjectMenu ? 'd-block' : 'd-none'} navDrop`}>
@@ -166,29 +191,46 @@ const Navigation = () => {
                                 className={`${((mode.myMode === 'dark') ? "textLight" : "textDark")} navbar-item m-0 d-flex align-items-center`}
                                 onClick={() => toggleCourseMenu()}
                             >
-                                Courses  &nbsp;
+                                Discover Careers
                                 <span className="material-symbols-outlined m-0">
-                                    {showCourseMenu ? 'expand_less' : 'expand_more'}
+                                    {showCourseMenu ? 'arrow_drop_up' : 'arrow_drop_down'}
                                 </span>
                             </span>
                             <section className={`${((mode.myMode === 'dark') ? "textLight" : "textDark")} ${showCourseMenu ? 'd-block' : 'd-none'} navDrop`}>
                                 <ul className='m-0 p-0' style={{ listStyle: 'none' }}>
-                                    <li>
-                                        <Link
-                                            to={'/'}
-                                            className={` dropLink`}
-                                        >
-                                            Development
+                                    <li className="m-3 d-flex justify-content-between" >
+                                        <span  style={{ padding: '6px 10px', fontSize: '13px',  }}>
+                                            EXPLORE CAREER CATEGORIES 
+                                        </span>
+                                        <Link to={'/careers'}  style={{ padding: '6px 10px', fontSize: '13px',  }}>
+                                            View All 
                                         </Link>
                                     </li>
-                                    <li>
-                                        <Link
-                                            to={'/'}
-                                            className={` dropLink`}
-                                        >
-                                            Home Economics
-                                        </Link>
-                                    </li>
+                                    {
+                                        calls.careers.length === 0 ? null : (
+                                            <>
+                                                {calls.careers.map((career) => (
+                                                    <li key={career.id}>
+                                                        <Link
+                                                            to={`/careers/${career.career_ref}`}
+                                                            className={`dropLink d-flex justify-content-start`}
+                                                        >
+                                                            <img src={career.career_category_image} alt={career.career_ref} className="navIcon" />
+                                                            <div>
+                                                                <span className={(mode.myMode === 'light') ? "blackText" : "whiteText"}>
+                                                                    {career.career_category}
+                                                                </span>
+                                                                <br />
+                                                                <span className="whiteText">
+                                                                    {career.career_count} careers
+                                                                </span>
+                                                            </div>
+                                                        </Link>
+                                                    </li>
+                                                ))}
+                                            </>
+                                        )
+                                    }
                                 </ul>
                             </section>
                         </span>
@@ -246,6 +288,7 @@ const Navigation = () => {
                     </div>
                 </div>
             </nav>
+            <div id="overlay" style={{ display: 'none' }} className="overlay"></div>
         </>
     )
 }

@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, { createContext, useContext, useState, useEffect } from "react";
 import { useHook } from "./Hook";
 
@@ -5,29 +6,34 @@ const CallsContext = createContext(null);
 
 export const Calls = ({ children }) => {
     const hook = useHook();
-    const [navCourses, setNavCourses] = useState([]);
+    const [courses, setCourses] = useState([]);
+    const [careers, setCareers] = useState([]);
 
-    const getNavCourses = () => {
-        fetch(`${hook.endpoint}/careers`, {
-            headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-            }
-        })
-            .then(function (response) {
-                return response.json();
-            })
-            .then(function (myJson) {
-                console.log(myJson);
-            });
+    const getCourses = async () => {
+        try {
+            const res = await axios.get(`${hook.endpoint}/careers`);
+            setCourses(res.data.response)
+        } catch (error) {
+            // Handle errors
+        }
+    }
+
+    const getCareers = async () => {
+        try {
+            const res = await axios.get(`${hook.endpoint}/careers`);
+            setCareers(res.data.response)
+        } catch (error) {
+            // Handle errors
+        }
     }
 
 
     useEffect(() => {
-        getNavCourses()
+        getCourses();
+        getCareers();
     }, [])
     return (
-        <CallsContext.Provider value={{ navCourses }}>
+        <CallsContext.Provider value={{ courses, careers  }}>
             {children}
         </CallsContext.Provider>
     )
