@@ -8,6 +8,7 @@ import { Calls } from './providers/Calls';
 
 const App = () => {
   const Home = React.lazy(() => import('./pages/home/Home'));
+  const ContactUs = React.lazy(() => import('./pages/contactUs/ContactUs'));
   const NotFound = React.lazy(() => import('./pages/notFound/NotFound'));
   return (
     <>
@@ -102,6 +103,14 @@ const App = () => {
                 element={
                   <Suspense fallback={<Preloader />}>
                     <Home />
+                  </Suspense>
+                }
+              />
+              <Route
+                path='/contact-us'
+                element={
+                  <Suspense fallback={<Preloader />}>
+                    <ContactUs />
                   </Suspense>
                 }
               />

@@ -162,37 +162,39 @@ const Navigation = () => {
                                 </span>
                             </span>
                             <section className={`${((mode.myMode === 'dark') ? "textLight" : "textDark")} ${showSubjectMenu ? 'd-block' : 'd-none'} navDrop`}>
-                                <ul className='m-0 p-0' style={{ listStyle: 'none' }}>
-                                    <li className="m-3 d-flex justify-content-between" >
-                                        <span style={{ padding: '6px 10px', fontSize: '13px', }}>
-                                            COURSE CATEGORIES
-                                        </span>
-                                        <Link to={'/courses'} style={{ padding: '6px 10px', fontSize: '13px', }}>
-                                            View All
-                                        </Link>
-                                    </li>
-                                    {
-                                        calls.courses.length === 0 ? null : (
-                                            <>
-                                                {calls.courses.map((course) => (
-                                                    <li key={course.id}>
-                                                        <Link
-                                                            to={`/courses/${course.course_category.toLowerCase()}`}
-                                                            className={`dropLink d-flex justify-content-start align-items-center`}
-                                                        >
-                                                            <img src={course.course_category_image} alt={course.course_ref} className="navIcon2" />
-                                                            <div>
-                                                                <span className={(mode.myMode === 'light') ? "blackText" : "whiteText"} style={{ fontSize: '14px'}}>
-                                                                    {course.course_category} &nbsp; ({course.course_count} courses)
-                                                                </span>
-                                                            </div>
-                                                        </Link>
-                                                    </li>
-                                                ))}
-                                            </>
-                                        )
-                                    }
-                                </ul>
+                                <li className="m-3 d-flex justify-content-between" >
+                                    <span style={{ padding: '6px 10px', fontSize: '13px', }}>
+                                        COURSE CATEGORIES
+                                    </span>
+                                    <Link to={'/courses'} style={{ padding: '6px 10px', fontSize: '13px', }}>
+                                        View All
+                                    </Link>
+                                </li>
+                                <div style={{ overflowY: 'scroll' }}>
+                                    <ul className='m-0 p-0' style={{ listStyle: 'none' }}>
+                                        {
+                                            calls.courses.length === 0 ? null : (
+                                                <>
+                                                    {calls.courses.map((course) => (
+                                                        <li key={course.id}>
+                                                            <Link
+                                                                to={`/courses/${course.course_category.toLowerCase()}`}
+                                                                className={`dropLink d-flex justify-content-start align-items-center`}
+                                                            >
+                                                                <img src={course.course_category_image} alt={course.course_ref} className="navIcon2" />
+                                                                <div>
+                                                                    <span className={(mode.myMode === 'light') ? "blackText" : "whiteText"} style={{ fontSize: '14px' }}>
+                                                                        {course.course_category} &nbsp; ({course.course_count} courses)
+                                                                    </span>
+                                                                </div>
+                                                            </Link>
+                                                        </li>
+                                                    ))}
+                                                </>
+                                            )
+                                        }
+                                    </ul>
+                                </div>
                             </section>
                         </span>
 
@@ -272,7 +274,7 @@ const Navigation = () => {
                                         Sign in
                                     </span>
                                 </button>
-                                <button to={'/sign-up'} className={`${((mode.myMode === 'light') ? "textDark" : "textLight")}  ${location.pathname === '/sign-in' ? 'active' : ''} menuLink d-flex navBtn`}>
+                                <button to={'/sign-up'} className={`${((mode.myMode === 'light') ? "textDark" : "textLight")} ${location.pathname === '/sign-in' ? 'active' : ''} menuLink d-flex navBtn`} style={{ background: '#198754!important' }}>
                                     <span className={`${((mode.myMode === 'light') ? "textDark" : "textLight")} m-0`}>
                                         Sign up
                                     </span>
@@ -306,7 +308,17 @@ const Navigation = () => {
                     </div>
                 </div>
             </nav>
-            <div id="overlay" style={{ display: 'none' }} className="overlay"></div>
+            <div
+                id="overlay"
+                style={{ display: 'none' }}
+                className="overlay"
+                onClick={() => {
+                    setShowSubjectMenu(false)
+                    setShowCourseMenu(false)
+                    overlay.style.display = 'none'
+                    body.style.overflow = ""
+                }}
+            ></div>
         </>
     )
 }

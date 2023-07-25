@@ -9,7 +9,7 @@ const Footer = () => {
     const [scrollNow, setScrollNow] = useState(false);
 
     const handleScroll = (event) => {
-        if(window.scrollY > 60) {
+        if (window.scrollY > 60) {
             setScrollNow(true);
         } else {
             setScrollNow(false);
@@ -175,6 +175,93 @@ const Footer = () => {
                                 expand_less
                             </span>
                         </button>
+                    </div><hr class="ft-hr" />
+                    <div class="ft-b-wrap">
+                        <div class="ft-b-wrap-col-1">
+                            <div class="row-1">
+                                <div class="logo-wrapper">
+                                    <img width="141" height="48" style={{ transform: 'scaleY(3)' }} class="alison-logo lazyload" src={`${((mode.myMode === 'dark') ? "/logo_dark.png" : "/logo.png")}`} />
+                                </div>
+                                <ul>
+                                    <li class="lazyload" data-bg="/faqs.svg">
+                                        <Link to="/faqs">FAQs</Link>
+                                    </li>
+                                    <li class="lazyload" data-bg="/faqs.svg">
+                                        <Link to="/contact-us">Customer Support</Link>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className='row-2'>
+                                <ul>
+                                    <li>
+                                        <Link to="https://www.facebook.com/FhorgeOfficial" target="_blank" rel="nofollow">
+                                            <img class="lazyload" src="/imgs/social/facebook.svg"/>
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to="https://twitter.com/fhorge_official" target="_blank" rel="nofollow">
+                                            <img class="lazyload" src="/imgs/social/twitter.svg"/>
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to="https://www.linkedin.com/company/fhorge" target="_blank" rel="nofollow">
+                                            <img class="lazyload" src="/imgs/social/linkedin.svg"/>
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to="https://www.instagram.com/fhorge_official/" target="_blank" rel="nofollow">
+                                            <img class="lazyload" src="/imgs/social/instagram.svg"/>
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to="https://www.tiktok.com/@fhorgeofficial" target="_blank" rel="nofollow">
+                                            <img class="lazyload" src="/imgs/social/tiktok.svg"/>
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to="https://www.youtube.com/" target="_blank" rel="nofollow">
+                                            <img class="lazyload" src="/imgs/social/youtube.svg"/>
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to="https://fhorge.quora.com/" target="_blank" rel="nofollow">
+                                            <img class="lazyload" src="/imgs/social/quora.svg"/>
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ft-b-wrap-col-2">
+                            <hr class="ft-hr ft-hr--bottom" />
+                            <div class="row-4 apps">
+                                <Link to="https://apps.apple.com/" target="_blank">
+                                    <img class="lazyload" width="156" height="48" src="/imgs/social/footer-desktop-appstore.svg" alt="Download on the App Store" title="Download the Fhorge app on iPhone"/>
+                                </Link>
+                                <Link to="https://play.google.com/" target="_blank">
+                                    <img class="lazyload" width="156" height="48" src="/imgs/social/footer-desktop-playstore.svg" alt="Download on Google Play" title="Download the Fhorge app on Android"/>
+                                </Link>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="row-5 policies">
+                                <ul class="policies-list">
+                                    <li class="icon-rights">
+                                        <span>&copy;Fhorge 2023</span>
+                                    </li>
+                                    <li class="icon-rights">
+                                        <Link to="/about/terms-of-use?privacy-policy" title="Fhorge Privacy Policy">Privacy</Link>
+                                    </li>
+                                    <li class="icon-rights">
+                                        <Link to="/about/terms-of-use" title="Fhorge Terms and conditions">Terms</Link>
+                                    </li>
+                                    <li class="icon-rights">
+                                        <Link class="cancel-scroll" to="/about/terms-of-use?privacy-policy#alison_cookie_policy" title="Fhorge Cookie Policy">Cookie Policy</Link>
+                                    </li>
+                                    <li class="icon-rights">
+                                        <Link to="/sitemap" title="Fhorge Sitemap">Sitemap</Link>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </footer>

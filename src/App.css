@@ -1,10 +1,17 @@
 body {
   min-height: 100vh;
   color: #4460EF !important;
-  /* font-family: 'Mulish', sans-serif; */
-  /* font-family: 'Mulish', sans-serif; */
+  transition-delay: 500ms;
+  transition-duration: 500ms;
+  transition-property: all;
   font-family: 'Work Sans', sans-serif !important;
 }
+
+/* button {
+  background:  transparent !important;
+  border: none !important;
+  border-radius: 7px !important;
+} */
 
 .no-decoration {
   text-decoration: none;
@@ -47,6 +54,7 @@ body {
 .lightNav,
 .sm.light {
   background-color: #ffffff !important;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .08);
   /* box-shadow: 0px 1px 6px #002347; */
 }
 
@@ -253,27 +261,37 @@ body {
   padding: 5px;
   margin-right: 10px !important;
   width: fit-content;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 7px !important;
 }
 
 .navDrop.textLight {
   background-color: #002347 !important;
+  box-shadow: 5px 3px 6px rgba(255, 255, 255, .08)
 }
 
 .navDrop.textDark>ul>li>.dropLink {
   color: #002347;
 }
 
+.navDrop.textDark {
+  box-shadow: 5px 3px 6px rgba(0, 0, 0, .8)
+}
+
 .navDrop {
   position: absolute;
-  overflow: hidden;
-  top: 40px;
+  top: 55px;
   width: 350px;
   height: 80vh;
-  /* padding: 2px 10px; */
   background: #f3f3f3;
-  border-radius: 5px;
+  border-radius: 20px;
   z-index: 100;
   padding: 5px;
+  box-shadow: 5px 3px 6px rgba(0, 0, 0, .08);
+  transition-delay: 500ms;
+  transition-duration: 500ms;
+  transition-property: all;
 }
 
 .navIcon {
@@ -311,7 +329,7 @@ body {
   background-color: rgb(0, 35, 71, 0.5);
 }
 
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
   width: 25px;
 }
 
@@ -322,7 +340,7 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: darkgrey;
   outline: 1px solid slategrey;
-}
+} */
 
 .blackText {
   color: black !important
@@ -334,11 +352,16 @@ body::-webkit-scrollbar-thumb {
 
 .overlay {
   width: 100vw;
-  height: calc(100vh - 70px);
+  height: calc(100vh - 66px);
   position: fixed;
   z-index: 20;
   bottom: 0;
   left: 0;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(0, 0, 0, 0.7);
   overflow: hidden;
+}
+
+.lazyload {
+  opacity: 1 !important;
+  transition: opacity 500ms;
 }
