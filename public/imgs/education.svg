@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Ellipse_2611" data-name="Ellipse 2611" cx="18" cy="18" r="18" transform="translate(8198 2069)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_119366" data-name="Mask Group 119366" transform="translate(-8198 -2069)" clip-path="url(#clip-path)">
+    <g id="mortarboard" transform="translate(8204.936 2080.372)">
+      <path id="Path_105165" data-name="Path 105165" d="M21.393,46.128,11.122,42.5a.639.639,0,0,0-.425,0L.427,46.128a.639.639,0,0,0,0,1.205L10.7,50.984a.639.639,0,0,0,.428,0l10.27-3.651a.639.639,0,0,0,0-1.205Z" transform="translate(0 -42.468)" fill="#7070e3"/>
+      <path id="Path_105166" data-name="Path 105166" d="M432.771,203.31v-5.576l-1.278.454v5.121a1.283,1.283,0,0,0,0,2.226v3.141a.639.639,0,1,0,1.278,0v-3.141a1.283,1.283,0,0,0,0-2.226Z" transform="translate(-412.487 -191.117)" fill="#7070e3"/>
+      <path id="Path_105167" data-name="Path 105167" d="M111.86,224.575a1.913,1.913,0,0,1-.642-.111l-5.774-2.053v2.813c0,.688.718,1.27,2.134,1.73a15.07,15.07,0,0,0,8.564,0c1.416-.46,2.134-1.042,2.134-1.73v-2.813l-5.774,2.053A1.913,1.913,0,0,1,111.86,224.575Z" transform="translate(-100.95 -214.744)" fill="#7070e3"/>
+    </g>
+  </g>
+</svg>
