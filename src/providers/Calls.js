@@ -8,27 +8,24 @@ export const Calls = ({ children }) => {
     const [navCourses, setNavCourses] = useState([]);
 
     const getNavCourses = () => {
-       fetch(`${hook.endpoint}/careers`
-    ,{
-      headers : { 
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-       }
+        fetch(`${hook.endpoint}/careers`, {
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            }
+        })
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (myJson) {
+                console.log(myJson);
+            });
     }
-    )
-      .then(function(response){
-        alert(JSON.stringify(response))
-        return response.json();
-      })
-      .then(function(myJson) {
-        console.log(myJson);
-      });
-    }
-    
 
-    useEffect(()=>{
-    getNavCourses()
-  },[])
+
+    useEffect(() => {
+        getNavCourses()
+    }, [])
     return (
         <CallsContext.Provider value={{ navCourses }}>
             {children}
