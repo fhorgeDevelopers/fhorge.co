@@ -281,6 +281,12 @@ body {
   margin-right: 25px;
 }
 
+.navIcon2 {
+  margin-right: 15px;
+  width: 30px;
+  height: 30px;
+}
+
 .dropLink {
   display: block;
   width: 100%;
@@ -304,12 +310,17 @@ body {
   background-color: rgb(0, 35, 71, 0.5);
 }
 
-.dropLink:hover>.navIcon {
-  /* background: rgb(255, 255, 255); */
+body::-webkit-scrollbar {
+  width: 25px;
 }
 
-.navDrop.textDark>ul>li>.dropLink:hover>.navIcon {
-  /* background: grey; */
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
 }
 
 .blackText {

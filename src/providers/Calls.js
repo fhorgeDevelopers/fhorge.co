@@ -11,7 +11,7 @@ export const Calls = ({ children }) => {
 
     const getCourses = async () => {
         try {
-            const res = await axios.get(`${hook.endpoint}/careers`);
+            const res = await axios.get(`${hook.endpoint}/courses`);
             setCourses(res.data.response)
         } catch (error) {
             // Handle errors

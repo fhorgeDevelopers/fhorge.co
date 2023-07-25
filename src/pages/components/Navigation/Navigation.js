@@ -163,22 +163,35 @@ const Navigation = () => {
                             </span>
                             <section className={`${((mode.myMode === 'dark') ? "textLight" : "textDark")} ${showSubjectMenu ? 'd-block' : 'd-none'} navDrop`}>
                                 <ul className='m-0 p-0' style={{ listStyle: 'none' }}>
-                                    <li>
-                                        <Link
-                                            to={'/'}
-                                            className={` dropLink`}
-                                        >
-                                            Development
+                                    <li className="m-3 d-flex justify-content-between" >
+                                        <span style={{ padding: '6px 10px', fontSize: '13px', }}>
+                                            COURSE CATEGORIES
+                                        </span>
+                                        <Link to={'/courses'} style={{ padding: '6px 10px', fontSize: '13px', }}>
+                                            View All
                                         </Link>
                                     </li>
-                                    <li>
-                                        <Link
-                                            to={'/'}
-                                            className={` dropLink`}
-                                        >
-                                            Home Economics
-                                        </Link>
-                                    </li>
+                                    {
+                                        calls.courses.length === 0 ? null : (
+                                            <>
+                                                {calls.courses.map((course) => (
+                                                    <li key={course.id}>
+                                                        <Link
+                                                            to={`/courses/${course.course_category.toLowerCase()}`}
+                                                            className={`dropLink d-flex justify-content-start align-items-center`}
+                                                        >
+                                                            <img src={course.course_category_image} alt={course.course_ref} className="navIcon2" />
+                                                            <div>
+                                                                <span className={(mode.myMode === 'light') ? "blackText" : "whiteText"} style={{ fontSize: '14px'}}>
+                                                                    {course.course_category} &nbsp; ({course.course_count} courses)
+                                                                </span>
+                                                            </div>
+                                                        </Link>
+                                                    </li>
+                                                ))}
+                                            </>
+                                        )
+                                    }
                                 </ul>
                             </section>
                         </span>
@@ -199,11 +212,11 @@ const Navigation = () => {
                             <section className={`${((mode.myMode === 'dark') ? "textLight" : "textDark")} ${showCourseMenu ? 'd-block' : 'd-none'} navDrop`}>
                                 <ul className='m-0 p-0' style={{ listStyle: 'none' }}>
                                     <li className="m-3 d-flex justify-content-between" >
-                                        <span  style={{ padding: '6px 10px', fontSize: '13px',  }}>
-                                            EXPLORE CAREER CATEGORIES 
+                                        <span style={{ padding: '6px 10px', fontSize: '13px', }}>
+                                            EXPLORE CAREER CATEGORIES
                                         </span>
-                                        <Link to={'/careers'}  style={{ padding: '6px 10px', fontSize: '13px',  }}>
-                                            View All 
+                                        <Link to={'/careers'} style={{ padding: '6px 10px', fontSize: '13px', }}>
+                                            View All
                                         </Link>
                                     </li>
                                     {
