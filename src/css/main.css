@@ -6808,6 +6808,18 @@ footer.tpv2 .ft-wrap .col .col-inner .ft-column .ft-column-inner .footer_h3 {
     min-width: auto
 }
 
+footer.tpv2 .ft-wrap .col .col-inner .ft-column .ft-column-inner ul {
+    padding: 0;
+}
+
+footer.tpv2 .ft-wrap .col .col-inner .ft-column .ft-column-inner ul li a {
+    text-decoration: none;
+}
+
+footer.tpv2 .ft-wrap .col .col-inner .ft-column .ft-column-inner ul li a:hover {
+    text-decoration: underline;
+}
+
 footer.tpv2 .ft-wrap .col:first-child .col-inner .ft-column .ft-column-inner .footer_h3 {
     max-width: 173px
 }

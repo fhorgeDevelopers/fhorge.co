@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Ellipse_2604" data-name="Ellipse 2604" cx="18" cy="18" r="18" transform="translate(7723 2069)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_119352" data-name="Mask Group 119352" transform="translate(-7723 -2069)" clip-path="url(#clip-path)">
+    <g id="Group_136220" data-name="Group 136220" transform="translate(7732.757 2079.446)">
+      <g id="Group_136217" data-name="Group 136217">
+        <path id="Path_105127" data-name="Path 105127" d="M7.778,3.252A3.934,3.934,0,0,0,5.7.726,4.835,4.835,0,0,0,1.456.309,3.019,3.019,0,0,0,.17,1.263L0,1.485l.142.241A6.373,6.373,0,0,0,.966,2.864a6.774,6.774,0,0,0,5.59,2.48,1.584,1.584,0,0,0-.12-.213,6.253,6.253,0,0,0-3-2.425l.352-.861A7.157,7.157,0,0,1,7.213,4.632l.167.278a2.216,2.216,0,0,0,.4-1.657Z" transform="translate(0 0)" fill="#00a94f"/>
+      </g>
+      <g id="Group_136218" data-name="Group 136218" transform="translate(7.99 0.002)">
+        <path id="Path_105128" data-name="Path 105128" d="M266.633,1.313C265.6.073,263.426-.515,261.058.785A3.91,3.91,0,0,0,258.994,3.3a2.216,2.216,0,0,0,.4,1.657l.167-.278A7.158,7.158,0,0,1,262.984,1.9l.352.861a6.222,6.222,0,0,0-2.989,2.416c-.046.074-.093.148-.13.222a6.774,6.774,0,0,0,5.59-2.48,7.817,7.817,0,0,0,.855-1.138l.111-.241Z" transform="translate(-258.966 -0.052)" fill="#00a94f"/>
+      </g>
+      <g id="Agriculture" transform="translate(0 10.212)">
+        <g id="Group_136219" data-name="Group 136219">
+          <path id="Path_105129" data-name="Path 105129" d="M15.8,336.584H0v-.494a3.261,3.261,0,0,1,4.326-3.053,4.149,4.149,0,0,1,7.143,0,3.261,3.261,0,0,1,4.326,3.053Z" transform="translate(0 -331)" fill="#00a94f"/>
+        </g>
+      </g>
+      <path id="Path_105130" data-name="Path 105130" d="M215.184,159.557a7.289,7.289,0,0,0-.879,3.554v.379a3.876,3.876,0,0,0-.926,0v-.379a7.235,7.235,0,0,0-.879-3.554,5.157,5.157,0,0,0,.824-.435,6.786,6.786,0,0,1,.518,1.148,6.472,6.472,0,0,1,.518-1.148A5.157,5.157,0,0,0,215.184,159.557Z" transform="translate(-205.944 -154.213)" fill="#00a94f"/>
+    </g>
+  </g>
+</svg>

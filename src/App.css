@@ -13,6 +13,18 @@ body {
   border-radius: 7px !important;
 } */
 
+.networkAlert {
+  position: fixed;
+  top: 40px;
+  right: calc(50vw - 125px);
+  background-color: rgba(142, 251, 247, 0.3);
+  z-index: 1000;
+  width: 250px;
+  padding: 7px;
+  border-radius: 9px;
+  text-align: center;
+}
+
 .b-2 {
   border-radius: 2rem;
 }
@@ -302,6 +314,8 @@ body {
   background: white;
   border-radius: 100%;
   margin-right: 25px;
+  width: 40px;
+  height: 40px;
 }
 
 .navIcon2 {
@@ -323,7 +337,7 @@ body {
 
 .dropLink:hover {
   color: #4460EF;
-  background-color: rgb(0, 0, 0, 0.5);
+  background-color: rgb(0, 0, 0, 0.2);
   text-decoration: none;
   border-left: 5px solid black;
 }

@@ -88,10 +88,9 @@ const Navigation = () => {
         setShowCourseMenu(false);
 
 
-        const overlay = document.getElementById('overlay');
-        const body = document.getElementsByTagName("body")[0];
-        body.style.overflow = "";
-        overlay.style.display = 'none'
+        document.getElementById('overlay').style.display = 'none'
+        document.getElementsByTagName("body")[0].style.overflow = "";
+
         window.addEventListener("resize", displayWindowSize);
     }, [location.pathname])
 
@@ -170,7 +169,7 @@ const Navigation = () => {
                                         View All
                                     </Link>
                                 </li>
-                                <div style={{ overflowY: 'scroll' }}>
+                                <div style={{ overflowY: 'auto', height: '80%' }}>
                                     <ul className='m-0 p-0' style={{ listStyle: 'none' }}>
                                         {
                                             calls.courses.length === 0 ? null : (
@@ -212,41 +211,43 @@ const Navigation = () => {
                                 </span>
                             </span>
                             <section className={`${((mode.myMode === 'dark') ? "textLight" : "textDark")} ${showCourseMenu ? 'd-block' : 'd-none'} navDrop`}>
-                                <ul className='m-0 p-0' style={{ listStyle: 'none' }}>
-                                    <li className="m-3 d-flex justify-content-between" >
-                                        <span style={{ padding: '6px 10px', fontSize: '13px', }}>
-                                            EXPLORE CAREER CATEGORIES
-                                        </span>
-                                        <Link to={'/careers'} style={{ padding: '6px 10px', fontSize: '13px', }}>
-                                            View All
-                                        </Link>
-                                    </li>
-                                    {
-                                        calls.careers.length === 0 ? null : (
-                                            <>
-                                                {calls.careers.map((career) => (
-                                                    <li key={career.id}>
-                                                        <Link
-                                                            to={`/careers/${career.career_ref}`}
-                                                            className={`dropLink d-flex justify-content-start`}
-                                                        >
-                                                            <img src={career.career_category_image} alt={career.career_ref} className="navIcon" />
-                                                            <div>
-                                                                <span className={(mode.myMode === 'light') ? "blackText" : "whiteText"}>
-                                                                    {career.career_category}
-                                                                </span>
-                                                                <br />
-                                                                <span className="whiteText">
-                                                                    {career.career_count} careers
-                                                                </span>
-                                                            </div>
-                                                        </Link>
-                                                    </li>
-                                                ))}
-                                            </>
-                                        )
-                                    }
-                                </ul>
+                                <li className="m-3 d-flex justify-content-between" >
+                                    <span style={{ padding: '6px 10px', fontSize: '13px', }}>
+                                        EXPLORE CAREER CATEGORIES
+                                    </span>
+                                    <Link to={'/careers'} style={{ padding: '6px 10px', fontSize: '13px', }}>
+                                        View All
+                                    </Link>
+                                </li>
+                                <div style={{ overflowY: 'auto', height: '80%' }}>
+                                    <ul className='m-0 p-0' style={{ listStyle: 'none' }}>
+                                        {
+                                            calls.careers.length === 0 ? null : (
+                                                <>
+                                                    {calls.careers.map((career) => (
+                                                        <li key={career.id}>
+                                                            <Link
+                                                                to={`/careers/${career.career_ref}`}
+                                                                className={`dropLink d-flex justify-content-start`}
+                                                            >
+                                                                <img src={career.career_category_image} alt={career.career_ref} className="navIcon" />
+                                                                <div>
+                                                                    <span className={(mode.myMode === 'light') ? "blackText" : "whiteText"}>
+                                                                        {career.career_category}
+                                                                    </span>
+                                                                    <br />
+                                                                    <span className="whiteText">
+                                                                        {career.career_count} careers
+                                                                    </span>
+                                                                </div>
+                                                            </Link>
+                                                        </li>
+                                                    ))}
+                                                </>
+                                            )
+                                        }
+                                    </ul>
+                                </div>
                             </section>
                         </span>
 

@@ -6,11 +6,13 @@ import Preloader from './Preloader';
 import { Hook } from './providers/Hook';
 import { Calls } from './providers/Calls';
 import Faq from './pages/faq/Faq';
-
 const App = () => {
   const Home = React.lazy(() => import('./pages/home/Home'));
   const ContactUs = React.lazy(() => import('./pages/contactUs/ContactUs'));
   const NotFound = React.lazy(() => import('./pages/notFound/NotFound'));
+  const AllCareers = React.lazy(() => import('./pages/careers/AllCareers'));
+  const CareerCategories = React.lazy(() => import('./pages/careers/CareerCategories'));
+  const EachCareer = React.lazy(() => import('./pages/careers/EachCareer'));
   return (
     <>
       <Hook>
@@ -85,7 +87,7 @@ const App = () => {
                 path='/careers'
                 element={
                   <Suspense fallback={<Preloader />}>
-                    <Home />
+                    <AllCareers />
                   </Suspense>
                 }
               />
@@ -94,7 +96,7 @@ const App = () => {
                 path='/careers/:category_id'
                 element={
                   <Suspense fallback={<Preloader />}>
-                    <Home />
+                    <CareerCategories />
                   </Suspense>
                 }
               />
@@ -103,7 +105,7 @@ const App = () => {
                 path='/careers/:category_id/:career_id'
                 element={
                   <Suspense fallback={<Preloader />}>
-                    <Home />
+                    <EachCareer />
                   </Suspense>
                 }
               />
