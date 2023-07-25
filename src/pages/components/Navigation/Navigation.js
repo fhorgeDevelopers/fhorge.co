@@ -258,7 +258,7 @@ const Navigation = () => {
                     <div className="navbar-end">
                         <div className={`${((mode.myMode === 'dark') ? "textLight" : "textDark")} navbar-item`}>
                             <div className="buttons d-flex m-0 align-items-center">
-                                <span
+                                {/* <span
                                     className={`${((mode.myMode === 'light') ? "textDark" : "textLight")} ${location.pathname === '/sign-in' ? 'active' : ''} menuLink d-flex m-0 navBtn`}
                                     onClick={() => toggleSearch()}
                                     style={{ marginRight: '10px' }}
@@ -266,10 +266,15 @@ const Navigation = () => {
                                     <span className={`${((mode.myMode === 'light') ? "textDark" : "textLight")} material-symbols-outlined m-0`}>
                                         search
                                     </span>
-                                </span>
-                                <button to={'/sign-in'} className={`${((mode.myMode === 'light') ? "textDark" : "textLight")} btn  ${location.pathname === '/sign-in' ? 'active' : ''} menuLink d-flex m-0 navBtn`} style={{ marginRight: '10px' }}>
+                                </span> */}
+                                <button to={'/sign-in'} className={`${((mode.myMode === 'light') ? "textDark" : "textLight")}  ${location.pathname === '/sign-in' ? 'active' : ''} menuLink d-flex navBtn`} style={{ marginRight: '10px' }}>
                                     <span className={`${((mode.myMode === 'light') ? "textDark" : "textLight")} m-0`}>
                                         Sign in
+                                    </span>
+                                </button>
+                                <button to={'/sign-up'} className={`${((mode.myMode === 'light') ? "textDark" : "textLight")}  ${location.pathname === '/sign-in' ? 'active' : ''} menuLink d-flex navBtn`}>
+                                    <span className={`${((mode.myMode === 'light') ? "textDark" : "textLight")} m-0`}>
+                                        Sign up
                                     </span>
                                 </button>
                                 <span

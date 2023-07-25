@@ -251,7 +251,8 @@ body {
 
 .navBtn {
   padding: 5px;
-  margin-right: 5px !important;
+  margin-right: 10px !important;
+  width: fit-content;
 }
 
 .navDrop.textLight {
