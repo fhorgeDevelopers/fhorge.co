@@ -19,13 +19,13 @@ const Faq = () => {
                 <div className="row">
                     <div className="col-lg-12">
                         <div className={`${mode.myMode === 'light' ? 'lightNav' : 'darkNav'} b-2`}>
-                            <h2 className={`${(mode.myMode === "light") ? "textDark" : "textLight"} m-3 p-2`}>
+                            <h2 className={`${(mode.myMode === "light") ? "textDark" : "textLight"} m-3 p-2`} style={{ height: '50vh'}}>
                                 Frequently Asked Questions
                             </h2>
                         </div>
                     </div>
                     <div className="col-lg-6">
-                        <div className={`${mode.myMode === 'light' ? 'lightNav' : 'darkNav'} card w-100`}>
+                        <div className={`${mode.myMode === 'light' ? 'lightNav' : 'darkNav'} card w-100`} style={{ height: '50vh'}}>
 
                         </div>
                     </div>

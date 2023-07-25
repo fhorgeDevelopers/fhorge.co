@@ -25,12 +25,12 @@ const ContactUs = () => {
                         </div>
                     </div>
                     <div className="col-lg-6">
-                        <div className={`${mode.myMode === 'light' ? 'lightNav' : 'darkNav'} card w-100`}>
+                        <div className={`${mode.myMode === 'light' ? 'lightNav' : 'darkNav'} card w-100`} style={{ height: '50vh'}}>
 
                         </div>
                     </div>
                     <div className="col-lg-6">
-                        <div className={`${mode.myMode === 'light' ? 'lightNav' : 'darkNav'} card w-100`}>
+                        <div className={`${mode.myMode === 'light' ? 'lightNav' : 'darkNav'} card w-100`} style={{ height: '50vh'}}>
 
                         </div>
                     </div>
