@@ -13,6 +13,10 @@ body {
   border-radius: 7px !important;
 } */
 
+.b-2 {
+  border-radius: 2rem;
+}
+
 .no-decoration {
   text-decoration: none;
 }

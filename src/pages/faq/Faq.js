@@ -1,16 +1,16 @@
 import React from 'react'
-import { Helmet } from 'react-helmet'
-import { useMode } from '../../providers/Mode'
-import Footer from '../components/Footer/Footer'
-import Navigation from '../components/Navigation/Navigation'
+import { Helmet } from 'react-helmet';
+import { useMode } from '../../providers/Mode';
+import Footer from '../components/Footer/Footer';
+import Navigation from '../components/Navigation/Navigation';
 
-const ContactUs = () => {
+const Faq = () => {
     const mode = useMode();
     return (
         <>
             <Helmet>
                 <title>
-                    Contact Us | Fhorge
+                    Frequently Asked Questions | Fhorge
                 </title>
             </Helmet>
             <Navigation />
@@ -20,7 +20,7 @@ const ContactUs = () => {
                     <div className="col-lg-12">
                         <div className={`${mode.myMode === 'light' ? 'lightNav' : 'darkNav'} b-2`}>
                             <h2 className={`${(mode.myMode === "light") ? "textDark" : "textLight"} m-3 p-2`}>
-                                Get in touch
+                                Frequently Asked Questions
                             </h2>
                         </div>
                     </div>
@@ -42,4 +42,4 @@ const ContactUs = () => {
     )
 }
 
-export default ContactUs
+export default Faq

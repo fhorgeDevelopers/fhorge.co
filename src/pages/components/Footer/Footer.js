@@ -2,9 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { useMode } from '../../../providers/Mode';
 import '../../../css/main.css'
 import { Link } from 'react-router-dom';
+import { useCalls } from '../../../providers/Calls';
 
 const Footer = () => {
-
+    const calls = useCalls();
     const mode = useMode();
     const [scrollNow, setScrollNow] = useState(false);
 
@@ -34,36 +35,22 @@ const Footer = () => {
                                     <div class="ft-column-inner">
                                         <div class="footer_h3">FREE ONLINE COURSE CATEGORIES</div>
                                         <ul>
-                                            <li>
-                                                <Link to="/courses/it" title=" IT Courses">IT </Link>
-                                            </li>
-                                            <li>
-                                                <Link to="/courses/health" title=" Health Courses">Health </Link>
-                                            </li>
-                                            <li>
-                                                <Link to="/courses/language" title=" Language Courses">Language </Link>
-                                            </li>
-                                            <li>
-                                                <Link to="/courses/business" title=" Business Courses">Business </Link>
-                                            </li>
-                                            <li>
-                                                <Link to="/courses/management" title=" Management Courses">Management </Link>
-                                            </li>
-                                            <li>
-                                                <Link to="/courses/personal-development" title=" Personal Development Courses">Personal Development </Link>
-                                            </li>
-                                            <li>
-                                                <Link to="/courses/marketing" title=" Sales &amp; Marketing Courses">Sales &amp;Marketing </Link>
-                                            </li>
-                                            <li>
-                                                <Link to="/courses/engineering" title=" Engineering &amp; Construction Courses">Engineering &amp;Construction </Link>
-                                            </li>
-                                            {/* <li>
-                                                <Link to="/courses/education" title=" Teaching &amp; Academics Courses">Teaching &amp;Academics </Link>
-                                            </li>
-                                            <li>
-                                                <Link to="/vertical/english">English</Link>
-                                            </li> */}
+                                            {
+                                                calls.courses.length === 0 ? null : (
+                                                    <>
+                                                        {calls.courses.map((course) => (
+                                                            <li key={course.id}>
+                                                                <Link
+                                                                    to={`/courses/${course.course_category.toLowerCase()}`}
+                                                                    title={`${course.course_category}`}
+                                                                >
+                                                                    {course.course_category}
+                                                                </Link>
+                                                            </li>
+                                                        ))}
+                                                    </>
+                                                )
+                                            }
                                         </ul>
                                     </div>
                                 </div>
@@ -195,37 +182,37 @@ const Footer = () => {
                                 <ul>
                                     <li>
                                         <Link to="https://www.facebook.com/FhorgeOfficial" target="_blank" rel="nofollow">
-                                            <img class="lazyload" src="/imgs/social/facebook.svg"/>
+                                            <img class="lazyload" src="/imgs/social/facebook.svg" />
                                         </Link>
                                     </li>
                                     <li>
                                         <Link to="https://twitter.com/fhorge_official" target="_blank" rel="nofollow">
-                                            <img class="lazyload" src="/imgs/social/twitter.svg"/>
+                                            <img class="lazyload" src="/imgs/social/twitter.svg" />
                                         </Link>
                                     </li>
                                     <li>
                                         <Link to="https://www.linkedin.com/company/fhorge" target="_blank" rel="nofollow">
-                                            <img class="lazyload" src="/imgs/social/linkedin.svg"/>
+                                            <img class="lazyload" src="/imgs/social/linkedin.svg" />
                                         </Link>
                                     </li>
                                     <li>
                                         <Link to="https://www.instagram.com/fhorge_official/" target="_blank" rel="nofollow">
-                                            <img class="lazyload" src="/imgs/social/instagram.svg"/>
+                                            <img class="lazyload" src="/imgs/social/instagram.svg" />
                                         </Link>
                                     </li>
                                     <li>
                                         <Link to="https://www.tiktok.com/@fhorgeofficial" target="_blank" rel="nofollow">
-                                            <img class="lazyload" src="/imgs/social/tiktok.svg"/>
+                                            <img class="lazyload" src="/imgs/social/tiktok.svg" />
                                         </Link>
                                     </li>
                                     <li>
                                         <Link to="https://www.youtube.com/" target="_blank" rel="nofollow">
-                                            <img class="lazyload" src="/imgs/social/youtube.svg"/>
+                                            <img class="lazyload" src="/imgs/social/youtube.svg" />
                                         </Link>
                                     </li>
                                     <li>
                                         <Link to="https://fhorge.quora.com/" target="_blank" rel="nofollow">
-                                            <img class="lazyload" src="/imgs/social/quora.svg"/>
+                                            <img class="lazyload" src="/imgs/social/quora.svg" />
                                         </Link>
                                     </li>
                                 </ul>
@@ -235,10 +222,10 @@ const Footer = () => {
                             <hr class="ft-hr ft-hr--bottom" />
                             <div class="row-4 apps">
                                 <Link to="https://apps.apple.com/" target="_blank">
-                                    <img class="lazyload" width="156" height="48" src="/imgs/social/footer-desktop-appstore.svg" alt="Download on the App Store" title="Download the Fhorge app on iPhone"/>
+                                    <img class="lazyload" width="156" height="48" src="/imgs/social/footer-desktop-appstore.svg" alt="Download on the App Store" title="Download the Fhorge app on iPhone" />
                                 </Link>
                                 <Link to="https://play.google.com/" target="_blank">
-                                    <img class="lazyload" width="156" height="48" src="/imgs/social/footer-desktop-playstore.svg" alt="Download on Google Play" title="Download the Fhorge app on Android"/>
+                                    <img class="lazyload" width="156" height="48" src="/imgs/social/footer-desktop-playstore.svg" alt="Download on Google Play" title="Download the Fhorge app on Android" />
                                 </Link>
                             </div>
                             <div class="clearfix"></div>

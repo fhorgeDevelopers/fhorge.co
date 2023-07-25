@@ -5,6 +5,7 @@ import { Mode } from './providers/Mode';
 import Preloader from './Preloader';
 import { Hook } from './providers/Hook';
 import { Calls } from './providers/Calls';
+import Faq from './pages/faq/Faq';
 
 const App = () => {
   const Home = React.lazy(() => import('./pages/home/Home'));
@@ -111,6 +112,14 @@ const App = () => {
                 element={
                   <Suspense fallback={<Preloader />}>
                     <ContactUs />
+                  </Suspense>
+                }
+              />
+              <Route
+                path='/faqs'
+                element={
+                  <Suspense fallback={<Preloader />}>
+                    <Faq />
                   </Suspense>
                 }
               />
