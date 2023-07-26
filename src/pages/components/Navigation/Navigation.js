@@ -80,10 +80,11 @@ const Navigation = () => {
     }
 
     useEffect(() => {
+        setShowLoader(true)
         setTimeout(() => {
             setShowLoader(false)
         }, 1000);
-    }, [location.key])
+    }, [location])
 
     useEffect(() => {
         setShowMenu(false);

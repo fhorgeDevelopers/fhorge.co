@@ -85,7 +85,10 @@ body {
   transform: scaleY(3);
   height: 38px;
   width: 130px;
+}
 
+.site-icon::after {
+  content: 'LIVE THE FUTURE';
 }
 
 .textLight,

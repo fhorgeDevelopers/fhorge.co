@@ -7,6 +7,7 @@ import { Hook } from './providers/Hook';
 import { Calls } from './providers/Calls';
 import Faq from './pages/faq/Faq';
 import EmpowerUs from './pages/about/EmpowerUs';
+import Earn from './pages/earn/Earn';
 const App = () => {
   const Home = React.lazy(() => import('./pages/home/Home'));
   const ContactUs = React.lazy(() => import('./pages/contactUs/ContactUs'));
@@ -49,7 +50,7 @@ const App = () => {
                 path='/earn-money'
                 element={
                   <Suspense fallback={<Preloader />}>
-                    <Home />
+                    <Earn />
                   </Suspense>
                 }
               />

@@ -7,8 +7,8 @@ const Preloader = () => {
         <>
             <div className={style.overlay}></div>
             <div className={style.overlayContent}>
-                <div className={style.inOverlay}>
-                    <img src={Logo} alt={'Fhorge'} />
+                <div className={`${style.inOverlay} ${style.rotatingBorder} `}>
+                    <img src={Logo} alt={'Fhorge'}  />
                 </div>
             </div>
         </>

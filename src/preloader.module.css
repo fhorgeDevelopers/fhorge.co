@@ -17,18 +17,75 @@
     align-items: center;
     position: fixed;
     z-index: 1000;
-
+    top: 0;
 }
 
-.inOverlay {
-    background-color: #ffffff;
-    border-radius: 100%;
+@keyframes spin {
+    from {
+        transform: translate(-50%, -50%) rotate(0);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.rotatingBorder {
+    --border-radius: 100%;
+    --border-size: 5px;
+    --border-bg: conic-gradient(white, #002347, #fd7702, #4460ef);
+    --padding: 1rem;
+
+    position: relative;
     overflow: hidden;
-    padding: 15px;
-    border: 7px solid #FD7702;
+    font-size: 2rem;
+    padding: calc(var(--padding) + var(--border-size));
+    border-radius: var(--border-radius);
+    display: inline-block;
+}
+
+.rotatingBorder::after {
+    content: '';
+    position: absolute;
+    inset: var(--border-size);
+    background: white;
+    z-index: -1;
+    border-radius: calc(var(--border-radius) - var(--border-size));
+}
+
+.rotatingBorder::before {
+    content: '';
+    display: block;
+    background: var(--border-bg);
+    width: calc(100% * 1.41421356237);
+    padding-bottom: calc(100% * 1.41421356237);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+    z-index: -2;
+    animation: spin 5s linear infinite;
 }
 
 .inOverlay img {
     width: 150px;
     height: 150px;
+    padding: 10px;
+}
+
+.rotating-border--google {
+    --border-radius: 0.5rem;
+    --border-size: 0.25rem;
+    --border-bg: conic-gradient(#ffffff 0.0turn 0.125turn,
+            #002347 0.125turn 0.25turn,
+            #fd7702 0.25turn 0.375turn,
+            #4460ef 0.375turn 0.5turn,
+            #ffffff 0.5turn 0.625turn,
+            #002347 0.625turn 0.75turn,
+            #fd7702 0.75turn 0.875turn,
+            #4460ef 0.875turn 1.0turn);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    line-height: 2;
 }
