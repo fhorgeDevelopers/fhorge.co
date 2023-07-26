@@ -31,22 +31,29 @@ const Navigation = () => {
     const toogleMenu = () => {
         if (showMenu) {
             setShowMenu(false)
+            setShowSubjectMenu(false)
+            setShowCourseMenu(false)
+            body.style.overflow = ""
         } else {
             setShowMenu(true);
+            body.style.overflow = "hidden"
         }
     }
 
     const toggleSubjectMenu = () => {
         if (showSubjectMenu) {
             setShowSubjectMenu(false)
-            overlay.style.display = 'none'
             body.style.overflow = ""
+            if (!showMenu) {
+                overlay.style.display = 'none'
+            }
 
         } else {
             setShowSubjectMenu(true)
-            overlay.style.display = 'block'
             body.style.overflow = "hidden"
-
+            if (!showMenu) {
+                overlay.style.display = 'block'
+            }
         }
         setShowCourseMenu(false)
     }
@@ -54,12 +61,16 @@ const Navigation = () => {
     const toggleCourseMenu = () => {
         if (showCourseMenu) {
             setShowCourseMenu(false)
-            overlay.style.display = 'none'
+            if (!showMenu) {
+                overlay.style.display = 'none'
+            }
             body.style.overflow = ""
 
         } else {
             setShowCourseMenu(true)
-            overlay.style.display = 'block'
+            if (!showMenu) {
+                overlay.style.display = 'block'
+            }
             body.style.overflow = "hidden"
         }
         setShowSubjectMenu(false)
@@ -87,10 +98,12 @@ const Navigation = () => {
     }, [location])
 
     useEffect(() => {
-        setShowMenu(false);
         displayWindowSize();
         setShowSubjectMenu(false);
         setShowCourseMenu(false);
+        if (showMenu) {
+            toogleMenu()
+        }
 
 
         document.getElementById('overlay').style.display = 'none'
@@ -143,11 +156,11 @@ const Navigation = () => {
                         <img src={((mode.myMode === 'dark') ? "/logo_dark.png" : "/logo.png")} className={'site-icon'} alt={'Fhorge'} />
                     </Link>
 
-                    <Link role="button" className={`${showMenu ? 'is-active' : ''} ${((mode.myMode === 'dark') ? "textLight" : "textDark")} navbar-burger`} style={{ position: 'absolute', right: '15px' }} aria-label="menu" aria-expanded="false" onClick={toogleMenu} data-target="navbarBasicExample">
+                    <span role="button" className={`${showMenu ? 'is-active' : ''} ${((mode.myMode === 'dark') ? "textLight" : "textDark")} navbar-burger`} style={{ position: 'absolute', right: '15px' }} aria-label="menu" aria-expanded="false" onClick={toogleMenu} data-target="navbarBasicExample">
                         <span class="material-symbols-outlined p-3" >
                             {showMenu ? 'close' : 'menu'}
                         </span>
-                    </Link>
+                    </span>
                 </div>
 
                 <div id="navbarBasicExample" className={`${showMenu ? 'sm' : 'big'} ${mode.myMode} navbar-menu align-items-center d-flex justify-content-between m-2`}>
@@ -165,7 +178,15 @@ const Navigation = () => {
                                     {showSubjectMenu ? 'arrow_drop_up' : 'arrow_drop_down'}
                                 </span>
                             </span>
-                            <section className={`${((mode.myMode === 'dark') ? "textLight" : "textDark")} ${showSubjectMenu ? 'd-block' : 'd-none'} navDrop`}>
+                            <section className={`${((mode.myMode === 'dark') ? "textLight" : "textDark")} ${showSubjectMenu ? 'd-block' : 'd-none'} navDrop ${showMenu ? 'sm' : 'big'} `}>
+                                <li className={`${showMenu ? 'd-block' : 'd-none'}`}>
+                                    <span
+                                        style={{ padding: '0px 22px', fontSize: '13px', }}
+                                        onClick={() => toggleSubjectMenu()}
+                                    >
+                                        Go back
+                                    </span>
+                                </li>
                                 <li className="m-3 d-flex justify-content-between" >
                                     <span style={{ padding: '6px 10px', fontSize: '13px', }}>
                                         COURSE CATEGORIES
@@ -215,7 +236,15 @@ const Navigation = () => {
                                     {showCourseMenu ? 'arrow_drop_up' : 'arrow_drop_down'}
                                 </span>
                             </span>
-                            <section className={`${((mode.myMode === 'dark') ? "textLight" : "textDark")} ${showCourseMenu ? 'd-block' : 'd-none'} navDrop`}>
+                            <section className={`${((mode.myMode === 'dark') ? "textLight" : "textDark")} ${showCourseMenu ? 'd-block' : 'd-none'} navDrop ${showMenu ? 'sm' : 'big'} `}>
+                                <li className={`${showMenu ? 'd-block' : 'd-none'}`}>
+                                    <span
+                                        style={{ padding: '0px 22px', fontSize: '13px', }}
+                                        onClick={() => toggleCourseMenu()}
+                                    >
+                                        Go back
+                                    </span>
+                                </li>
                                 <li className="m-3 d-flex justify-content-between" >
                                     <span style={{ padding: '6px 10px', fontSize: '13px', }}>
                                         EXPLORE CAREER CATEGORIES
@@ -298,12 +327,24 @@ const Navigation = () => {
                                             <span class="material-symbols-outlined" style={{ color: '#FD7702', }} >
                                                 star
                                             </span>
+                                            <span
+                                                className={`${showMenu ? 'sm' : 'big'} `}
+                                                style={{ color: '#FD7702', }}
+                                            >
+                                                Light Mode
+                                            </span>
                                         </>
                                     ) : (
                                         <>
                                             <>
                                                 <span class="material-symbols-outlined" style={{ color: '#f2f2f2', }}>
                                                     dark_mode
+                                                </span>
+                                                <span
+                                                    className={`${showMenu ? 'sm' : 'big'} `}
+                                                    style={{ color: '#f2f2f2', }}
+                                                >
+                                                    Dark Mode
                                                 </span>
                                             </>
                                         </>
@@ -317,7 +358,7 @@ const Navigation = () => {
             <div
                 id="overlay"
                 style={{ display: 'none' }}
-                className="overlay"
+                className={`overlay ${showMenu ? 'sm' : null}`}
                 onClick={() => {
                     setShowSubjectMenu(false)
                     setShowCourseMenu(false)
@@ -325,7 +366,7 @@ const Navigation = () => {
                     body.style.overflow = ""
                 }}
             ></div>
-            {showLoader ? <Preloader /> : null }
+            {showLoader ? <Preloader /> : null}
         </>
     )
 }
