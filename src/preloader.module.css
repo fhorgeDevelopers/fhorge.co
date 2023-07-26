@@ -1,0 +1,34 @@
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    background-color: #002347;
+    opacity: 0.4;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 900;
+}
+
+.overlayContent {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+
+}
+
+.inOverlay {
+    background-color: #ffffff;
+    border-radius: 100%;
+    overflow: hidden;
+    padding: 15px;
+    border: 7px solid #FD7702;
+}
+
+.inOverlay img {
+    width: 150px;
+    height: 150px;
+}

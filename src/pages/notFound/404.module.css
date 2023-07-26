@@ -1,0 +1,19 @@
+.Nav {
+    padding: 5px;
+}
+
+.lightBox {
+    background-color: white;
+}
+
+.darkBox {
+    background-color: #002347;
+}
+
+.lightText {
+    color: white;
+}
+
+.darkText {
+    color: #002347;
+}

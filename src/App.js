@@ -6,6 +6,7 @@ import Preloader from './Preloader';
 import { Hook } from './providers/Hook';
 import { Calls } from './providers/Calls';
 import Faq from './pages/faq/Faq';
+import EmpowerUs from './pages/about/EmpowerUs';
 const App = () => {
   const Home = React.lazy(() => import('./pages/home/Home'));
   const ContactUs = React.lazy(() => import('./pages/contactUs/ContactUs'));
@@ -13,6 +14,12 @@ const App = () => {
   const AllCareers = React.lazy(() => import('./pages/careers/AllCareers'));
   const CareerCategories = React.lazy(() => import('./pages/careers/CareerCategories'));
   const EachCareer = React.lazy(() => import('./pages/careers/EachCareer'));
+  const AboutUs = React.lazy(() => import('./pages/about/AboutUs'));
+  const AboutCourses = React.lazy(() => import('./pages/about/AboutCourses'));
+  const How = React.lazy(() => import('./pages/about/How'));
+  const EmpowerUs = React.lazy(() => import('./pages/about/EmpowerUs'));
+  const Programmes = React.lazy(() => import('./pages/about/Programmes'));
+  const Publishers = React.lazy(() => import('./pages/about/Publishers'));
   return (
     <>
       <Hook>
@@ -125,6 +132,61 @@ const App = () => {
                   </Suspense>
                 }
               />
+
+
+              {/* about routes start  */}
+
+              <Route
+                path='/about/our-story'
+                element={
+                  <Suspense fallback={<Preloader />}>
+                    <AboutUs />
+                  </Suspense>
+                }
+              />
+              <Route
+                path='/about/about-fhorge-courses'
+                element={
+                  <Suspense fallback={<Preloader />}>
+                    <AboutCourses />
+                  </Suspense>
+                }
+              />
+              <Route
+                path='/about/how-it-works'
+                element={
+                  <Suspense fallback={<Preloader />}>
+                    <How />
+                  </Suspense>
+                }
+              />
+              <Route
+                path='/publishers'
+                element={
+                  <Suspense fallback={<Preloader />}>
+                    <Publishers />
+                  </Suspense>
+                }
+              />
+              <Route
+                path='/programmes'
+                element={
+                  <Suspense fallback={<Preloader />}>
+                    <Programmes />
+                  </Suspense>
+                }
+              />
+              <Route
+                path='/empower-us'
+                element={
+                  <Suspense fallback={<Preloader />}>
+                    <EmpowerUs />
+                  </Suspense>
+                }
+              />
+
+              {/* About routes end  */}
+
               <Route
                 path='*'
                 element={

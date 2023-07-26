@@ -3,6 +3,7 @@ import { useMode } from '../../../providers/Mode';
 import { Link, useLocation } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import { useCalls } from '../../../providers/Calls';
+import Preloader from '../../../Preloader';
 
 const Navigation = () => {
     const calls = useCalls();
@@ -14,6 +15,7 @@ const Navigation = () => {
     const [seeSearch, setSeeSearch] = useState(false);
     const [searchQuery, setSearchQuery] = useState('');
     const screenWidth = document.documentElement.clientWidth;
+    const [showLoader, setShowLoader] = useState(true)
     const overlay = document.getElementById('overlay');
     const body = document.getElementsByTagName("body")[0];
 
@@ -78,8 +80,10 @@ const Navigation = () => {
     }
 
     useEffect(() => {
-        console.log(calls.careers)
-    }, [calls.careers])
+        setTimeout(() => {
+            setShowLoader(false)
+        }, 1000);
+    }, [location.key])
 
     useEffect(() => {
         setShowMenu(false);
@@ -320,6 +324,7 @@ const Navigation = () => {
                     body.style.overflow = ""
                 }}
             ></div>
+            {showLoader ? <Preloader /> : null }
         </>
     )
 }
