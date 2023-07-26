@@ -27,7 +27,7 @@ const ContactUs = () => {
                             </h2>
                         </div>
                     </div>
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 mt-3">
                         <div className={`${mode.myMode === 'light' ? 'lightNav' : 'darkNav'} p-3 b-2 w-100`} style={{ height: '50vh' }}>
                             <div className='d-flex m-3'>
                                 <img src={ContactIcon} alt='1' width={50} height={50} />
@@ -56,7 +56,7 @@ const ContactUs = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 mt-3">
                         <div className={`${mode.myMode === 'light' ? 'lightNav' : 'darkNav'} b-2 w-100`} style={{ height: '50vh' }}>
                             <iframe 
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.3273641985325!2d3.355492074624245!3d6.60618112219776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9235c77deaad%3A0x9d444807220e81aa!2sIndustrial%20Estate%20Rd%2C%20Allen%20101233%2C%20Ikeja%2C%20Lagos!5e0!3m2!1sen!2sng!4v1690397434452!5m2!1sen!2sng" width="100%" height="100%" style={{ border: '0' }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
