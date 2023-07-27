@@ -2,14 +2,15 @@ import React from 'react'
 import Footer from '../components/Footer/Footer'
 import Navigation from '../components/Navigation/Navigation'
 import Hero from './Index'
+import Switch from './Switch'
 
 const Home = () => {
   return (
     <>
       <Navigation />
-      <section>
-        
-      </section>
+      <main style={{ minHeight: '40vh'}}>
+        <Switch />
+      </main>
       <Footer />
     </>
   )

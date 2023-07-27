@@ -7,6 +7,7 @@ import pic3 from "./img/icon3.png"
 import login from "./img/icon1.png"
 import logo from "../../img/fhorge_logo_secondary.png"
 import Navigation from '../components/Navigation/Navigation';
+import Switch from '../home/Switch';
 
 
 
@@ -34,6 +35,7 @@ export default function Earn() {
     return (
         <>
             <Navigation />
+            <Switch />
             <Header />
             <PictureRow />
             <Empower />

@@ -6,6 +6,10 @@
     display: table
 }
 
+a {
+    text-decoration: none !important;
+}
+
 .group:after {
     clear: both
 }
