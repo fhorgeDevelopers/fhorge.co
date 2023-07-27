@@ -10910,7 +10910,7 @@ a.certification-study-now-button .arrow {
 /*EARN AND BUILD DOT CSS*/
 
 
-@charset "UTF-8";
+/* @charset "UTF-8"; */
 
 .group {
     *zoom: 1
@@ -12535,7 +12535,7 @@ a.certification-study-now-button .arrow {
 }
 
 @media(min-width: 768px) {
-    /* .Fhorge .alison__background { */
+    .Fhorge .alison__background {
     /* background: url(https://cdn01.alison-static.net/publichomepage/ireland.png) no-repeat 100% 0/auto 100%; */
     height: 100%;
     left: 0;
@@ -17021,16 +17021,16 @@ h2.key-person-details {
 }
 
 #how-it-works #how-it-works-main-wrap {
-    /* /* background: url(https://cdn01.alison-static.net/publichow-it-works-background-narrow.png) repeat-y top; */
-    */ margin-top: -40px;
+    /* background: url(https://cdn01.alison-static.net/publichow-it-works-background-narrow.png) repeat-y top; */
+    margin-top: -40px;
     position: relative;
     z-index: 10
 }
 
 @media only screen and (min-width: 1020px) {
     #how-it-works #how-it-works-main-wrap {
-        /* /* background: url(https://cdn01.alison-static.net/publichow-it-works-background.png) no-repeat top; */
-        */ margin-top: -40px;
+        /* background: url(https://cdn01.alison-static.net/publichow-it-works-background.png) no-repeat top; */
+        margin-top: -40px;
         position: relative;
         z-index: 10
     }
@@ -20966,7 +20966,7 @@ h2.key-person-details {
 }
 
 
-@charset "UTF-8";
+/* @charset "UTF-8"; */
 
 .group {
     *zoom: 1
