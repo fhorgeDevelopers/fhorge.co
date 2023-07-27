@@ -40,11 +40,15 @@ export default function Earn() {
             <Navigation />
             <main style={{ minHeight: '40vh' }}>
                 <Switch />
+                {/* <PictureRow /> */}
+                <Empower />
+                {/* <Empower2 /> */}
+                <Lastpart />
             </main>
             <Footer />
-            {/* <Navigation />
-            <Switch />
-            <Header />
+
+
+            {/* <Header />
             <PictureRow />
             <Empower />
             <Empower2 />
@@ -144,8 +148,8 @@ function Empower2() {
 }
 function Lastpart() {
     return (
-        <div className="lastpart">
-            <div className="container">
+        // <div className="lastpart">
+            <div className="container darkNav">
                 <div className="left">
                     <div className='col-md-6'>
                         <p className='content'>
@@ -165,7 +169,7 @@ function Lastpart() {
                     </div>
                 </div>
             </div>
-        </div>
+        // </div>
     )
 }
 {/*function Goal({Hobbbies}){
