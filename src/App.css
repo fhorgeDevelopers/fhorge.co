@@ -7,6 +7,14 @@ body {
   font-family: 'Work Sans', sans-serif !important;
 }
 
+.navbar {
+  position: fixed !important; 
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 15;
+}
+
 /* button {
   background:  transparent !important;
   border: none !important;
@@ -422,7 +430,7 @@ body::-webkit-scrollbar-thumb {
   width: 100vw;
   height: calc(100vh - 66px);
   position: fixed;
-  z-index: 20;
+  z-index: 10;
   bottom: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.7);
