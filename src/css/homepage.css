@@ -256,7 +256,7 @@ h2 {
     border-radius: 0;
     left: 50%;
     position: fixed;
-    top: 72px;
+    top:65px;
     transform: translate(-50%);
     width: 100%;
     z-index: 2

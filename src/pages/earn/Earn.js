@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Button } from "bootstrap"
 import "./earn.css"
 import pic1 from "./img/icon1.png";
@@ -8,6 +8,8 @@ import login from "./img/icon1.png"
 import logo from "../../img/fhorge_logo_secondary.png"
 import Navigation from '../components/Navigation/Navigation';
 import Switch from '../home/Switch';
+import Footer from '../components/Footer/Footer';
+import { useLocation } from 'react-router';
 
 
 
@@ -32,17 +34,23 @@ const hobby = [
 
 export default function Earn() {
     const [Hobbbies, setHobby] = useState(hobby);
+
     return (
         <>
             <Navigation />
+            <main style={{ minHeight: '40vh' }}>
+                <Switch />
+            </main>
+            <Footer />
+            {/* <Navigation />
             <Switch />
             <Header />
             <PictureRow />
             <Empower />
             <Empower2 />
             <Empower />
-            {/*<Goal Hobbbies={Hobbbies}/>*/}
-            <Lastpart />
+            <Goal Hobbbies={Hobbbies}/>
+            <Lastpart /> */}
         </>
     )
 }
