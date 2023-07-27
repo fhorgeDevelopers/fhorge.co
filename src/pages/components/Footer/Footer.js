@@ -36,9 +36,9 @@ const Footer = () => {
                                         <div className="footer_h3">FREE ONLINE COURSE CATEGORIES</div>
                                         <ul>
                                             {
-                                                calls.courses.length === 0 ? null : (
+                                                calls.courseCategories.length === 0 ? null : (
                                                     <>
-                                                        {calls.courses.map((course) => (
+                                                        {calls.courseCategories.map((course) => (
                                                             <li key={course.id}>
                                                                 <Link
                                                                     to={`/courses/${course.course_category.toLowerCase()}`}

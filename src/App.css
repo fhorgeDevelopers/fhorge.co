@@ -12,6 +12,9 @@ body {
   border: none !important;
   border-radius: 7px !important;
 } */
+.is-hoverable:hover {
+  cursor: pointer;
+}
 
 .networkAlert {
   position: fixed;
@@ -58,11 +61,32 @@ body {
   flex-grow: 1;
 }
 
+.navbar-end.sm {
+  display: block;
+}
+
+.navbar-end.sm>.navbar-item {
+  display: block;
+  padding: 15px;
+  padding-top: 0;
+}
+
+.navbar-end.sm>.navbar-item>.buttons {
+  display: block !important;
+}
+
+.navbar-end.sm>.navbar-item>.buttons>.menuLink {
+  text-decoration: none;
+  padding: 10px 5px;
+  width: 100%;
+}
+
 .navbar-menu.sm>.navbar-start {
   display: grid;
 }
 
-.navbar-menu.sm>.navbar-start>.navbar-item {
+.navbar-menu.sm>.navbar-start>.navbar-item,
+.navbar-menu.sm>.navbar-start>span>.navbar-item {
   text-decoration: none;
   padding: 10px 5px;
 }
@@ -220,6 +244,7 @@ body {
   .navbar-menu.sm>.navbar-start {
     display: block !important;
     padding: 15px;
+    padding-bottom: 0;
   }
 
   .navbar-menu.sm>.navbar-start>span {
@@ -387,6 +412,10 @@ body::-webkit-scrollbar-thumb {
 
 .greyText {
   color: grey !important;
+}
+
+.whiteText {
+  color: #f4f4f4
 }
 
 .overlay {

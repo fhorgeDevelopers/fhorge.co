@@ -4,16 +4,33 @@
 
 .lightBox {
     background-color: white;
+    text-decoration: none !important;
+    color: #002347 !important;
 }
 
 .darkBox {
     background-color: #002347;
+    color: white !important;
+    text-decoration: none !important;
 }
 
 .lightText {
-    color: white;
+    color: white !important;
+    text-decoration: none !important;
 }
 
 .darkText {
-    color: #002347;
+    color: #002347 !important;
+    text-decoration: none !important;
+}
+
+a:hover {
+    text-decoration: underline !important;
+}
+
+@media screen and (max-width: 769px) {
+    .media {
+        width: 100% !important;
+        text-align: left;
+    }
 }

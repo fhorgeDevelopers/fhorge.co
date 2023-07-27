@@ -179,16 +179,16 @@ const Navigation = () => {
                                 </span>
                             </span>
                             <section className={`${((mode.myMode === 'dark') ? "textLight" : "textDark")} ${showSubjectMenu ? 'd-block' : 'd-none'} navDrop ${showMenu ? 'sm' : 'big'} `}>
-                                <li className={`${showMenu ? 'd-block' : 'd-none'}`}>
-                                    <span
-                                        style={{ padding: '0px 22px', fontSize: '13px', }}
-                                        onClick={() => toggleSubjectMenu()}
-                                    >
-                                        Go back
-                                    </span>
-                                </li>
                                 <li className="m-3 d-flex justify-content-between" >
-                                    <span style={{ padding: '6px 10px', fontSize: '13px', }}>
+                                    <span className='d-flex align-items-center' style={{ padding: '6px 10px', fontSize: '13px', }}>
+                                        <span
+                                            onClick={() => toggleSubjectMenu()}
+                                            style={{ fontSize: '10px' }}
+                                        >
+                                            <span className={`${showMenu ? 'd-block ' : 'd-none'} material-symbols-outlined is-hoverable`}>
+                                                chevron_left
+                                            </span>
+                                        </span>
                                         COURSE CATEGORIES
                                     </span>
                                     <Link to={'/courses'} style={{ padding: '6px 10px', fontSize: '13px', }}>
@@ -198,9 +198,9 @@ const Navigation = () => {
                                 <div style={{ overflowY: 'auto', height: '80%' }}>
                                     <ul className='m-0 p-0' style={{ listStyle: 'none' }}>
                                         {
-                                            calls.courses.length === 0 ? null : (
+                                            calls.courseCategories.length === 0 ? null : (
                                                 <>
-                                                    {calls.courses.map((course) => (
+                                                    {calls.courseCategories.map((course) => (
                                                         <li key={course.id}>
                                                             <Link
                                                                 to={`/courses/${course.course_category.toLowerCase()}`}
@@ -237,16 +237,16 @@ const Navigation = () => {
                                 </span>
                             </span>
                             <section className={`${((mode.myMode === 'dark') ? "textLight" : "textDark")} ${showCourseMenu ? 'd-block' : 'd-none'} navDrop ${showMenu ? 'sm' : 'big'} `}>
-                                <li className={`${showMenu ? 'd-block' : 'd-none'}`}>
-                                    <span
-                                        style={{ padding: '0px 22px', fontSize: '13px', }}
-                                        onClick={() => toggleCourseMenu()}
-                                    >
-                                        Go back
-                                    </span>
-                                </li>
                                 <li className="m-3 d-flex justify-content-between" >
-                                    <span style={{ padding: '6px 10px', fontSize: '13px', }}>
+                                    <span className='d-flex align-items-center' style={{ padding: '6px 10px', fontSize: '13px', }}>
+                                        <span
+                                            onClick={() => toggleCourseMenu()}
+                                            style={{ fontSize: '10px' }}
+                                        >
+                                            <span className={`${showMenu ? 'd-block ' : 'd-none'} material-symbols-outlined is-hoverable`}>
+                                                chevron_left
+                                            </span>
+                                        </span>
                                         EXPLORE CAREER CATEGORIES
                                     </span>
                                     <Link to={'/careers'} style={{ padding: '6px 10px', fontSize: '13px', }}>
@@ -256,21 +256,21 @@ const Navigation = () => {
                                 <div style={{ overflowY: 'auto', height: '80%' }}>
                                     <ul className='m-0 p-0' style={{ listStyle: 'none' }}>
                                         {
-                                            calls.careers.length === 0 ? null : (
+                                            calls.careerCategories.length === 0 ? null : (
                                                 <>
-                                                    {calls.careers.map((career) => (
+                                                    {calls.careerCategories.map((career) => (
                                                         <li key={career.id}>
                                                             <Link
-                                                                to={`/careers/${career.career_ref}`}
+                                                                to={`/careers/${career.career_category_ref}`}
                                                                 className={`dropLink d-flex justify-content-start`}
                                                             >
-                                                                <img src={career.career_category_image} alt={career.career_ref} className="navIcon" />
+                                                                <img src={career.career_category_image} alt={career.id} className="navIcon" />
                                                                 <div>
                                                                     <span className={(mode.myMode === 'light') ? "blackText" : "whiteText"}>
                                                                         {career.career_category}
                                                                     </span>
                                                                     <br />
-                                                                    <span className="whiteText">
+                                                                    <span className={(mode.myMode === 'light') ? "blackText" : "greyText"}>
                                                                         {career.career_count} careers
                                                                     </span>
                                                                 </div>
@@ -292,7 +292,7 @@ const Navigation = () => {
                             Fhorge for Business
                         </Link>
                     </div>
-                    <div className="navbar-end">
+                    <div className={`${showMenu ? 'sm' : ''} navbar-end `}>
                         <div className={`${((mode.myMode === 'dark') ? "textLight" : "textDark")} navbar-item`}>
                             <div className="buttons d-flex m-0 align-items-center">
                                 {/* <span

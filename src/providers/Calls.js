@@ -6,34 +6,60 @@ const CallsContext = createContext(null);
 
 export const Calls = ({ children }) => {
     const hook = useHook();
-    const [courses, setCourses] = useState([]);
-    const [careers, setCareers] = useState([]);
+    const [courseCategories, setCourseCategories] = useState([]);
+    const [careerCategories, setCareerCategories] = useState([]);
+    const [careerCategory, setCareerCategory] = useState([]);
+    const [careerDetail, setCareerDetail] = useState([]);
 
-    const getCourses = async () => {
+    const getCourseCategories = async () => {
         try {
             const res = await axios.get(`${hook.endpoint}/courses`);
-            setCourses(res.data.response)
+            setCourseCategories(res.data.response)
         } catch (error) {
             // Handle errors
+            setCourseCategories([])
         }
     }
 
-    const getCareers = async () => {
+    const getCareerCategories = async () => {
         try {
             const res = await axios.get(`${hook.endpoint}/careers`);
-            setCareers(res.data.response)
+            setCareerCategories(res.data.response)
         } catch (error) {
             // Handle errors
+            setCareerCategories([])
+        }
+    }
+
+    const specificCareerCategory = async (category) => {
+        setCareerCategory([])
+        try {
+            const res = await axios.get(`${hook.endpoint}/careers/${category}`);
+            setCareerCategory(res.data)
+        } catch (error) {
+            // Handle errors
+            setCareerCategory([])
+        }
+    }
+
+    const getCareerDetail = async (category, career) => {
+        setCareerDetail([])
+        try {
+            const res = await axios.get(`${hook.endpoint}/careers/${category}/${career}`);
+            setCareerDetail(res.data)
+        } catch (error) {
+            // Handle errors
+            setCareerDetail([])
         }
     }
 
 
     useEffect(() => {
-        getCourses();
-        getCareers();
+        getCareerCategories();
+        getCourseCategories();
     }, [])
     return (
-        <CallsContext.Provider value={{ courses, careers  }}>
+        <CallsContext.Provider value={{ courseCategories, careerCategories, specificCareerCategory, careerCategory, getCareerDetail, careerDetail }}>
             {children}
         </CallsContext.Provider>
     )
