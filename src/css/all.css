@@ -169,7 +169,7 @@ form[name=publishers-form] input[type=checkbox]:checked+label:after {
 }
 
 #certification-section-2 .split-screen-module .split-screen-column.background-image-column {
-    background-image: url(https://cdn01.alison-static.net/public/html/site/img/learners-certificates.jpg);
+    background-image: url(https://cdn01.alison-static.net/publiclearners-certificates.jpg);
     background-position: 50%;
     background-size: cover
 }
@@ -215,7 +215,7 @@ form[name=publishers-form] input[type=checkbox]:checked+label:after {
 }
 
 #certification-section-2 .split-screen-module .split-screen-column .content-area ul li {
-    background: url(https://cdn01.alison-static.net/public/html/site/img/enterprise-list-bullet.png) no-repeat 0 0;
+    background: url(https://cdn01.alison-static.net/publicenterprise-list-bullet.png) no-repeat 0 0;
     color: #2d3a42;
     font-size: .875em;
     font-weight: 400;
@@ -1183,7 +1183,7 @@ a.certification-study-now-button .arrow {
 }
 
 .fs__header .fs__header-curve {
-    background: #f3f6f7 url(/html/site/img/free-school/curve.svg) no-repeat top/100%;
+    background: #f3f6f7 url('') no-repeat top/100%;
     bottom: -14px;
     height: 100px;
     left: -1px;
@@ -1542,7 +1542,7 @@ a.certification-study-now-button .arrow {
 }
 
 .fs__ask {
-    background: #593ef4 url(/html/site/img/free-school/curve.svg) no-repeat top/100%;
+    background: #593ef4 url() no-repeat top/100%;
     padding: 20px 40px 40px;
     position: relative
 }
@@ -1563,7 +1563,7 @@ a.certification-study-now-button .arrow {
 }
 
 .fs__ask .fs__ask-curve {
-    background: #e6eff2 url(/html/site/img/free-school/curve.svg) no-repeat top/100%;
+    background: #e6eff2 url() no-repeat top/100%;
     height: 100px;
     left: 0;
     position: absolute;
@@ -1699,7 +1699,7 @@ a.certification-study-now-button .arrow {
 }
 
 .fs__popup--thank-you .fs__popup-inner {
-    background: #fff url(/html/site/img/free-school/empower.png) no-repeat center 95%/161px;
+    background: #fff url() no-repeat center 95%/161px;
     color: #707070;
     padding: 80px 50px 100px;
     text-align: center;
@@ -3105,7 +3105,7 @@ a.certification-study-now-button .arrow {
 }
 
 .l-reviews .l-reviews__head {
-    background: #f3f6f7 url(/html/site/img/course-landing-v2/review-head.svg) no-repeat 100% 100%;
+    background: #f3f6f7 url(course-landing-v2/review-head.svg) no-repeat 100% 100%;
     border-bottom: 1px solid #d2d8de;
     min-height: 136px;
     padding: 22px 90px 22px 24px
@@ -3131,7 +3131,7 @@ a.certification-study-now-button .arrow {
     }
 
     .l-reviews .l-reviews__head {
-        background-image: url(/html/site/img/course-landing-v2/mobile-reviews.svg);
+        background-image: url();
         padding: 20px 90px 24px 24px
     }
 
@@ -3245,14 +3245,14 @@ a.certification-study-now-button .arrow {
 }
 
 .l-review .l-review__user-rating>span {
-    background: url(/html/site/img/course-landing-v2/loved-active.svg) no-repeat 0/20px;
+    background: url() no-repeat 0/20px;
     color: #0091c7;
     font-weight: 700;
     padding-left: 26px
 }
 
 .l-review .l-review__user-rating .liked {
-    background-image: url(/html/site/img/course-landing-v2/like-active.svg)
+    background-image: url()
 }
 
 .l-review .l-review__rating {
@@ -3955,7 +3955,7 @@ a.certification-study-now-button .arrow {
 
 @media(min-width: 992px) {
     .l-faqs .l-faqs__header {
-        background-image:url(/html/site/img/course-landing-v2/faqs.svg)!important
+        background-image:url()!important
     }
 }
 
@@ -4164,7 +4164,7 @@ a.certification-study-now-button .arrow {
 }
 
 .course-landing__body:after {
-    content: url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/loved.svg) url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/loved-active.svg) url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/like.svg) url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/like-active.svg) url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/nope.svg) url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/nope-active.svg) url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/nope-active-blue.svg);
+    content: url(https://cdn01.alison-static.net/publiccourse-landing-v2/loved.svg) url(https://cdn01.alison-static.net/publiccourse-landing-v2/loved-active.svg) url(https://cdn01.alison-static.net/publiccourse-landing-v2/like.svg) url(https://cdn01.alison-static.net/publiccourse-landing-v2/like-active.svg) url(https://cdn01.alison-static.net/publiccourse-landing-v2/nope.svg) url(https://cdn01.alison-static.net/publiccourse-landing-v2/nope-active.svg) url(https://cdn01.alison-static.net/publiccourse-landing-v2/nope-active-blue.svg);
     left: -9999px;
     position: absolute!important;
     top: -9999px
@@ -4684,11 +4684,11 @@ a.certification-study-now-button .arrow {
 }
 
 .l-rating:not(.enrol-to-rate) .l-rating__love span:first-child:hover:not(.disabled) {
-    background-image: url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/loved-active.svg)
+    background-image: url(https://cdn01.alison-static.net/publiccourse-landing-v2/loved-active.svg)
 }
 
 .l-rating:not(.enrol-to-rate) .l-rating__love span:first-child.rated {
-    background-image: url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/loved-active.svg)!important
+    background-image: url(https://cdn01.alison-static.net/publiccourse-landing-v2/loved-active.svg)!important
 }
 
 .l-rating:not(.enrol-to-rate) .l-rating__love.l-tooltip:before {
@@ -4697,11 +4697,11 @@ a.certification-study-now-button .arrow {
 }
 
 .l-rating:not(.enrol-to-rate) .l-rating__like span:first-child:hover:not(.disabled) {
-    background-image: url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/like-active.svg)
+    background-image: url(https://cdn01.alison-static.net/publiccourse-landing-v2/like-active.svg)
 }
 
 .l-rating:not(.enrol-to-rate) .l-rating__like span:first-child.rated {
-    background-image: url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/like-active.svg)!important
+    background-image: url(https://cdn01.alison-static.net/publiccourse-landing-v2/like-active.svg)!important
 }
 
 .l-rating:not(.enrol-to-rate) .l-rating__like.l-tooltip:before {
@@ -4710,15 +4710,15 @@ a.certification-study-now-button .arrow {
 }
 
 .l-rating:not(.enrol-to-rate) .l-rating__no span:first-child:hover:not(.disabled) {
-    background-image: url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/nope-active.svg)
+    background-image: url(https://cdn01.alison-static.net/publiccourse-landing-v2/nope-active.svg)
 }
 
 .l-rating:not(.enrol-to-rate) .l-rating__no span:first-child.rated {
-    background-image: url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/nope-active.svg)!important
+    background-image: url(https://cdn01.alison-static.net/publiccourse-landing-v2/nope-active.svg)!important
 }
 
 .l-rating.enrol-to-rate .l-rating__like:hover:before,.l-rating.enrol-to-rate .l-rating__love:hover:before,.l-rating.enrol-to-rate .l-rating__no:hover:before {
-    background: #465159 url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/error-state.svg) no-repeat top 4px left 10px;
+    background: #465159 url(https://cdn01.alison-static.net/publiccourse-landing-v2/error-state.svg) no-repeat top 4px left 10px;
     border-radius: 4px;
     color: #fff;
     content: "Enrol in course to rate";
@@ -4749,7 +4749,7 @@ a.certification-study-now-button .arrow {
 }
 
 .l-rating>div span:first-child {
-    background: url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/loved.svg) no-repeat 0/100%;
+    background: url(https://cdn01.alison-static.net/publiccourse-landing-v2/loved.svg) no-repeat 0/100%;
     display: inline-block;
     height: 22px;
     margin-right: 6px;
@@ -4758,16 +4758,16 @@ a.certification-study-now-button .arrow {
 }
 
 .l-rating .l-rating__love span:first-child {
-    background-image: url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/loved.svg)
+    background-image: url(https://cdn01.alison-static.net/publiccourse-landing-v2/loved.svg)
 }
 
 .l-rating .l-rating__like span:first-child {
-    background-image: url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/like.svg);
+    background-image: url(https://cdn01.alison-static.net/publiccourse-landing-v2/like.svg);
     width: 18px
 }
 
 .l-rating .l-rating__no span:first-child {
-    background-image: url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/nope.svg);
+    background-image: url(https://cdn01.alison-static.net/publiccourse-landing-v2/nope.svg);
     width: 18px
 }
 
@@ -4869,7 +4869,7 @@ a.certification-study-now-button .arrow {
 }
 
 .l-list.l-list--tick ul li {
-    background: url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/tick.svg) no-repeat 0/16px 16px;
+    background: url(https://cdn01.alison-static.net/publiccourse-landing-v2/tick.svg) no-repeat 0/16px 16px;
     padding-left: 27px
 }
 
@@ -5397,7 +5397,7 @@ a.certification-study-now-button .arrow {
 }
 
 .l-user-review .l-user-review__top .bt:hover:not(.disabled) span {
-    background-image: url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/loved-active.svg)
+    background-image: url(https://cdn01.alison-static.net/publiccourse-landing-v2/loved-active.svg)
 }
 
 .l-user-review .l-user-review__top .bt:last-child {
@@ -5405,7 +5405,7 @@ a.certification-study-now-button .arrow {
 }
 
 .l-user-review .l-user-review__top .bt span {
-    background: url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/loved.svg) no-repeat 0/100%;
+    background: url(https://cdn01.alison-static.net/publiccourse-landing-v2/loved.svg) no-repeat 0/100%;
     display: inline-block;
     height: 16px;
     margin-right: 4px;
@@ -5415,7 +5415,7 @@ a.certification-study-now-button .arrow {
 }
 
 .l-user-review .l-user-review__top .bt-loved.rated span {
-    background-image: url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/loved-active.svg)!important
+    background-image: url(https://cdn01.alison-static.net/publiccourse-landing-v2/loved-active.svg)!important
 }
 
 .l-user-review .l-user-review__top .bt-loved span {
@@ -5424,15 +5424,15 @@ a.certification-study-now-button .arrow {
 }
 
 .l-user-review .l-user-review__top .bt-liked:hover:not(.disabled) span {
-    background-image: url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/like-active.svg)
+    background-image: url(https://cdn01.alison-static.net/publiccourse-landing-v2/like-active.svg)
 }
 
 .l-user-review .l-user-review__top .bt-liked.rated span {
-    background-image: url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/like-active.svg)!important
+    background-image: url(https://cdn01.alison-static.net/publiccourse-landing-v2/like-active.svg)!important
 }
 
 .l-user-review .l-user-review__top .bt-liked span {
-    background-image: url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/like.svg)
+    background-image: url(https://cdn01.alison-static.net/publiccourse-landing-v2/like.svg)
 }
 
 .l-user-review .l-user-review__top .bt-nope.rated,.l-user-review .l-user-review__top .bt-nope:hover:not(.disabled) {
@@ -5442,11 +5442,11 @@ a.certification-study-now-button .arrow {
 }
 
 .l-user-review .l-user-review__top .bt-nope.rated span,.l-user-review .l-user-review__top .bt-nope:hover:not(.disabled) span {
-    background-image: url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/nope-active-blue.svg)
+    background-image: url(https://cdn01.alison-static.net/publiccourse-landing-v2/nope-active-blue.svg)
 }
 
 .l-user-review .l-user-review__top .bt-nope span {
-    background-image: url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/nope.svg);
+    background-image: url(https://cdn01.alison-static.net/publiccourse-landing-v2/nope.svg);
     top: 4px
 }
 
@@ -5650,7 +5650,7 @@ a.certification-study-now-button .arrow {
 }
 
 .l-outcomes:after {
-    background: url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/top-guy.svg);
+    background: url(https://cdn01.alison-static.net/publiccourse-landing-v2/top-guy.svg);
     content: "";
     height: 117px;
     position: absolute;
@@ -6378,7 +6378,7 @@ a.certification-study-now-button .arrow {
 }
 
 .l-reviews .l-reviews__head {
-    background: #f3f6f7 url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/review-head.svg) no-repeat 100% 100%;
+    background: #f3f6f7 url(https://cdn01.alison-static.net/publiccourse-landing-v2/review-head.svg) no-repeat 100% 100%;
     border-bottom: 1px solid #d2d8de;
     min-height: 136px;
     padding: 22px 90px 22px 24px
@@ -6404,7 +6404,7 @@ a.certification-study-now-button .arrow {
     }
 
     .l-reviews .l-reviews__head {
-        background-image: url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/mobile-reviews.svg);
+        background-image: url(https://cdn01.alison-static.net/publiccourse-landing-v2/mobile-reviews.svg);
         padding: 20px 90px 24px 24px
     }
 
@@ -6518,14 +6518,14 @@ a.certification-study-now-button .arrow {
 }
 
 .l-review .l-review__user-rating>span {
-    background: url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/loved-active.svg) no-repeat 0/20px;
+    background: url(https://cdn01.alison-static.net/publiccourse-landing-v2/loved-active.svg) no-repeat 0/20px;
     color: #0091c7;
     font-weight: 700;
     padding-left: 26px
 }
 
 .l-review .l-review__user-rating .liked {
-    background-image: url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/like-active.svg)
+    background-image: url(https://cdn01.alison-static.net/publiccourse-landing-v2/like-active.svg)
 }
 
 .l-review .l-review__rating {
@@ -7217,7 +7217,7 @@ a.certification-study-now-button .arrow {
 
 .l-faqs .l-faqs__header {
     align-items: center;
-    background: url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/faqs.svg) no-repeat 100% 0;
+    background: url(https://cdn01.alison-static.net/publiccourse-landing-v2/faqs.svg) no-repeat 100% 0;
     border-bottom: 1px solid #b7c1c4;
     display: flex;
     min-height: 102px
@@ -7234,7 +7234,7 @@ a.certification-study-now-button .arrow {
     }
 
     .l-faqs .l-faqs__header {
-        background-image: url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/faqs-mobile.svg);
+        background-image: url(https://cdn01.alison-static.net/publiccourse-landing-v2/faqs-mobile.svg);
         min-height: 87px;
         padding-left: 24px
     }
@@ -7427,7 +7427,7 @@ a.certification-study-now-button .arrow {
 }
 
 .course-landing__body:after {
-    content: url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/loved.svg) url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/loved-active.svg) url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/like.svg) url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/like-active.svg) url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/nope.svg) url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/nope-active.svg) url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/nope-active-blue.svg);
+    content: url(https://cdn01.alison-static.net/publiccourse-landing-v2/loved.svg) url(https://cdn01.alison-static.net/publiccourse-landing-v2/loved-active.svg) url(https://cdn01.alison-static.net/publiccourse-landing-v2/like.svg) url(https://cdn01.alison-static.net/publiccourse-landing-v2/like-active.svg) url(https://cdn01.alison-static.net/publiccourse-landing-v2/nope.svg) url(https://cdn01.alison-static.net/publiccourse-landing-v2/nope-active.svg) url(https://cdn01.alison-static.net/publiccourse-landing-v2/nope-active-blue.svg);
     left: -9999px;
     position: absolute!important;
     top: -9999px
@@ -7947,11 +7947,11 @@ a.certification-study-now-button .arrow {
 }
 
 .l-rating:not(.enrol-to-rate) .l-rating__love span:first-child:hover:not(.disabled) {
-    background-image: url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/loved-active.svg)
+    background-image: url(https://cdn01.alison-static.net/publiccourse-landing-v2/loved-active.svg)
 }
 
 .l-rating:not(.enrol-to-rate) .l-rating__love span:first-child.rated {
-    background-image: url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/loved-active.svg)!important
+    background-image: url(https://cdn01.alison-static.net/publiccourse-landing-v2/loved-active.svg)!important
 }
 
 .l-rating:not(.enrol-to-rate) .l-rating__love.l-tooltip:before {
@@ -7960,11 +7960,11 @@ a.certification-study-now-button .arrow {
 }
 
 .l-rating:not(.enrol-to-rate) .l-rating__like span:first-child:hover:not(.disabled) {
-    background-image: url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/like-active.svg)
+    background-image: url(https://cdn01.alison-static.net/publiccourse-landing-v2/like-active.svg)
 }
 
 .l-rating:not(.enrol-to-rate) .l-rating__like span:first-child.rated {
-    background-image: url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/like-active.svg)!important
+    background-image: url(https://cdn01.alison-static.net/publiccourse-landing-v2/like-active.svg)!important
 }
 
 .l-rating:not(.enrol-to-rate) .l-rating__like.l-tooltip:before {
@@ -7973,15 +7973,15 @@ a.certification-study-now-button .arrow {
 }
 
 .l-rating:not(.enrol-to-rate) .l-rating__no span:first-child:hover:not(.disabled) {
-    background-image: url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/nope-active.svg)
+    background-image: url(https://cdn01.alison-static.net/publiccourse-landing-v2/nope-active.svg)
 }
 
 .l-rating:not(.enrol-to-rate) .l-rating__no span:first-child.rated {
-    background-image: url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/nope-active.svg)!important
+    background-image: url(https://cdn01.alison-static.net/publiccourse-landing-v2/nope-active.svg)!important
 }
 
 .l-rating.enrol-to-rate .l-rating__like:hover:before,.l-rating.enrol-to-rate .l-rating__love:hover:before,.l-rating.enrol-to-rate .l-rating__no:hover:before {
-    background: #465159 url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/error-state.svg) no-repeat top 4px left 10px;
+    background: #465159 url(https://cdn01.alison-static.net/publiccourse-landing-v2/error-state.svg) no-repeat top 4px left 10px;
     border-radius: 4px;
     color: #fff;
     content: "Enrol in course to rate";
@@ -8012,7 +8012,7 @@ a.certification-study-now-button .arrow {
 }
 
 .l-rating>div span:first-child {
-    background: url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/loved.svg) no-repeat 0/100%;
+    background: url(https://cdn01.alison-static.net/publiccourse-landing-v2/loved.svg) no-repeat 0/100%;
     display: inline-block;
     height: 22px;
     margin-right: 6px;
@@ -8021,16 +8021,16 @@ a.certification-study-now-button .arrow {
 }
 
 .l-rating .l-rating__love span:first-child {
-    background-image: url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/loved.svg)
+    background-image: url(https://cdn01.alison-static.net/publiccourse-landing-v2/loved.svg)
 }
 
 .l-rating .l-rating__like span:first-child {
-    background-image: url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/like.svg);
+    background-image: url(https://cdn01.alison-static.net/publiccourse-landing-v2/like.svg);
     width: 18px
 }
 
 .l-rating .l-rating__no span:first-child {
-    background-image: url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/nope.svg);
+    background-image: url(https://cdn01.alison-static.net/publiccourse-landing-v2/nope.svg);
     width: 18px
 }
 
@@ -8132,7 +8132,7 @@ a.certification-study-now-button .arrow {
 }
 
 .l-list.l-list--tick ul li {
-    background: url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/tick.svg) no-repeat 0/16px 16px;
+    background: url(https://cdn01.alison-static.net/publiccourse-landing-v2/tick.svg) no-repeat 0/16px 16px;
     padding-left: 27px
 }
 
@@ -8660,7 +8660,7 @@ a.certification-study-now-button .arrow {
 }
 
 .l-user-review .l-user-review__top .bt:hover:not(.disabled) span {
-    background-image: url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/loved-active.svg)
+    background-image: url(https://cdn01.alison-static.net/publiccourse-landing-v2/loved-active.svg)
 }
 
 .l-user-review .l-user-review__top .bt:last-child {
@@ -8668,7 +8668,7 @@ a.certification-study-now-button .arrow {
 }
 
 .l-user-review .l-user-review__top .bt span {
-    background: url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/loved.svg) no-repeat 0/100%;
+    background: url(https://cdn01.alison-static.net/publiccourse-landing-v2/loved.svg) no-repeat 0/100%;
     display: inline-block;
     height: 16px;
     margin-right: 4px;
@@ -8678,7 +8678,7 @@ a.certification-study-now-button .arrow {
 }
 
 .l-user-review .l-user-review__top .bt-loved.rated span {
-    background-image: url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/loved-active.svg)!important
+    background-image: url(https://cdn01.alison-static.net/publiccourse-landing-v2/loved-active.svg)!important
 }
 
 .l-user-review .l-user-review__top .bt-loved span {
@@ -8687,15 +8687,15 @@ a.certification-study-now-button .arrow {
 }
 
 .l-user-review .l-user-review__top .bt-liked:hover:not(.disabled) span {
-    background-image: url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/like-active.svg)
+    background-image: url(https://cdn01.alison-static.net/publiccourse-landing-v2/like-active.svg)
 }
 
 .l-user-review .l-user-review__top .bt-liked.rated span {
-    background-image: url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/like-active.svg)!important
+    background-image: url(https://cdn01.alison-static.net/publiccourse-landing-v2/like-active.svg)!important
 }
 
 .l-user-review .l-user-review__top .bt-liked span {
-    background-image: url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/like.svg)
+    background-image: url(https://cdn01.alison-static.net/publiccourse-landing-v2/like.svg)
 }
 
 .l-user-review .l-user-review__top .bt-nope.rated,.l-user-review .l-user-review__top .bt-nope:hover:not(.disabled) {
@@ -8705,11 +8705,11 @@ a.certification-study-now-button .arrow {
 }
 
 .l-user-review .l-user-review__top .bt-nope.rated span,.l-user-review .l-user-review__top .bt-nope:hover:not(.disabled) span {
-    background-image: url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/nope-active-blue.svg)
+    background-image: url(https://cdn01.alison-static.net/publiccourse-landing-v2/nope-active-blue.svg)
 }
 
 .l-user-review .l-user-review__top .bt-nope span {
-    background-image: url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/nope.svg);
+    background-image: url(https://cdn01.alison-static.net/publiccourse-landing-v2/nope.svg);
     top: 4px
 }
 
@@ -8913,7 +8913,7 @@ a.certification-study-now-button .arrow {
 }
 
 .l-outcomes:after {
-    background: url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/top-guy.svg);
+    background: url(https://cdn01.alison-static.net/publiccourse-landing-v2/top-guy.svg);
     content: "";
     height: 117px;
     position: absolute;
@@ -9641,7 +9641,7 @@ a.certification-study-now-button .arrow {
 }
 
 .l-reviews .l-reviews__head {
-    background: #f3f6f7 url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/review-head.svg) no-repeat 100% 100%;
+    background: #f3f6f7 url(https://cdn01.alison-static.net/publiccourse-landing-v2/review-head.svg) no-repeat 100% 100%;
     border-bottom: 1px solid #d2d8de;
     min-height: 136px;
     padding: 22px 90px 22px 24px
@@ -9667,7 +9667,7 @@ a.certification-study-now-button .arrow {
     }
 
     .l-reviews .l-reviews__head {
-        background-image: url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/mobile-reviews.svg);
+        background-image: url(https://cdn01.alison-static.net/publiccourse-landing-v2/mobile-reviews.svg);
         padding: 20px 90px 24px 24px
     }
 
@@ -9781,14 +9781,14 @@ a.certification-study-now-button .arrow {
 }
 
 .l-review .l-review__user-rating>span {
-    background: url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/loved-active.svg) no-repeat 0/20px;
+    background: url(https://cdn01.alison-static.net/publiccourse-landing-v2/loved-active.svg) no-repeat 0/20px;
     color: #0091c7;
     font-weight: 700;
     padding-left: 26px
 }
 
 .l-review .l-review__user-rating .liked {
-    background-image: url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/like-active.svg)
+    background-image: url(https://cdn01.alison-static.net/publiccourse-landing-v2/like-active.svg)
 }
 
 .l-review .l-review__rating {
@@ -10480,7 +10480,7 @@ a.certification-study-now-button .arrow {
 
 .l-faqs .l-faqs__header {
     align-items: center;
-    background: url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/faqs.svg) no-repeat 100% 0;
+    background: url(https://cdn01.alison-static.net/publiccourse-landing-v2/faqs.svg) no-repeat 100% 0;
     border-bottom: 1px solid #b7c1c4;
     display: flex;
     min-height: 102px
@@ -10497,7 +10497,7 @@ a.certification-study-now-button .arrow {
     }
 
     .l-faqs .l-faqs__header {
-        background-image: url(https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/faqs-mobile.svg);
+        background-image: url(https://cdn01.alison-static.net/publiccourse-landing-v2/faqs-mobile.svg);
         min-height: 87px;
         padding-left: 24px
     }
@@ -12295,7 +12295,7 @@ a.certification-study-now-button .arrow {
 
 @media(min-width: 768px) {
     .Fhorge .alison__background {
-        background:url(https://cdn01.alison-static.net/public/html/site/img/homepage/ireland.png) no-repeat 100% 0/auto 100%;
+        background:url(https://cdn01.alison-static.net/publichomepage/ireland.png) no-repeat 100% 0/auto 100%;
         height: 100%;
         left: 0;
         position: absolute;
@@ -12304,7 +12304,7 @@ a.certification-study-now-button .arrow {
     }
 
     .Fhorge .alison__world {
-        background: url(https://cdn01.alison-static.net/public/html/site/img/homepage/world.svg) no-repeat bottom!important
+        background: url(https://cdn01.alison-static.net/publichomepage/world.svg) no-repeat bottom!important
     }
 }
 
@@ -12329,7 +12329,7 @@ a.certification-study-now-button .arrow {
     }
 
     .Fhorge .inner .alison__section:first-child {
-        background: #f5fcec url(https://cdn01.alison-static.net/public/html/site/img/homepage/world.svg) no-repeat 100% 100%;
+        background: #f5fcec url(https://cdn01.alison-static.net/publichomepage/world.svg) no-repeat 100% 100%;
         justify-content: left;
         order: 2;
         padding-left: 101px
@@ -12667,7 +12667,7 @@ a.certification-study-now-button .arrow {
 }
 
 .earn-intro .intro__header-outer h1:after {
-    background-image: url(/html/site/img/homepage/earn-money-underline.svg);
+    background-image: url(homepage/earn-money-underline.svg);
     height: 13px;
     left: -5px
 }
@@ -13358,7 +13358,7 @@ a.certification-study-now-button .arrow {
 }
 
 .business {
-    background: url(https://cdn01.alison-static.net/public/html/site/img/homepage/earn-business.svg) no-repeat 100% 0/auto 100%,linear-gradient(210.58deg,#0e7396 -31.18%,#0094c9 94.68%)
+    background: url(https://cdn01.alison-static.net/publichomepage/earn-business.svg) no-repeat 100% 0/auto 100%,linear-gradient(210.58deg,#0e7396 -31.18%,#0094c9 94.68%)
 }
 
 .business .inner {
@@ -13395,7 +13395,7 @@ a.certification-study-now-button .arrow {
 
 @media(max-width: 768px) {
     .business {
-        background:#0094c9 url(https://cdn01.alison-static.net/public/html/site/img/homepage/business-mobile.svg) no-repeat bottom/auto 100%;
+        background:#0094c9 url(https://cdn01.alison-static.net/publichomepage/business-mobile.svg) no-repeat bottom/auto 100%;
         height: 321px
     }
 
@@ -14761,7 +14761,7 @@ body.flms-single .tooltip.bottom .tooltip-arrow {
 }
 
 #generic-template .template-header--alison-university-top .alison-university-top__wrapper {
-    background-image: url(/html/site/img/generic/left-illustatrion.svg),url(/html/site/img/generic/right-illustatrion.svg);
+    background-image: url(generic/left-illustatrion.svg),url(generic/right-illustatrion.svg);
     background-position: bottom left 50px,bottom right 50px;
     background-repeat: no-repeat;
     background-size: 13.575rem,16.075rem;
@@ -14842,7 +14842,7 @@ body.flms-single .tooltip.bottom .tooltip-arrow {
     }
 
     #generic-template .template-header--alison-university-top .alison-university-top__cta-wrap__background {
-        background-image: url(/html/site/img/generic/right-illustatrion.svg);
+        background-image: url(generic/right-illustatrion.svg);
         background-position: 50%;
         background-repeat: no-repeat;
         background-size: contain;
@@ -14874,7 +14874,7 @@ body.flms-single .tooltip.bottom .tooltip-arrow {
 
 #generic-template .template-header--alison-university-top .alison-university-top__cta-wrap__cta.hover {
     background-color: transparent;
-    background-image: url(/html/site/img/generic/button-background.png);
+    background-image: url(generic/button-background.png);
     background-position: 50%;
     background-repeat: no-repeat;
     opacity: 1
@@ -14984,7 +14984,7 @@ body.flms-single .tooltip.bottom .tooltip-arrow {
 
 #generic-template .template-body--insert ul.generic-template-ul--with-ticks li {
     line-height: 2.525em!important;
-    list-style-image: url(/html/site/img/generic/generic-thick.png);
+    list-style-image: url(generic/generic-thick.png);
     margin-left: 25px!important
 }
 
@@ -15036,7 +15036,7 @@ body.flms-single .tooltip.bottom .tooltip-arrow {
 }
 
 #generic-template .template-body--insert .footer-area .psychometrics-link {
-    background: url(/html/site/img/generic/michaeloreillybg.png) no-repeat;
+    background: url(generic/michaeloreillybg.png) no-repeat;
     background-position: 0
 }
 
@@ -15714,22 +15714,22 @@ body.flms-single .tooltip.bottom .tooltip-arrow {
 }
 
 #generic-template .workforce section.content-section .slick-arrow.slick-prev {
-    background-image: url(/html/site/img/category-page/arrow-active-left.png);
+    background-image: url(category-page/arrow-active-left.png);
     left: 4px
 }
 
 #generic-template .workforce section.content-section .slick-arrow.slick-prev.slick-disabled {
-    background-image: url(/html/site/img/category-page/arrow-inactive-left.png);
+    background-image: url(category-page/arrow-inactive-left.png);
     cursor: not-allowed
 }
 
 #generic-template .workforce section.content-section .slick-arrow.slick-next {
-    background-image: url(/html/site/img/category-page/arrow-active-right.png);
+    background-image: url(category-page/arrow-active-right.png);
     right: 4px
 }
 
 #generic-template .workforce section.content-section .slick-arrow.slick-next.slick-disabled {
-    background-image: url(/html/site/img/category-page/arrow-inactive-right.png);
+    background-image: url(category-page/arrow-inactive-right.png);
     cursor: not-allowed
 }
 
@@ -15823,7 +15823,7 @@ body.flms-single .tooltip.bottom .tooltip-arrow {
 }
 
 #generic-template .modal .modal-content {
-    background: url(/html/site/img/workforce/earn-banner-illustration.svg) #fff no-repeat 0 100%;
+    background: url(workforce/earn-banner-illustration.svg) #fff no-repeat 0 100%;
     border: none;
     border-radius: 12px;
     height: 161px;
@@ -16251,7 +16251,7 @@ h2.key-person-details {
 }
 
 .wpa__box .wpa__cta {
-    background: #f3fce7 url(/html/site/img/workforce/triangles-right.svg) no-repeat 100%;
+    background: #f3fce7 url(workforce/triangles-right.svg) no-repeat 100%;
     border: 1px solid #dff2c5;
     display: flex;
     flex-flow: wrap;
@@ -16619,7 +16619,7 @@ h2.key-person-details {
 }
 
 #how-it-works #how-it-works-main-wrap {
-    background: url(https://cdn01.alison-static.net/public/html/site/img/how-it-works-background-narrow.png) repeat-y top;
+    background: url(https://cdn01.alison-static.net/publichow-it-works-background-narrow.png) repeat-y top;
     margin-top: -40px;
     position: relative;
     z-index: 10
@@ -16627,7 +16627,7 @@ h2.key-person-details {
 
 @media only screen and (min-width: 1020px) {
     #how-it-works #how-it-works-main-wrap {
-        background:url(https://cdn01.alison-static.net/public/html/site/img/how-it-works-background.png) no-repeat top;
+        background:url(https://cdn01.alison-static.net/publichow-it-works-background.png) no-repeat top;
         margin-top: -40px;
         position: relative;
         z-index: 10
@@ -17172,7 +17172,7 @@ h2.key-person-details {
 }
 
 #new_careers .banner h1:after {
-    background: url(/html/site/img/careers/headling-border.svg) no-repeat;
+    background: url(careers/headling-border.svg) no-repeat;
     content: "";
     display: block;
     height: 25px;
@@ -17570,7 +17570,7 @@ h2.key-person-details {
 }
 
 #new_careers .form-group .error-wrapper:before {
-    background-image: url(/html/site/img/careers/occupations-form-error.jpg);
+    background-image: url(careers/occupations-form-error.jpg);
     background-repeat: no-repeat;
     content: "";
     display: inline-block;
@@ -19216,7 +19216,7 @@ h2.key-person-details {
 }
 
 #new_careers .form-group .error-wrapper:before {
-    background-image: url(/html/site/img/careers/occupations-form-error.jpg);
+    background-image: url(careers/occupations-form-error.jpg);
     background-repeat: no-repeat;
     content: "";
     display: inline-block;
@@ -20784,7 +20784,7 @@ h2.key-person-details {
 
 #new_careers.careers-single-career .career-carousel-no-courses {
     background: #fcfcfc 0 0 no-repeat padding-box;
-    background-image: url(/html/site/img/careers/no-courses-left-bg.png),url(/html/site/img/careers/no-courses-right-bg.png);
+    background-image: url(careers/no-courses-left-bg.png),url(careers/no-courses-right-bg.png);
     background-position: 0 100%,100% 0;
     background-repeat: no-repeat,no-repeat;
     border: 1px solid #aacfde;
@@ -20856,7 +20856,7 @@ h2.key-person-details {
 
 #new_careers.careers-single-career .career-rating-wrapper {
     background: #fffcfa 0 0 no-repeat padding-box;
-    background-image: url(/html/site/img/careers/career-rating-left-bg.jpg),url(/html/site/img/careers/career-rating-right-bg.jpg);
+    background-image: url(careers/career-rating-left-bg.jpg),url(careers/career-rating-right-bg.jpg);
     background-position: 0,100%;
     background-repeat: no-repeat,no-repeat;
     border: 1px solid #ffdac7;
@@ -22065,7 +22065,7 @@ h2.key-person-details {
 }
 
 .benefits {
-    background: #fafafa url(/html/site/img/psychometrics/bg.svg) no-repeat;
+    background: #fafafa url(psychometrics/bg.svg) no-repeat;
     background-position-y: 60px;
     padding: 160px 0 166px;
     position: relative;
@@ -22073,7 +22073,7 @@ h2.key-person-details {
 }
 
 .benefits:before {
-    background: url(/html/site/img/psychometrics/bg2.svg) no-repeat;
+    background: url(psychometrics/bg2.svg) no-repeat;
     bottom: 40px;
     content: "";
     height: 159px;
@@ -22598,7 +22598,7 @@ h2.key-person-details {
 }
 
 #publishers-application-received .wrapper .right-block .info-block a.starter-pack:after {
-    content: url(https://cdn01.alison-static.net/public/html/site/img/download-starter.png);
+    content: url(https://cdn01.alison-static.net/publicdownload-starter.png);
     position: relative;
     right: -11px;
     top: 8px
@@ -22888,7 +22888,7 @@ h2.key-person-details {
 }
 
 #alison-publishing-training section.publishing-on-alison.page--heading .background--wrap,#publishing-on-alison section.publishing-on-alison.page--heading .background--wrap {
-    background: url(https://cdn01.alison-static.net/public/html/site/img/publish-on-alison-heading2.png) no-repeat 0 0/cover;
+    background: url(https://cdn01.alison-static.net/publicpublish-on-alison-heading2.png) no-repeat 0 0/cover;
     color: #fff;
     max-width: 1870px;
     min-height: 350px;
@@ -22896,7 +22896,7 @@ h2.key-person-details {
 }
 
 #alison-publishing-training section.publishing-on-alison.page--heading .background--wrap.publishing-training,#publishing-on-alison section.publishing-on-alison.page--heading .background--wrap.publishing-training {
-    background: url(https://cdn01.alison-static.net/public/html/site/img/publishing-training-header%20img@2x.png) no-repeat 0 0/cover
+    background: url(https://cdn01.alison-static.net/publicpublishing-training-header%20img@2x.png) no-repeat 0 0/cover
 }
 
 @media(max-width: 1400px) {
@@ -23098,7 +23098,7 @@ h2.key-person-details {
 #alison-publishing-training section.publishing-on-alison.grey--section .inner-wrap .box-selector-wrap.box-selector-wrap--with-background,#publishing-on-alison section.publishing-on-alison.grey--section .inner-wrap .box-selector-wrap.box-selector-wrap--with-background {
     background-repeat-x: repeat;
     background-repeat-y: no-repeat;
-    background-image: url(https://cdn01.alison-static.net/public/html/site/img/dotted_line-horizontal.png);
+    background-image: url(https://cdn01.alison-static.net/publicdotted_line-horizontal.png);
     background-position-x: center;
     background-position-y: center
 }
@@ -23107,7 +23107,7 @@ h2.key-person-details {
     #alison-publishing-training section.publishing-on-alison.grey--section .inner-wrap .box-selector-wrap.box-selector-wrap--with-background,#publishing-on-alison section.publishing-on-alison.grey--section .inner-wrap .box-selector-wrap.box-selector-wrap--with-background {
         background-repeat-x:no-repeat;
         background-repeat-y: repeat;
-        background-image: url(https://cdn01.alison-static.net/public/html/site/img/dotted_line-vertical.png);
+        background-image: url(https://cdn01.alison-static.net/publicdotted_line-vertical.png);
         background-position-x: center;
         background-position-y: center;
         margin: 0 auto;
@@ -23268,22 +23268,22 @@ h2.key-person-details {
 }
 
 #alison-publishing-training section.publishing-on-alison.grey--section .inner-wrap .box-selector-wrap ul li.box-selector .box__icon .box__icon-inner.updates,#publishing-on-alison section.publishing-on-alison.grey--section .inner-wrap .box-selector-wrap ul li.box-selector .box__icon .box__icon-inner.updates {
-    background: url(https://cdn01.alison-static.net/public/html/site/img/publishing-training-updates.jpg) no-repeat 50%;
+    background: url(https://cdn01.alison-static.net/publicpublishing-training-updates.jpg) no-repeat 50%;
     background-size: 55px
 }
 
 #alison-publishing-training section.publishing-on-alison.grey--section .inner-wrap .box-selector-wrap ul li.box-selector .box__icon .box__icon-inner.videos,#publishing-on-alison section.publishing-on-alison.grey--section .inner-wrap .box-selector-wrap ul li.box-selector .box__icon .box__icon-inner.videos {
-    background: url(https://cdn01.alison-static.net/public/html/site/img/publishing-training-video.jpg) no-repeat 50%;
+    background: url(https://cdn01.alison-static.net/publicpublishing-training-video.jpg) no-repeat 50%;
     background-size: 55px
 }
 
 #alison-publishing-training section.publishing-on-alison.grey--section .inner-wrap .box-selector-wrap ul li.box-selector .box__icon .box__icon-inner.faqs,#publishing-on-alison section.publishing-on-alison.grey--section .inner-wrap .box-selector-wrap ul li.box-selector .box__icon .box__icon-inner.faqs {
-    background: url(https://cdn01.alison-static.net/public/html/site/img/publishing-training-faq.jpg) no-repeat 50%;
+    background: url(https://cdn01.alison-static.net/publicpublishing-training-faq.jpg) no-repeat 50%;
     background-size: 55px
 }
 
 #alison-publishing-training section.publishing-on-alison.grey--section .inner-wrap .box-selector-wrap ul li.box-selector .box__icon .box__icon-inner.quiz,#publishing-on-alison section.publishing-on-alison.grey--section .inner-wrap .box-selector-wrap ul li.box-selector .box__icon .box__icon-inner.quiz {
-    background: url(https://cdn01.alison-static.net/public/html/site/img/publishing-training-quiz.jpg) no-repeat 50%;
+    background: url(https://cdn01.alison-static.net/publicpublishing-training-quiz.jpg) no-repeat 50%;
     background-size: 55px
 }
 
@@ -23864,7 +23864,7 @@ h2.key-person-details {
 }
 
 .quiz .quiz__header {
-    background: #ebebeb url(https://cdn01.alison-static.net/public/html/site/img/quiz/triangles-pattern-left.svg) no-repeat 0;
+    background: #ebebeb url(https://cdn01.alison-static.net/publicquiz/triangles-pattern-left.svg) no-repeat 0;
     border-radius: 5px;
     margin-bottom: 20px;
     padding-top: 10px;
@@ -23895,7 +23895,7 @@ h2.key-person-details {
 }
 
 .quiz .quiz__header .quiz__header-right-icon {
-    background: url(https://cdn01.alison-static.net/public/html/site/img/quiz/triangles-pattern-right.svg) no-repeat 100%;
+    background: url(https://cdn01.alison-static.net/publicquiz/triangles-pattern-right.svg) no-repeat 100%;
     height: 100%;
     left: 0;
     position: absolute;
@@ -23946,21 +23946,21 @@ h2.key-person-details {
 
 @media(max-width: 980px) {
     .quiz .quiz__header {
-        background:#ebebeb url(https://cdn01.alison-static.net/public/html/site/img/quiz/triangles-pattern-right.svg) no-repeat -190px
+        background:#ebebeb url(https://cdn01.alison-static.net/publicquiz/triangles-pattern-right.svg) no-repeat -190px
     }
 
     .quiz .quiz__header .quiz__header-right-icon {
-        background: url(https://cdn01.alison-static.net/public/html/site/img/quiz/triangles-pattern-left.svg) no-repeat calc(100% + 191px)
+        background: url(https://cdn01.alison-static.net/publicquiz/triangles-pattern-left.svg) no-repeat calc(100% + 191px)
     }
 }
 
 @media(max-width: 768px) {
     .quiz .quiz__header {
-        background:#ebebeb url(https://cdn01.alison-static.net/public/html/site/img/quiz/triangles-left-mobile.svg) no-repeat 0 0
+        background:#ebebeb url(https://cdn01.alison-static.net/publicquiz/triangles-left-mobile.svg) no-repeat 0 0
     }
 
     .quiz .quiz__header .quiz__header-right-icon {
-        background: url(https://cdn01.alison-static.net/public/html/site/img/quiz/triangles-right-mobile.svg) no-repeat 100% 0
+        background: url(https://cdn01.alison-static.net/publicquiz/triangles-right-mobile.svg) no-repeat 100% 0
     }
 
     .quiz .quiz__header h1 {
@@ -24262,7 +24262,7 @@ h2.key-person-details {
 }
 
 .quiz .quiz__progress .quiz__progress-inner .quiz__progress-bar:after {
-    background: url("https://cdn01.alison-static.net/public/html/site/img/quiz/man-hiking.svg");
+    background: url("https://cdn01.alison-static.net/publicquiz/man-hiking.svg");
     color: #00a94f;
     content: "";
     font-size: 35px;
@@ -25265,21 +25265,21 @@ h2.key-person-details {
 }
 
 #search .wrapper.related .related__nav li.prev {
-    background-image: url(/html/site/img/category-page/arrow-active-left.png)
+    background-image: url(category-page/arrow-active-left.png)
 }
 
 #search .wrapper.related .related__nav li.prev.slick-disabled {
-    background-image: url(/html/site/img/category-page/arrow-inactive-left.png)
+    background-image: url(category-page/arrow-inactive-left.png)
 }
 
 #search .wrapper.related .related__nav li.next {
-    background-image: url(/html/site/img/category-page/arrow-active-right.png);
+    background-image: url(category-page/arrow-active-right.png);
     float: right;
     top: -45px
 }
 
 #search .wrapper.related .related__nav li.next.slick-disabled {
-    background-image: url(/html/site/img/category-page/arrow-inactive-right.png)
+    background-image: url(category-page/arrow-inactive-right.png)
 }
 
 #search .wrapper.related .related__nav li.slick-disabled {
@@ -26541,7 +26541,7 @@ h2.key-person-details {
     }
 
     .a-link .a-link__mobile .a-link__mobile-input:before {
-        background: url(/html/site/img/affiliates/copy.svg) no-repeat 0 0/100%;
+        background: url(affiliates/copy.svg) no-repeat 0 0/100%;
         content: "";
         height: 12px;
         left: 9px;
@@ -28799,7 +28799,7 @@ section#categories-page-main-wrapper .categories-listing .category-item ul h3.ca
 }
 
 .graduate-box {
-    background: #fff url(https://cdn01.alison-static.net/public/html/site/img/shop/header-shop.jpg) no-repeat 100% 0/auto 100%;
+    background: #fff url(https://cdn01.alison-static.net/publicshop/header-shop.jpg) no-repeat 100% 0/auto 100%;
     box-shadow: 0 2px 6px 0 rgba(50,50,50,.4);
     margin: 30px auto 40px;
     max-width: 80%;
@@ -29051,7 +29051,7 @@ section#categories-page-main-wrapper .categories-listing .category-item ul h3.ca
 }
 
 #learner-outcomes .learner-outcomes-outer .intro .img {
-    background: url(https://cdn01.alison-static.net/public/html/site/img/alison-graduates.png) no-repeat 100%;
+    background: url(https://cdn01.alison-static.net/publicalison-graduates.png) no-repeat 100%;
     background-size: cover;
     float: right;
     width: 50%
@@ -29495,7 +29495,7 @@ section#categories-page-main-wrapper .categories-listing .category-item ul h3.ca
 }
 
 .testimonial-widget .loading {
-    background: #fff url(https://cdn01.alison-static.net/public/html/site/img/loader.gif) no-repeat 50%/90%;
+    background: #fff url(https://cdn01.alison-static.net/publicloader.gif) no-repeat 50%/90%;
     border: 2px solid rgba(0,0,0,.4);
     border-radius: 100%;
     box-shadow: 0 3px 5px 0 rgba(50,50,50,.8);
