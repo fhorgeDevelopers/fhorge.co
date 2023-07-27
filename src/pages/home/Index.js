@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
 
 import "../../css/homepage.css";
-// import "../../css/homepage2.css";
-// import "../../css/homepage-lower.css";
+import "../../css/homepage-lower.css";
 
 const Hero = () => {
     const boxes = [{
@@ -19,7 +18,7 @@ const Hero = () => {
         type: "Countries"
     }]
     return (
-        <main className="">
+        <main className="mt-4">
             <section className="">
                 <div className="">
                     <div className="">
@@ -31,7 +30,7 @@ const Hero = () => {
                             <img src="" alt="" />
                             <span className="">Career</span>
                         </Link>
-                        <Link className="" to="/earn">
+                        <Link className="" to="/earn-money">
                             <img src="" alt="" />
                             <span className="">Earn</span>
                         </Link>
