@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 
-import "../../css/homepage.css";
-import "../../css/homepage2.css";
-import "../../css/homepage-lower.css";
+// import "../../css/homepage.css";
+// import "../../css/homepage2.css";
+// import "../../css/homepage-lower.css";
 
 const Hero = () => {
     const boxes = [{
