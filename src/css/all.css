@@ -15338,7 +15338,7 @@ body.flms-single .tooltip.bottom .tooltip-arrow {
 
 #generic-template .template-body--insert ul.generic-template-ul--with-ticks li {
     line-height: 2.525em !important;
-    list-style-image: url(generic/generic-thick.png);
+    /* list-style-image: url(generic/generic-thick.png); */
     margin-left: 25px !important
 }
 
