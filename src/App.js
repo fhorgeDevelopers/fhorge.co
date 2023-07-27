@@ -1,6 +1,5 @@
 import React, { Suspense } from 'react'
 import './App.css'
-import './css/all.css'
 import { Route, Routes } from 'react-router-dom';
 import { Mode } from './providers/Mode';
 import Preloader from './Preloader';
