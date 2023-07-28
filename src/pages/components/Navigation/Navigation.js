@@ -117,6 +117,7 @@ const Navigation = () => {
             <Helmet>
                 <link rel="icon" href={mode.changeIcon()} />
             </Helmet>
+            <div style={{ height: '60px', width: '100vw' }}></div>
             <div className={seeSearch ? "row justify-content-center" : "d-none"}>
                 <div className='col-lg-8'>
                     <div className='searchBox'>

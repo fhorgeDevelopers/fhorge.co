@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Button } from "bootstrap"
 import "./earn.css"
 import pic1 from "./img/icon1.png";
@@ -7,6 +7,9 @@ import pic3 from "./img/icon3.png"
 import login from "./img/icon1.png"
 import logo from "../../img/fhorge_logo_secondary.png"
 import Navigation from '../components/Navigation/Navigation';
+import Switch from '../home/Switch';
+import Footer from '../components/Footer/Footer';
+import { useLocation } from 'react-router';
 
 
 
@@ -31,16 +34,27 @@ const hobby = [
 
 export default function Earn() {
     const [Hobbbies, setHobby] = useState(hobby);
+
     return (
         <>
             <Navigation />
-            <Header />
+            <main style={{ minHeight: '40vh' }}>
+                <Switch />
+                {/* <PictureRow /> */}
+                <Empower />
+                {/* <Empower2 /> */}
+                <Lastpart />
+            </main>
+            <Footer />
+
+
+            {/* <Header />
             <PictureRow />
             <Empower />
             <Empower2 />
             <Empower />
-            {/*<Goal Hobbbies={Hobbbies}/>*/}
-            <Lastpart />
+            <Goal Hobbbies={Hobbbies}/>
+            <Lastpart /> */}
         </>
     )
 }
@@ -134,8 +148,8 @@ function Empower2() {
 }
 function Lastpart() {
     return (
-        <div className="lastpart">
-            <div className="container">
+        // <div className="lastpart">
+            <div className="container darkNav">
                 <div className="left">
                     <div className='col-md-6'>
                         <p className='content'>
@@ -155,7 +169,7 @@ function Lastpart() {
                     </div>
                 </div>
             </div>
-        </div>
+        // </div>
     )
 }
 {/*function Goal({Hobbbies}){
