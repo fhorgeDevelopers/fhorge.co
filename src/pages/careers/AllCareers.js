@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../components/Footer/Footer'
 import Navigation from '../components/Navigation/Navigation'
 
 const AllCareers = () => {
@@ -6,9 +7,12 @@ const AllCareers = () => {
         <>
             <Navigation />
 
-            <section>
-                Careers
-            </section>
+            <main style={{ minHeight: '40vh' }}>
+                <h4>
+                    All Careers
+                </h4>
+            </main>
+            <Footer />
         </>
     )
 }
