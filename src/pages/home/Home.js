@@ -1,7 +1,7 @@
 import React from 'react'
 import Footer from '../components/Footer/Footer'
 import Navigation from '../components/Navigation/Navigation'
-import Hero from './Index'
+import Hero from './Hero'
 import Switch from './Switch'
 
 const Home = () => {
