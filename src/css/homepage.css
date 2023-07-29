@@ -256,7 +256,7 @@ h2 {
     border-radius: 0;
     left: 50%;
     position: fixed;
-    top:65px;
+    top: 65px;
     transform: translate(-50%);
     width: 100%;
     z-index: 2
@@ -324,14 +324,14 @@ h2 {
 
 @media(max-width: 976px) and (min-width:768px) {
     .tab-nav {
-        top:48px
+        top:70px
     }
 }
 
 @media(max-width: 768px) {
     .tab-nav {
         left:0;
-        top: 48px;
+        top: 70px;
         transform: translate(0);
         width: 100%
     }

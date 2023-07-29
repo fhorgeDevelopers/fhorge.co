@@ -366,7 +366,7 @@
 
 #new_careers.careers-single-career .career-carousel-no-courses {
     background: #fcfcfc 0 0 no-repeat padding-box;
-    background-image: url(/html/site/img/careers/no-courses-left-bg.png),url(/html/site/img/careers/no-courses-right-bg.png);
+    /* background-image: url(/html/site/img/careers/no-courses-left-bg.png),url(/html/site/img/careers/no-courses-right-bg.png); */
     background-position: 0 100%,100% 0;
     background-repeat: no-repeat,no-repeat;
     border: 1px solid #aacfde;
@@ -438,7 +438,7 @@
 
 #new_careers.careers-single-career .career-rating-wrapper {
     background: #fffcfa 0 0 no-repeat padding-box;
-    background-image: url(/html/site/img/careers/career-rating-left-bg.jpg),url(/html/site/img/careers/career-rating-right-bg.jpg);
+    /* background-image: url(/html/site/img/careers/career-rating-left-bg.jpg),url(/html/site/img/careers/career-rating-right-bg.jpg); */
     background-position: 0,100%;
     background-repeat: no-repeat,no-repeat;
     border: 1px solid #ffdac7;
