@@ -207,7 +207,7 @@ const Navigation = () => {
                                                                 to={`/courses/${course.course_category.toLowerCase()}`}
                                                                 className={`dropLink d-flex justify-content-start align-items-center`}
                                                             >
-                                                                <img src={course.course_category_image} alt={course.course_ref} className="navIcon2" />
+                                                                <img src={course.course_category_image} alt={course.course_category_id} className="navIcon2" />
                                                                 <div>
                                                                     <span className={(mode.myMode === 'light') ? "blackText" : "whiteText"} style={{ fontSize: '14px' }}>
                                                                         {course.course_category} &nbsp; ({course.course_count} courses)
@@ -262,7 +262,7 @@ const Navigation = () => {
                                                     {calls.careerCategories.map((career) => (
                                                         <li key={career.id}>
                                                             <Link
-                                                                to={`/careers/${career.career_category_ref}`}
+                                                                to={`/careers/${career.career_category_id}`}
                                                                 className={`dropLink d-flex justify-content-start`}
                                                             >
                                                                 <img src={career.career_category_image} alt={career.id} className="navIcon" />

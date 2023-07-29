@@ -331,7 +331,7 @@ h2 {
 @media(max-width: 768px) {
     .tab-nav {
         left:0;
-        top: 70px;
+        top: 64px;
         transform: translate(0);
         width: 100%
     }
@@ -439,7 +439,7 @@ h2 {
 
 .intro {
     background-color: #fff;
-    /*padding-top: 138px*/
+    padding-top: 120px
 }
 
 @media(min-width: 768px) {
@@ -609,7 +609,7 @@ h2 {
 
 @media(max-width: 768px) {
     .intro {
-        /*padding-top:67px*/
+        padding-top:60px
     }
 
     .intro.pre-sale-active {
