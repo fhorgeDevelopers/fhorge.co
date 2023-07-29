@@ -10,6 +10,7 @@ const Home = () => {
       <Navigation />
       <main style={{ minHeight: '40vh'}}>
         <Switch />
+  <Hero />
       </main>
       <Footer />
     </>
