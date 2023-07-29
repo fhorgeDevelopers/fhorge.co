@@ -73,4 +73,4 @@ const Hero = () => {
     );
 }
 
-export default Hero;￼Enter
+export default Hero;
