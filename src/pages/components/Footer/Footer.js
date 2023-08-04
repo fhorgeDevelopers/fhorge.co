@@ -26,7 +26,7 @@ const Footer = () => {
     }, []);
     return (
         <>
-            <footer className={`${((mode.myMode === 'dark') ? "darkNav textLight" : "lightNav textDark")} main tpv2`}>
+            <footer className={`${((mode.myMode === 'dark') ? "darkNav textLight" : "lightNav textDark")} main tpv2 mt-0`}>
                 <div className="main-bg">
                     <div className='ft-wrap'>
                         <div className="col col-1 col-a">

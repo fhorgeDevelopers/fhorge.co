@@ -7,7 +7,7 @@ import pic2 from "./img/2.png";
 import picc3 from "./img/3.png"
 import login from "./img/login.png";
 import tobi from './img/tobi.png'
-import logo from "./img/3.png"
+import "../../css/homepage-lower.css";
 import Navigation from '../components/Navigation/Navigation';
 import Switch from '../home/Switch';
 import Footer from '../components/Footer/Footer';
@@ -48,11 +48,16 @@ export default function Earn() {
                         <Cards />
                     </div>
                 </div>
+                <Empower />
+                <Empower2 />
+                <Goal mode={mode} Hobbbies={hobbies} />
+                <Lastpart />
             </main>
             <Footer />
         </>
     )
 }
+
 function Cards() {
     return (
         <div className='container'>
@@ -199,8 +204,6 @@ function Lastpart() {
     )
 }
 function Goal({ Hobbbies, mode }) {
-
-
     return (
         <div className={`${((mode.myMode === 'dark') ? "darkNav" : "lightNav")} text-center container goal`}>
             <h1>Not sure where to begin ?<br></br> What is your main goal on Alison?</h1>
