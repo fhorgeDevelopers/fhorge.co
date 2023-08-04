@@ -68,7 +68,7 @@ const App = () => {
                 path='/courses/:category_id'
                 element={
                   <Suspense fallback={<Preloader />}>
-                    <Home />
+                    <CareerCategories />
                   </Suspense>
                 }
               />

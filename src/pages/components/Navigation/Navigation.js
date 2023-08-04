@@ -192,9 +192,6 @@ const Navigation = () => {
                                         </span>
                                         COURSE CATEGORIES
                                     </span>
-                                    <Link to={'/courses'} style={{ padding: '6px 10px', fontSize: '13px', }}>
-                                        View All
-                                    </Link>
                                 </li>
                                 <div style={{ overflowY: 'auto', height: '80%' }}>
                                     <ul className='m-0 p-0' style={{ listStyle: 'none' }}>

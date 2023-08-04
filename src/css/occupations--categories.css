@@ -55,13 +55,13 @@
 }
 
 @media(min-width: 1281px) {
-    #new_careers.careers-categories .careers__inner--padding .categories-holder .categories-holder-inner-wrap .occupations-card-wrapper {
+    .occupations-card-wrapper {
         width:30%
     }
 }
 
 @media(max-width: 1280px) and (min-width:1201px) {
-    #new_careers.careers-categories .careers__inner--padding .categories-holder .categories-holder-inner-wrap .occupations-card-wrapper {
+    .occupations-card-wrapper {
         width:29%
     }
 }
@@ -77,7 +77,7 @@
     width: 1542px
 }
 
-#new_careers.careers-categories .categories-holder .categories-holder-inner-wrap .occupations-card-wrapper {
+.occupations-card-wrapper {
     border-radius: 12px;
     box-shadow: 0 6px 20px rgba(51,51,51,.3);
     display: inline-block;
@@ -88,31 +88,31 @@
 }
 
 @media(max-width: 1525px) {
-    #new_careers.careers-categories .categories-holder .categories-holder-inner-wrap .occupations-card-wrapper {
+    .occupations-card-wrapper {
         height:266px
     }
 }
 
-#new_careers.careers-categories .categories-holder .categories-holder-inner-wrap .occupations-card-wrapper .occ-card-base,#new_careers.careers-categories .categories-holder .categories-holder-inner-wrap .occupations-card-wrapper .occupations-card-top {
+.occupations-card-wrapper .occupations-card-top {
     transition: opacity .3s ease-in-out
 }
 
-#new_careers.careers-categories .categories-holder .categories-holder-inner-wrap .occupations-card-wrapper .occ-card-base.hidden,#new_careers.careers-categories .categories-holder .categories-holder-inner-wrap .occupations-card-wrapper .occupations-card-top.hidden {
+.occupations-card-wrapper .occupations-card-top.hidden {
     opacity: 0
 }
 
-#new_careers.careers-categories .categories-holder .categories-holder-inner-wrap .occupations-card-wrapper .occupations-card-top {
+.occupations-card-wrapper .occupations-card-top {
     background-size: cover!important;
     border-radius: 12px
 }
 
 @media(max-width: 1525px) {
-    #new_careers.careers-categories .categories-holder .categories-holder-inner-wrap .occupations-card-wrapper .occupations-card-top {
+    .occupations-card-wrapper .occupations-card-top {
         height:266px
     }
 }
 
-#new_careers.careers-categories .categories-holder .categories-holder-inner-wrap .occupations-card-wrapper .occupations-card-top .occupations-card-top-outer-wrap {
+.occupations-card-wrapper .occupations-card-top .occupations-card-top-outer-wrap {
     display: table;
     height: 256px;
     overflow: hidden;
@@ -120,12 +120,12 @@
 }
 
 @media(max-width: 1525px) {
-    #new_careers.careers-categories .categories-holder .categories-holder-inner-wrap .occupations-card-wrapper .occupations-card-top .occupations-card-top-outer-wrap {
+    .occupations-card-wrapper .occupations-card-top .occupations-card-top-outer-wrap {
         height:266px
     }
 }
 
-#new_careers.careers-categories .categories-holder .categories-holder-inner-wrap .occupations-card-wrapper .occupations-card-top .occupations-card-top-outer-wrap .occupations-card-top-inner-wrap {
+.occupations-card-wrapper .occupations-card-top .occupations-card-top-outer-wrap .occupations-card-top-inner-wrap {
     color: hsla(0,0%,100%,.91);
     display: table-cell;
     font-family: Roboto,sans-serif;
@@ -140,7 +140,7 @@
     width: 100%
 }
 
-#new_careers.careers-categories .categories-holder .categories-holder-inner-wrap .occupations-card-wrapper .occ-card-base {
+.occupations-card-wrapper .occ-card-base {
     background: #fff 0 0 no-repeat padding-box;
     border-radius: 12px;
     height: 256px;
@@ -150,13 +150,13 @@
 }
 
 @media(max-width: 1525px) {
-    #new_careers.careers-categories .categories-holder .categories-holder-inner-wrap .occupations-card-wrapper .occ-card-base {
+    .occupations-card-wrapper .occ-card-base {
         height:266px;
         top: -266px
     }
 }
 
-#new_careers.careers-categories .categories-holder .categories-holder-inner-wrap .occupations-card-wrapper .occ-card-base span.card-bottom-heading {
+.occupations-card-wrapper .occ-card-base span.card-bottom-heading {
     color: #465159;
     display: block;
     font-family: Roboto,sans-serif;
@@ -170,7 +170,7 @@
 }
 
 @media(max-width: 1525px) {
-    #new_careers.careers-categories .categories-holder .categories-holder-inner-wrap .occupations-card-wrapper .occ-card-base span.card-bottom-heading {
+    .occupations-card-wrapper .occ-card-base span.card-bottom-heading {
         color:#465159;
         font-family: Roboto,sans-serif;
         font-size: 20px;
@@ -181,7 +181,7 @@
     }
 }
 
-#new_careers.careers-categories .categories-holder .categories-holder-inner-wrap .occupations-card-wrapper .occ-card-base p {
+.occupations-card-wrapper .occ-card-base p {
     color: #5d676e;
     font-family: Roboto,sans-serif;
     font-size: 14px;
@@ -191,7 +191,7 @@
     line-height: 21px
 }
 
-#new_careers.careers-categories .categories-holder .categories-holder-inner-wrap .occupations-card-wrapper .occ-card-base .occ-card-base-el {
+.occupations-card-wrapper .occ-card-base .occ-card-base-el {
     color: #0094c9;
     font-family: Roboto,sans-serif;
     font-size: 16px;
@@ -200,14 +200,14 @@
     line-height: 23px
 }
 
-#new_careers.careers-categories .categories-holder .categories-holder-inner-wrap .occupations-card-wrapper .occ-card-base .occ-card-base-el span.icon-filter_down.arrow-icon:before {
+.occupations-card-wrapper .occ-card-base .occ-card-base-el span.icon-filter_down.arrow-icon:before {
     color: #0094c9!important;
     display: inline-block;
     transform: rotate(270deg)
 }
 
 @media(max-width: 480px) {
-    #new_careers.careers-categories .categories-holder .categories-holder-inner-wrap .occupations-card-wrapper {
+    .occupations-card-wrapper {
         width:auto
     }
 }

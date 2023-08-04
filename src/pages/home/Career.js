@@ -1,7 +1,7 @@
-const Career = () => {
-    return (
-        "Career"
-    );
-}
+import React from 'react'
 
-export default Career;
+export const Career = () => {
+    return (
+        <div>Career</div>
+    )
+}

@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 import { useCalls } from '../../providers/Calls';
 import Footer from '../components/Footer/Footer';
 import Navigation from '../components/Navigation/Navigation';
+import Top from './parts/Top';
+import '../../css/occupations--categories.css';
 
 const CareerCategories = () => {
     let { category_id } = useParams();
@@ -26,29 +28,43 @@ const CareerCategories = () => {
             <Navigation />
 
             <main style={{ minHeight: '40vh' }}>
-                <section>
-                    <div className='row justify-content-center'>
-                        <div className='col-md-6'>
-                            <div className='card m-3'>
-                                <div className='card-header' style={{ textTransform: 'uppercase' }}>
-                                    {category_id}
-                                </div>
-                                <div className='card-body'>
-                                    <ol>
-                                        {calls.careerCategory.length === 0 ? null : (
-                                            <>
-                                                {calls.careerCategory.map((each) => (
-                                                    <li key={each.id} style={{ listStyle: 'korean-hangul-formal' }}>
-                                                        <Link to={`/careers/${category_id}/${each.career_ref}`}>
-                                                            {each.career_name}
-                                                        </Link>
-                                                    </li>
-                                                ))}
-                                            </>
-                                        )}
-                                    </ol>
-                                </div>
-                            </div>
+                <Top title={category_id} />
+                <section className='container row'>
+                    <div className='col-md-12'>
+                        <div className='card-body row'>
+                            <ol>
+                                {calls.careerCategory.length === 0 ? null : (
+                                    <>
+                                        {calls.careerCategory.map((category) => (
+                                            <div className='col-sm-5 col-md-4'>
+                                                <div class="occupations-card-wrapper">
+                                                    <Link to={`/careers/${category.career_category_id}`}>
+                                                        <div
+                                                            class="occupations-card-top"
+                                                            style={{ background: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${category.image_url})` }}
+                                                        >
+                                                            <div class="occupations-card-top-outer-wrap">
+                                                                <div class="occupations-card-top-inner-wrap">{category.career_name} </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="occ-card-base hidden">
+                                                            <span class="card-bottom-heading">{category.career_name}</span>
+                                                            <p>{category.career_description}...</p>
+                                                            <div class="row occ-card-base-el">
+                                                                <div class="col-xs-6 text-left"> {category.career_name}
+                                                                    <span class="material-symbols-outlined">
+                                                                        arrow_right_alt
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                        ))}
+                                    </>
+                                )}
+                            </ol>
                         </div>
                     </div>
                 </section>
