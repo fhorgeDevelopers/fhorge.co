@@ -150,7 +150,6 @@
 }
 button{
     background:#002347 ;
-    border: 1px solid #fd7702;
     border-radius: 8px;
     color: #fff;
     display: inline-block;
@@ -163,7 +162,6 @@ button{
     
 }
 button:hover{
-    background: #fd7702;
     transform: translateY(-1px);
     box-shadow:0 10px 20px rgba(0,0,0,0.2)
 }
