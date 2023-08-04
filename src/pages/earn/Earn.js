@@ -49,7 +49,7 @@ export default function Earn() {
                     </div>
                 </div>
                 <Empower />
-                <Empower2 />
+                <Empower2 mode={mode} />
                 <Goal mode={mode} Hobbbies={hobbies} />
                 <Lastpart />
             </main>
@@ -134,10 +134,10 @@ function Empower() {
 
     )
 }
-function Empower2() {
+function Empower2({mode}) {
     return (
         <div className="Emp">
-            <div className="container">
+            <div className={`${mode.myMode === 'light' ? 'darkNav' : ''} container`}>
                 <div className="left">
                     <div className='col-md-6 col-sm-12 col-xs-12'>
                         <img src={login} />
