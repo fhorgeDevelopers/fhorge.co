@@ -136,7 +136,7 @@ function Empower() {
 }
 function Empower2({mode}) {
     return (
-        <div className={`${mode.myMode === 'light' ? 'darkNav' : ''} Emp`}>
+        <div className={`${mode.myMode === 'light' ? 'darkNav' : 'lightNav'} Emp`}>
             <div className="container">
                 <div className="left">
                     <div className='col-md-6 col-sm-12 col-xs-12'>

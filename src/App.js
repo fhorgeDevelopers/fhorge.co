@@ -21,6 +21,7 @@ const App = () => {
   const EmpowerUs = React.lazy(() => import('./pages/about/EmpowerUs'));
   const Programmes = React.lazy(() => import('./pages/about/Programmes'));
   const Publishers = React.lazy(() => import('./pages/about/Publishers'));
+  const Search = React.lazy(() => import('./pages/search/Search'));
   return (
     <>
       <Hook>
@@ -86,7 +87,7 @@ const App = () => {
                 path='/courses/query/:search_text'
                 element={
                   <Suspense fallback={<Preloader />}>
-                    <Home />
+                    <Search />
                   </Suspense>
                 }
               />
