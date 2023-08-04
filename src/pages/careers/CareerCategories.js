@@ -38,7 +38,7 @@ const CareerCategories = () => {
                                         {calls.careerCategory.map((category) => (
                                             <div className='col-sm-5 col-md-4'>
                                                 <div class="occupations-card-wrapper">
-                                                    <Link to={`/careers/${category.career_category_id}`}>
+                                                    <Link to={`/careers/${category.career_category_id}/${category.career_ref}`}>
                                                         <div
                                                             class="occupations-card-top"
                                                             style={{ background: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${category.image_url})` }}
