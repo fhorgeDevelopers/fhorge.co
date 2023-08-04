@@ -60,7 +60,7 @@ const NotFound = () => {
                                 {calls.careerCategories.length === 0 ? null : (
                                     <>
                                         {calls.careerCategories.map((category) => (
-                                            <Link class={`${(mode.myMode === 'dark' ? style.darkBox : style.lightBox)} ${style.media} media p-3 m-2 b-2`} key={category.id} style={{ width: 'fit-content' }}>
+                                            <Link to={`/careers/${category.career_category_id}`} class={`${(mode.myMode === 'dark' ? style.darkBox : style.lightBox)} ${style.media} media p-3 m-2 b-2`} key={category.id} style={{ width: 'fit-content' }}>
                                                 <img src={category.image_url} class="align-self-center mr-2" style={{ width: '75px' }} />
                                                 <div class="media-body align-self-center">
                                                     <h6>{category.career_category}</h6>
