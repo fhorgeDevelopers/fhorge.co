@@ -312,7 +312,8 @@ h2 {
 }
 
 .tab-nav li a:hover {
-    color: #fd7702
+    color: #fd7702;
+    text-decoration: none !important;
 }
 
 .tab-nav .tab-nav__cta--active a {
