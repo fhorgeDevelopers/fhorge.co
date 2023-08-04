@@ -1,11 +1,12 @@
 import React from 'react'
 import Footer from '../components/Footer/Footer'
 import Navigation from '../components/Navigation/Navigation'
-import Switch from './Switch'
 import "../../css/homepage.css";
 import "../../css/homepage-lower.css";
 import Intro from './landing-page/Intro';
 import Categories from './landing-page/Categories';
+import Goals from './landing-page/Goals';
+import Courses from './landing-page/Courses';
 
 const Home = () => {
   return (
