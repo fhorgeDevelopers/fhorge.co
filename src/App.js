@@ -21,7 +21,7 @@ const App = () => {
   const EmpowerUs = React.lazy(() => import('./pages/about/EmpowerUs'));
   const Programmes = React.lazy(() => import('./pages/about/Programmes'));
   const Publishers = React.lazy(() => import('./pages/about/Publishers'));
-  const Search = React.lazy(() => import('./pages/search/Search'));
+  const Search = React.lazy(() => import('./pages/search/search'));
   return (
     <>
       <Hook>
@@ -134,7 +134,6 @@ const App = () => {
                   </Suspense>
                 }
               />
-
 
               {/* about routes start  */}
 

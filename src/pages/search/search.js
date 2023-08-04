@@ -8,7 +8,7 @@ import "./index.css"
 
 
 
-export default function Search() {
+export default function search() {
   return (
     <>
       <Navigation />
@@ -111,3 +111,4 @@ function Cards() {
     </div>
   )
 }
+
