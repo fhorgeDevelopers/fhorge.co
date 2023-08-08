@@ -3,10 +3,7 @@ import Footer from '../components/Footer/Footer';
 import Navigation from '../components/Navigation/Navigation';
 import pic1 from "./img/p8.jpeg"
 import pic2 from "./img/post3.jpeg"
-
-import "./index.css"
-
-
+import "./index.css";
 
 export default function search() {
   return (

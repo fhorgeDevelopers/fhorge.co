@@ -90,6 +90,10 @@ const Navigation = () => {
         }
     }
 
+    const showLoginForm =(form) => {
+        
+    }
+
     useEffect(() => {
         setShowLoader(true)
         setTimeout(() => {
@@ -302,7 +306,7 @@ const Navigation = () => {
                                         search
                                     </span>
                                 </span> */}
-                                <button to={'/sign-in'} className={`${((mode.myMode === 'light') ? "textDark" : "textLight")}  ${location.pathname === '/sign-in' ? 'active' : ''} menuLink d-flex navBtn`} style={{ marginRight: '10px' }}>
+                                <button onClick={showLoginForm('login')} className={`${((mode.myMode === 'light') ? "textDark" : "textLight")}  ${location.pathname === '/sign-in' ? 'active' : ''} menuLink d-flex navBtn`} style={{ marginRight: '10px' }}>
                                     <span className={`${((mode.myMode === 'light') ? "textDark" : "textLight")} m-0`}>
                                         Sign in
                                     </span>
