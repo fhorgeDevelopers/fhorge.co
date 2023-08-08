@@ -9,7 +9,7 @@ const Categories = () => {
         <div class="categories">
             <div class="categories__bg"></div>
             <div class="inner">
-                <h2>Explore our limitless free online courses</h2>
+                <h2>Explore <span class="fix-comma">4000</span>+ Free <span class="hide-on-mobile">Online</span> Courses</h2>
                 <ul>
                     {calls.courseCategories.length === 0 ? null : (
                         <>

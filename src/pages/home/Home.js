@@ -5,6 +5,14 @@ import "../../css/homepage.css";
 import "../../css/homepage-lower.css";
 import Intro from './landing-page/Intro';
 import Categories from './landing-page/Categories';
+import Goals from "./landing-page/Goals";
+import Courses from "./landing-page/Courses";
+import Publishers from "./landing-page/Publishers";
+import Careerss from "./landing-page/Careerss";
+import Test from "./landing-page/Testimonial";
+import Testimonial from "./landing-page/Testimonial";
+import Upskill from "./landing-page/Upskill";
+import App from "./landing-page/App";
 
 const Home = () => {
   return (
@@ -13,10 +21,18 @@ const Home = () => {
       <main style={{ minHeight: '40vh' }}>
         <Intro />
         <Categories />
+        <Goals />
+        <Courses />
+         <Publishers />
+         <Careerss />              
+         <Test />
+         <Testimonial />
+         <Upskill />
+         <App />
       </main>
       <Footer />
     </>
   )
 }
 
-export default Home
+export default Home;
