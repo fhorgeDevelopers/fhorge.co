@@ -37,22 +37,22 @@ const CareerCategories = () => {
                                     <>
                                         {calls.careerCategory.map((category) => (
                                             <div className='col-sm-5 col-md-4'>
-                                                <div class="occupations-card-wrapper">
+                                                <div className="occupations-card-wrapper">
                                                     <Link to={`/careers/${category.career_category_id}/${category.career_ref}`}>
                                                         <div
-                                                            class="occupations-card-top"
+                                                            className="occupations-card-top"
                                                             style={{ background: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${category.image_url})` }}
                                                         >
-                                                            <div class="occupations-card-top-outer-wrap">
-                                                                <div class="occupations-card-top-inner-wrap">{category.career_name} </div>
+                                                            <div className="occupations-card-top-outer-wrap">
+                                                                <div className="occupations-card-top-inner-wrap">{category.career_name} </div>
                                                             </div>
                                                         </div>
-                                                        <div class="occ-card-base hidden">
-                                                            <span class="card-bottom-heading">{category.career_name}</span>
+                                                        <div className="occ-card-base hidden">
+                                                            <span className="card-bottom-heading">{category.career_name}</span>
                                                             <p>{category.career_description}...</p>
-                                                            <div class="row occ-card-base-el">
-                                                                <div class="col-xs-6 text-left"> {category.career_name}
-                                                                    <span class="material-symbols-outlined">
+                                                            <div className="row occ-card-base-el">
+                                                                <div className="col-xs-6 text-left"> {category.career_name}
+                                                                    <span className="material-symbols-outlined">
                                                                         arrow_right_alt
                                                                     </span>
                                                                 </div>

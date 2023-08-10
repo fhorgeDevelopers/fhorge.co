@@ -25,7 +25,7 @@ const AllCareers = () => {
                             <div className={`d-inline-flex ${Style.searchBox}`}>
                                 <input type={'text'} name={'careerSearch'} className={`${Style.searchInput}`} placeholder="Search for the career of your dreams" />
                                 <button className={`${Style.searchButton} p-2`} type="button">
-                                    <span class="material-symbols-outlined">
+                                    <span className="material-symbols-outlined">
                                         search
                                     </span>
                                 </button>
@@ -38,23 +38,23 @@ const AllCareers = () => {
                                 <>
                                     {calls.careerCategories.map((category) => (
                                         <div className='col-sm-5 col-md-4'>
-                                            <div class="occupations-card-wrapper">
+                                            <div className="occupations-card-wrapper">
                                                 <Link to={`/careers/${category.career_category_id}`}>
                                                     <div
-                                                        class="occupations-card-top"
+                                                        className="occupations-card-top"
                                                         style={{ background: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${category.image_url})` }}
                                                     >
-                                                        <div class="occupations-card-top-outer-wrap">
-                                                            <div class="occupations-card-top-inner-wrap">{category.image_url} </div>
+                                                        <div className="occupations-card-top-outer-wrap">
+                                                            <div className="occupations-card-top-inner-wrap">{category.image_url} </div>
                                                         </div>
                                                     </div>
-                                                    <div class="occ-card-base hidden">
-                                                        <span class="card-bottom-heading">{category.career_category}</span>
+                                                    <div className="occ-card-base hidden">
+                                                        <span className="card-bottom-heading">{category.career_category}</span>
                                                         <p>{category.career_description}...</p>
-                                                        <div class="row occ-card-base-el">
-                                                            <div class="col-xs-6 text-left"> View Careers </div>
-                                                            <div class="col-xs-6 text-right">
-                                                                <span class="icon-filter_down arrow-icon"></span>
+                                                        <div className="row occ-card-base-el">
+                                                            <div className="col-xs-6 text-left"> View Careers </div>
+                                                            <div className="col-xs-6 text-right">
+                                                                <span className="icon-filter_down arrow-icon"></span>
                                                             </div>
                                                         </div>
                                                     </div>

@@ -41,8 +41,8 @@ export default function Earn() {
         <>
             <Navigation />
             <main style={{ minHeight: '40vh' }}>
-                <div class="intro">
-                    <div class="inner">
+                <div className="intro">
+                    <div className="inner">
                         <Switch />
                         <Header />
                         <Cards />
@@ -61,11 +61,11 @@ export default function Earn() {
 function Cards() {
     return (
         <div className='container'>
-            <div class="row">
-                <div class="col-md-4 col-sm-12 col-lg-4 col-xs-12">
-                    <div class="cards">
+            <div className="row">
+                <div className="col-md-4 col-sm-12 col-lg-4 col-xs-12">
+                    <div className="cards">
                         <img src={picc3} className="card-img-top" alt="..." />
-                        <div class="card-body" >
+                        <div className="card-body" >
                             <div className='bar'>
                                 <p className='text-left'> Ui/ Ux design</p>
                                 <span className='material-symbols-outlined text-right'>a
@@ -75,9 +75,9 @@ function Cards() {
                     </div>
                 </div>
                 <div className="col-md-4 col-sm-12 col-lg-4 col-xs-12">
-                    <div class="cards ">
-                        <img src={pic1} class="card-img-top" alt="..." />
-                        <div class="card-body">
+                    <div className="cards ">
+                        <img src={pic1} className="card-img-top" alt="..." />
+                        <div className="card-body">
                             <div className='bar'>
                                 <p className='text-left'> Afffilate Marketing</p>
                                 <span className='material-symbols-outlined text-right'>a
@@ -87,7 +87,7 @@ function Cards() {
                     </div>
                 </div>
                 <div className="col-md-4 col-sm-12 col-lg-4 col-xs-12">
-                    <div class="cards ">
+                    <div className="cards ">
                         <img src={pic2} className="card-img-top" alt="..." />
                         <div className="card-body">
                             <div className='bar'>

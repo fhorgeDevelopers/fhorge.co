@@ -139,7 +139,7 @@ const Navigation = () => {
                                 searchDB(e)
                             }}
                         >
-                            <span class="material-symbols-outlined" style={{ color: '#FD7702', }} >
+                            <span className="material-symbols-outlined" style={{ color: '#FD7702', }} >
                                 search
                             </span>
                         </button>
@@ -148,7 +148,7 @@ const Navigation = () => {
                             className={'closeSearch'}
                             onClick={() => toggleSearch()}
                         >
-                            <span class="material-symbols-outlined" style={{ color: 'red', }} >
+                            <span className="material-symbols-outlined" style={{ color: 'red', }} >
                                 x
                             </span>
                         </button>
@@ -162,7 +162,7 @@ const Navigation = () => {
                     </Link>
 
                     <span role="button" className={`${showMenu ? 'is-active' : ''} ${((mode.myMode === 'dark') ? "textLight" : "textDark")} navbar-burger`} style={{ position: 'absolute', right: '15px' }} aria-label="menu" aria-expanded="false" onClick={toogleMenu} data-target="navbarBasicExample">
-                        <span class="material-symbols-outlined p-3" >
+                        <span className="material-symbols-outlined p-3" >
                             {showMenu ? 'close' : 'menu'}
                         </span>
                     </span>
@@ -326,7 +326,7 @@ const Navigation = () => {
                                 >
                                     {(mode.myMode === 'light') ? (
                                         <>
-                                            <span class="material-symbols-outlined" style={{ color: '#FD7702', }} >
+                                            <span className="material-symbols-outlined" style={{ color: '#FD7702', }} >
                                                 star
                                             </span>
                                             <span
@@ -339,7 +339,7 @@ const Navigation = () => {
                                     ) : (
                                         <>
                                             <>
-                                                <span class="material-symbols-outlined" style={{ color: '#f2f2f2', }}>
+                                                <span className="material-symbols-outlined" style={{ color: '#f2f2f2', }}>
                                                     dark_mode
                                                 </span>
                                                 <span

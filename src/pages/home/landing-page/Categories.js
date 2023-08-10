@@ -6,10 +6,10 @@ const Categories = () => {
     const calls = useCalls();
 
     return (
-        <div class="categories">
-            <div class="categories__bg"></div>
-            <div class="inner">
-                <h2>Explore <span class="fix-comma">4000</span>+ Free <span class="hide-on-mobile">Online</span> Courses</h2>
+        <div className="categories">
+            <div className="categories__bg"></div>
+            <div className="inner">
+                <h2>Explore <span className="fix-comma">4000</span>+ Free <span className="hide-on-mobile">Online</span> Courses</h2>
                 <ul>
                     {calls.courseCategories.length === 0 ? null : (
                         <>
@@ -18,7 +18,7 @@ const Categories = () => {
                                     <Link to={`/courses/${category.course_category_id}`} title={category.course_category}>
                                         <img src={category.course_category_image} width="34" height="36" title={category.course_category} alt={`${category.course_category} Icon`} />
                                         <h4>{category.course_category}</h4>
-                                        <span class="course-amount">
+                                        <span className="course-amount">
                                             {category.course_count} Courses
                                             <img src="/imgs/homepage/trending_flat.svg" className="d-none d-md-inline" style={{ height: '19px', padding: '0', margin: '1px'}} />
                                         </span>
@@ -28,7 +28,7 @@ const Categories = () => {
                         </>
                     )}
                 </ul>
-                <div class="learning-counter" style={{ display: "none" }}><span class="bold users-here"></span> people are learning on Fhorge today </div>
+                <div className="learning-counter" style={{ display: "none" }}><span className="bold users-here"></span> people are learning on Fhorge today </div>
             </div>
         </div>
     );

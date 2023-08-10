@@ -1,12 +1,12 @@
 const Stats = () => {
     return (
-        <div class="stats">
-            <div class="stats__inner f-center">
-                <div class="stats__img f-center d-none">
+        <div className="stats">
+            <div className="stats__inner f-center">
+                <div className="stats__img f-center d-none">
                     <img width="367" height="24" srcset="/imgs/homepage/stats-trustpilot.png, /imgs/homepage/stats-trustpilot@2x.png 2x" src="/imgs/homepage/stats-trustpilot.png"
                         title="Rate us on Trustpilot" alt="Rating on Trustpilot" />
                 </div>
-                <ul class="stats__list f-center mt-3">
+                <ul className="stats__list f-center mt-3">
                     <li>
                         <img src="/imgs/homepage/learners.svg" width="20" height="19" title="30 Learners" alt="Learners" /><span>30 Million +</span> Learners </li>
                     <li>

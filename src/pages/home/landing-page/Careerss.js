@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 
 const Careerss = () =>{
    return(
-    <div class="careers skills-carousel-wrap">
-    <div class="inner">
+    <div className="careers skills-carousel-wrap">
+    <div className="inner">
         <h2>Advance Your Career.<br /> Learn In-demand Skills.</h2>
-        <p class="sub">Upskill in business analytics, health care, graphic design, management and more.</p>
-        <div class="carousel skills-carousel"></div><Link href="https://alison.com/tags">View More Skills <span class="icon-thick-arrow-right"></span></Link></div>
+        <p className="sub">Upskill in business analytics, health care, graphic design, management and more.</p>
+        <div className="carousel skills-carousel"></div><Link href="https://alison.com/tags">View More Skills <span className="icon-thick-arrow-right"></span></Link></div>
 </div>
 
    ) 
