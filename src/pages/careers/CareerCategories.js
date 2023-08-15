@@ -14,6 +14,7 @@ const CareerCategories = () => {
 
     useEffect(() => {
         calls.specificCareerCategory(category_id);
+        calls.getCareerCategory(category_id);
 
         return () => {
             return true;

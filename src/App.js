@@ -24,7 +24,7 @@ const App = () => {
   const Search = React.lazy(() => import('./pages/search/search'));
   return (
     <>
-      <Hook>
+      <Hook> 
         <Calls>
           <Mode>
             <Routes>

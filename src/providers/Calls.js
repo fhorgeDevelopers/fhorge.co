@@ -23,11 +23,22 @@ export const Calls = ({ children }) => {
 
     const getCareerCategories = async () => {
         try {
-            const res = await axios.get(`${hook.endpoint}/careers`);
+            const res = await axios.get(`${hook.endpoint}/career_categories`);
             setCareerCategories(res.data.response)
         } catch (error) {
             // Handle errors
             setCareerCategories([])
+        }
+    }
+
+    const getCareerCategory = async (category) => {
+        setCareerCategory([])
+        try {
+            const res = await axios.get(`${hook.endpoint}/career/${category}`);
+            setCareerCategory(res.data)
+        } catch (error) {
+            // Handle errors
+            setCareerCategory([])
         }
     }
 
@@ -59,7 +70,7 @@ export const Calls = ({ children }) => {
         getCourseCategories();
     }, [])
     return (
-        <CallsContext.Provider value={{ courseCategories, careerCategories, specificCareerCategory, careerCategory, getCareerDetail, careerDetail }}>
+        <CallsContext.Provider value={{ courseCategories, careerCategories, specificCareerCategory, careerCategory, getCareerDetail, careerDetail, getCareerCategory }}>
             {children}
         </CallsContext.Provider>
     )
