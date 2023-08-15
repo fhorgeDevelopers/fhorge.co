@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useMode } from '../../../providers/Mode';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import { useCalls } from '../../../providers/Calls';
 import Preloader from '../../../Preloader';
@@ -11,6 +11,7 @@ const Navigation = () => {
     const mode = useMode();
     const [showMenu, setShowMenu] = useState(false);
     const location = useLocation();
+    const navigate = useNavigate();
     const [showSubjectMenu, setShowSubjectMenu] = useState(false);
     const [showCourseMenu, setShowCourseMenu] = useState(false);
     const [seeSearch, setSeeSearch] = useState(false);
@@ -48,6 +49,13 @@ const Navigation = () => {
         setSelected(auth)
         body.style.overflow = "hidden"
         overlay.style.display = 'block'
+    }
+
+    const closeAuth = () => {
+        setSeeAuth(false)
+        setSelected("")
+        body.style.overflow = ""
+        overlay.style.display = 'none'
     }
 
     const toggleSubjectMenu = () => {
@@ -103,6 +111,26 @@ const Navigation = () => {
     const showLoginForm = (form) => {
 
     }
+
+    const tutorNav = () => {
+        if (selected === "register") {
+            var link = 'https://tutor-fhorge.netlify.app/info'
+        } else {
+            var link = 'https://tutor-fhorge.netlify.app/' + selected
+        }
+        window.open(link, '_blank')
+    }
+
+    const studentNav = () => {
+        let link = 'https://learn-fhorge.netlify.app/' + selected
+        window.open(link, '_blank')
+    }
+
+    const employNav = () => {
+        let link = 'https://hr-fhorge.netlify.app/' + selected
+        window.open(link, '_blank')
+    }
+
 
     useEffect(() => {
         setShowLoader(true)
@@ -322,7 +350,7 @@ const Navigation = () => {
                                     </span>
                                 </button>
                                 <button to={'/sign-up'} className={`${((mode.myMode === 'light') ? "textDark" : "textLight")} ${location.pathname === '/sign-in' ? 'active' : ''} menuLink d-flex navBtn`} style={{ background: '#198754!important' }}>
-                                    <span className={`${((mode.myMode === 'light') ? "textDark" : "textLight")} m-0`} onClick={() => toogleAuth('logout')}>
+                                    <span className={`${((mode.myMode === 'light') ? "textDark" : "textLight")} m-0`} onClick={() => toogleAuth('register')}>
                                         Sign up
                                     </span>
                                 </button>
@@ -387,12 +415,15 @@ const Navigation = () => {
                         <li className={`${selected === 'login' ? `${Style.selected}` : null}`} onClick={() => setSelected('login')}>
                             SIGN IN
                         </li>
-                        <li className={`${selected === 'logout' ? `${Style.selected}` : null}`} onClick={() => setSelected('logout')}>
+                        <li className={`${selected === 'register' ? `${Style.selected}` : null}`} onClick={() => setSelected('register')}>
                             SIGN OUT
                         </li>
                     </ul>
                 </div>
                 <div className={Style.loginRight}>
+                    <div className={Style.closeAuth} onClick={() => closeAuth()}>
+                        X
+                    </div>
                     <h4 className='text-center card-title mb-3'>
                         {selected === 'login' ? (
                             <>
@@ -403,17 +434,15 @@ const Navigation = () => {
                                 SIGN UP FOR FREE
                             </>
                         )}
-
-
                     </h4>
                     <ul className={`${Style.loginModalList}`}>
-                        <li className='btn btn-primary'>
+                        <li className='btn btn-primary' onClick={() => studentNav()}>
                             LEARNER
                         </li> <br />
-                        <li className='btn btn-primary'>
+                        <li className='btn btn-primary' onClick={() => tutorNav()}>
                             TUTOR
                         </li> <br />
-                        <li className='btn btn-primary'>
+                        <li className='btn btn-primary' onClick={() => employNav()}>
                             EMPLOYER
                         </li>
                     </ul>

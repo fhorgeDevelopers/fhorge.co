@@ -5,7 +5,7 @@ import { useMode } from '../../providers/Mode';
 import pic1 from "./img/1.png";
 import pic2 from "./img/2.png";
 import picc3 from "./img/3.png"
-import login from "./img/login.png";
+import login from "./img/share.jpeg";
 import tobi from './img/tobi.png'
 import "../../css/homepage-lower.css";
 import Navigation from '../components/Navigation/Navigation';
