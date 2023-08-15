@@ -4,6 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import { useCalls } from '../../../providers/Calls';
 import Preloader from '../../../Preloader';
+import Style from './Navigation.module.css'
 
 const Navigation = () => {
     const calls = useCalls();
@@ -18,6 +19,8 @@ const Navigation = () => {
     const [showLoader, setShowLoader] = useState(true)
     const overlay = document.getElementById('overlay');
     const body = document.getElementsByTagName("body")[0];
+    const [selected, setSelected] = useState('');
+    const [seeAuth, setSeeAuth] = useState(false);
 
     const toggleSearch = () => {
         if (seeSearch) {
@@ -38,6 +41,13 @@ const Navigation = () => {
             setShowMenu(true);
             body.style.overflow = "hidden"
         }
+    }
+
+    const toogleAuth = (auth) => {
+        setSeeAuth(true)
+        setSelected(auth)
+        body.style.overflow = "hidden"
+        overlay.style.display = 'block'
     }
 
     const toggleSubjectMenu = () => {
@@ -90,8 +100,8 @@ const Navigation = () => {
         }
     }
 
-    const showLoginForm =(form) => {
-        
+    const showLoginForm = (form) => {
+
     }
 
     useEffect(() => {
@@ -99,7 +109,7 @@ const Navigation = () => {
         setTimeout(() => {
             setShowLoader(false)
         }, 1000);
-    }, [location])
+    }, [location]);
 
     useEffect(() => {
         displayWindowSize();
@@ -114,7 +124,7 @@ const Navigation = () => {
         document.getElementsByTagName("body")[0].style.overflow = "";
 
         window.addEventListener("resize", displayWindowSize);
-    }, [location.pathname])
+    }, [location.pathname]);
 
     return (
         <>
@@ -307,12 +317,12 @@ const Navigation = () => {
                                     </span>
                                 </span> */}
                                 <button onClick={showLoginForm('login')} className={`${((mode.myMode === 'light') ? "textDark" : "textLight")}  ${location.pathname === '/sign-in' ? 'active' : ''} menuLink d-flex navBtn`} style={{ marginRight: '10px' }}>
-                                    <span className={`${((mode.myMode === 'light') ? "textDark" : "textLight")} m-0`}>
+                                    <span className={`${((mode.myMode === 'light') ? "textDark" : "textLight")} m-0`} onClick={() => toogleAuth('login')} >
                                         Sign in
                                     </span>
                                 </button>
                                 <button to={'/sign-up'} className={`${((mode.myMode === 'light') ? "textDark" : "textLight")} ${location.pathname === '/sign-in' ? 'active' : ''} menuLink d-flex navBtn`} style={{ background: '#198754!important' }}>
-                                    <span className={`${((mode.myMode === 'light') ? "textDark" : "textLight")} m-0`}>
+                                    <span className={`${((mode.myMode === 'light') ? "textDark" : "textLight")} m-0`} onClick={() => toogleAuth('logout')}>
                                         Sign up
                                     </span>
                                 </button>
@@ -359,15 +369,58 @@ const Navigation = () => {
             </nav>
             <div
                 id="overlay"
-                style={{ display: 'none' }}
+                // style={{ display: 'none' }}
                 className={`overlay ${showMenu ? 'sm' : null}`}
                 onClick={() => {
                     setShowSubjectMenu(false)
                     setShowCourseMenu(false)
+                    setSeeAuth(false)
+                    setSelected('');
                     overlay.style.display = 'none'
                     body.style.overflow = ""
                 }}
             ></div>
+
+            <div className={`${seeAuth ? "d-flex" : "d-none"} ${((mode.myMode === 'dark') ? "darkNav" : "lightNav")} ${Style.loginModal}`}>
+                <div className={` ${Style.loginLeft}`}>
+                    <ul className={`${Style.loginModalList}`}>
+                        <li className={`${selected === 'login' ? `${Style.selected}` : null}`} onClick={() => setSelected('login')}>
+                            SIGN IN
+                        </li>
+                        <li className={`${selected === 'logout' ? `${Style.selected}` : null}`} onClick={() => setSelected('logout')}>
+                            SIGN OUT
+                        </li>
+                    </ul>
+                </div>
+                <div className={Style.loginRight}>
+                    <h4 className='text-center card-title mb-3'>
+                        {selected === 'login' ? (
+                            <>
+                                PLEASE CONTINUE TO SIGN IN
+                            </>
+                        ) : (
+                            <>
+                                SIGN UP FOR FREE
+                            </>
+                        )}
+
+
+                    </h4>
+                    <ul className={`${Style.loginModalList}`}>
+                        <li className='btn btn-primary'>
+                            LEARNER
+                        </li> <br />
+                        <li className='btn btn-primary'>
+                            TUTOR
+                        </li> <br />
+                        <li className='btn btn-primary'>
+                            EMPLOYER
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
             {showLoader ? <Preloader /> : null}
         </>
     )

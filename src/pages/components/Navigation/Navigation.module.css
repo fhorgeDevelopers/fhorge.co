@@ -1,0 +1,132 @@
+.loginModal {
+    position: fixed;
+    top: 75px;
+    z-index: 1000;
+    width: 600px;
+    min-height: 300px;
+    background-color: white;
+    padding: 0px;
+    left: calc(50vw - 300px);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* background-image: url('./flowers.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ; */
+}
+
+/* .loginModal:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    z-index: inherit;
+    background-image: url('./flowers.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+  } */
+
+/* .loginModal {
+    position: fixed;
+    top: 75px;
+    z-index: 1000;
+    width: 250px;
+    height: fit-content;
+    background-color: white;
+    padding: 0px;
+    left: calc(50vw - 125px);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+} */
+
+
+.loginModalList {
+    margin: 0;
+    padding: 0;
+}
+
+.loginModalList>li {
+    padding: 10px;
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+.loginModalList>li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.loginLeft {
+    width: 200px;
+    height: fit-content;
+    text-align: center;
+    padding: 10px;
+}
+
+.loginLeft>.loginModalList>li {
+    border-radius: 25px;
+}
+
+.loginLeft>.loginModalList>li.selected {
+    box-shadow: 2px 2px orangered;
+}
+
+.loginLeft>.loginModalList>.selected {
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bolder;
+    box-shadow: 2px 2px orangered;
+}
+
+.loginLeft>.loginModalList>li:hover {
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bolder;
+    box-shadow: 2px 2px orangered;
+}
+
+.selected {
+    box-shadow: 2px 2px orangered;
+}
+
+.loginRight {
+    width: 400px;
+    min-height: 200px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .loginModal {
+        position: fixed;
+        top: 75px;
+        z-index: 2000;
+        width: 100vw;
+        right: 0;
+        left: 0;
+        display: block;
+    }
+
+    .loginLeft {
+        width: 100%;
+        height: fit-content;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .loginRight {
+        width: 100%;
+        min-height: 200px;
+        text-align: center;
+    }
+}
