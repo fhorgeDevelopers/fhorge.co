@@ -1,0 +1,12 @@
+@media only screen and (max-width: 769px) {
+    .careerTop {
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0 !important;
+    }
+
+    .careerTop>img {
+        width: 100% !important;
+        margin: 0 !important;
+    }
+}

@@ -1,3 +1,17 @@
+.darkNav {
+    background-color: #C76500;
+    color: #002347;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.lightNav {
+    background-color: #ffffff;
+    color: #002347;
+    border-radius: 10px;
+    padding: 5px;
+}
+
 .lightDesign {
     width: 100%;
     background-color: aquamarine;
@@ -9,4 +23,14 @@
 
 .lightDesign.active {
     background-color: aqua;
+}
+
+.darkDesign {
+    /* background-color: #472700; */
+    background-color: #C76500;
+    width: 100%;
+    margin: 4px;
+    border-radius: 5px;
+    color: #fff;
+    padding: 5px;
 }

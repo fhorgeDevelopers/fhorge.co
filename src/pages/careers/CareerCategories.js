@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet';
 import { useParams } from 'react-router'
 import { Link } from 'react-router-dom';
@@ -10,11 +10,16 @@ import '../../css/occupations--categories.css';
 import DummyCatTop from './parts/DummyCatTop';
 import CatTop from './parts/CatTop';
 import { useMode } from '../../providers/Mode';
+import Style from './parts/cattop.module.css'
+import './career.css'
+
 
 const CareerCategories = () => {
-    let { category_id } = useParams();
+    const { category_id } = useParams();
     const calls = useCalls();
     const mode = useMode();
+    const color = mode.myMode;
+    const thisCategory = category_id;
 
     const goNow = () => {
         calls.careerCategoryDetails(category_id);
@@ -64,8 +69,8 @@ const CareerCategories = () => {
                     )}
                 </section>
 
-                <section className='container row'>
-                    <div className='col-md-12'>
+                <section className='container-fluid row m-0'>
+                    <div className='col-md-9'>
                         <div className='card-body row'>
                             <ol>
                                 {calls.careerCategory.length === 0 ? null : (
@@ -101,6 +106,31 @@ const CareerCategories = () => {
                                 )}
                             </ol>
                         </div>
+                    </div>
+
+                    <div className={`${color === "dark" ? "darkNav" : "lightNav"} p-2  col-md-3 text-center`}>
+                        <h5 className='m-3 p-3 mb-0 pb-1 mt-0 pt-0'>
+                            OUR CATEGORIES
+                        </h5>
+                        {calls.careerCategories.length === 0 ? "" : (
+                            <>
+                                <ul className='m-0 p-0'>
+                                    {calls.careerCategories.map((all_category) => (
+                                        <>
+                                            <li
+                                                className={`
+                                                ${(color === "light") ? `${Style.lightDesign}` : `${Style.darkDesign}`} 
+                                                ${(all_category.career_category_id === thisCategory) ? `${Style.active}` : ``}
+                                            `}>
+                                                <p>
+                                                    {all_category.career_category} 
+                                                </p>
+                                            </li>
+                                        </>
+                                    ))}
+                                </ul>
+                            </>
+                        )}
                     </div>
                 </section>
             </main>
