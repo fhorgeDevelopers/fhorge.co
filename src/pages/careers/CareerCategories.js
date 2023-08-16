@@ -7,15 +7,22 @@ import Footer from '../components/Footer/Footer';
 import Navigation from '../components/Navigation/Navigation';
 import Top from './parts/Top';
 import '../../css/occupations--categories.css';
+import DummyCatTop from './parts/DummyCatTop';
+import CatTop from './parts/CatTop';
+import { useMode } from '../../providers/Mode';
 
 const CareerCategories = () => {
     let { category_id } = useParams();
     const calls = useCalls();
+    const mode = useMode();
+
+    const goNow = () => {
+        calls.careerCategoryDetails(category_id);
+        calls.getCareerCategory(category_id);
+    }
 
     useEffect(() => {
-        calls.specificCareerCategory(category_id);
-        calls.getCareerCategory(category_id);
-
+        goNow();
         return () => {
             return true;
         }
@@ -23,13 +30,40 @@ const CareerCategories = () => {
 
     return (
         <>
-            <Helmet>
-                <meta name="description" content={`${category_id}`} />
-            </Helmet>
+            {calls.categoryDetails.length === 0 ? (
+                <>
+                    <h1>
+                        <i>loading...</i>
+                    </h1>
+                </>
+            ) : (
+                <>
+                    <Helmet>
+                        <meta name="description" content={calls.categoryDetails.details[0].meta_description} />
+                        <meta name="keywords" content={calls.categoryDetails.details[0].meta_keywords} />
+                        <title>
+                            {calls.categoryDetails.details[0].meta_title}
+                        </title>
+                    </Helmet>
+                </>
+            )}
             <Navigation />
 
             <main style={{ minHeight: '40vh' }}>
-                <Top title={category_id} />
+                {/* <Top title={category_id} /> */}
+
+                <section>
+                    {calls.categoryDetails.length === 0 ? (
+                        <>
+                            <DummyCatTop />
+                        </>
+                    ) : (
+                        <>
+                            <CatTop category={calls.categoryDetails} color={mode.myMode} />
+                        </>
+                    )}
+                </section>
+
                 <section className='container row'>
                     <div className='col-md-12'>
                         <div className='card-body row'>

@@ -1,0 +1,12 @@
+.lightDesign {
+    width: 100%;
+    background-color: aquamarine;
+    margin: 4px;
+    border-radius: 5px;
+    color: black;
+    padding: 5px;
+}
+
+.lightDesign.active {
+    background-color: aqua;
+}
