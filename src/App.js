@@ -10,6 +10,7 @@ import EmpowerUs from './pages/about/EmpowerUs';
 import Earn from './pages/earn/Earn';
 const App = () => {
   const Home = React.lazy(() => import('./pages/home/Home'));
+  const HomeCareer = React.lazy(() => import('./pages/home/career/Career'));
   const ContactUs = React.lazy(() => import('./pages/contactUs/ContactUs'));
   const NotFound = React.lazy(() => import('./pages/notFound/NotFound'));
   const AllCareers = React.lazy(() => import('./pages/careers/AllCareers'));
@@ -42,7 +43,8 @@ const App = () => {
                 path='/build-your-career'
                 element={
                   <Suspense fallback={<Preloader />}>
-                    <Home />
+                    {/* <Home /> */}
+                    <HomeCareer />
                   </Suspense>
                 }
               />
