@@ -24,7 +24,7 @@ const Intro = () => {
                 </form>
                 <div className="intro__images">
                     <span className="p-2 mb-4">
-                        <img alt="img-1" className="lazyload w-100" src="https://cdn01.alison-static.net/public/html/site/img/homepage/banner-image.svg" />
+                        <img alt="img-1" className="lazyload w-100" src="https://firebasestorage.googleapis.com/v0/b/fhorgeimages.appspot.com/o/learn%2Fbanner-image.svg?alt=media&token=a97d4a84-8f52-4832-8117-50c532e00e2e" />
                     </span>
                 </div>
             </div>

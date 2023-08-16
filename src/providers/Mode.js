@@ -40,9 +40,9 @@ export const Mode = ({ children }) => {
     const changeIcon = () => {
         // let favicon = document.getElementById('favicon')
         if (mode === 'light') {
-            return "/icon.png";
+            return "https://firebasestorage.googleapis.com/v0/b/fhorgeimages.appspot.com/o/icon.png?alt=media&token=59707ce4-57b4-4f1b-9332-61adab055f28";
         } else {
-            return "/icon_dark.png";
+            return "https://firebasestorage.googleapis.com/v0/b/fhorgeimages.appspot.com/o/icon_dark.png?alt=media&token=d770ca64-f8a3-4e55-abcc-ce8de4bb8d6b";
         }
     }
 
