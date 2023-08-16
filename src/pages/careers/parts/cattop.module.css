@@ -13,6 +13,7 @@
 }
 
 .lightDesign {
+    display: block;
     width: 100%;
     background-color: aquamarine;
     margin: 4px;
@@ -27,10 +28,15 @@
 
 .darkDesign {
     /* background-color: #472700; */
+    display: block;
     background-color: #C76500;
     width: 100%;
     margin: 4px;
     border-radius: 5px;
     color: #fff;
     padding: 5px;
+}
+
+.darkDesign.active {
+    background-color: #472400;
 }
