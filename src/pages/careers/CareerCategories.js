@@ -78,16 +78,17 @@ const CareerCategories = () => {
                                     {calls.careerCategory.map((category) => (
                                         <div className='col-12 col-sm-5 col-md-4 mt-3' key={category.career_category_id}>
                                             <div className="occupations-card-wrapper w-100">
-                                                <Link to={`/careers/${category.career_category_id}/${category.career_ref}`}>
-                                                    <div
-                                                        className="occupations-card-top"
-                                                        style={{ background: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${category.image_url})` }}
-                                                    >
-                                                        <div className="occupations-card-top-outer-wrap">
-                                                            <div className="occupations-card-top-inner-wrap">{category.career_name} </div>
-                                                        </div>
+
+                                                <div
+                                                    className="occupations-card-top"
+                                                    style={{ background: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${category.career_image})` }}
+                                                >
+                                                    <div className="occupations-card-top-outer-wrap">
+                                                        <div className="occupations-card-top-inner-wrap">{category.career_name} </div>
                                                     </div>
-                                                    <div className="occ-card-base hidden">
+                                                </div>
+                                                <div className="occ-card-base hidden">
+                                                    <Link to={`/careers/${category.career_category_id}/${category.career_ref}`}>
                                                         <span className="card-bottom-heading">{category.career_name}</span>
                                                         <p>{category.career_description}...</p>
                                                         <div className="row occ-card-base-el">
@@ -97,8 +98,9 @@ const CareerCategories = () => {
                                                                 </span>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                </Link>
+                                                    </Link>
+
+                                                </div>
                                             </div>
                                         </div>
                                     ))}

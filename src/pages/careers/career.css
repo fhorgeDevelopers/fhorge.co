@@ -1,4 +1,10 @@
+.occ-card-base.hidden {
+    opacity: 0;
+}
 
+.occ-card-base.hidden:hover {
+    opacity: 1;
+}
 
 .occupations-card-wrapper {
     margin: 0 !important;
