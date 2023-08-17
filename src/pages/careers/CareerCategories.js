@@ -12,6 +12,7 @@ import CatTop from './parts/CatTop';
 import { useMode } from '../../providers/Mode';
 import Style from './parts/cattop.module.css'
 import './career.css'
+import CareerSearch from './parts/CareerSearch';
 
 
 const CareerCategories = () => {
@@ -56,26 +57,26 @@ const CareerCategories = () => {
 
             <main style={{ minHeight: '40vh' }}>
                 {/* <Top title={category_id} /> */}
+                {calls.categoryDetails.length === 0 ? (
+                    <>
+                        <DummyCatTop />
+                    </>
+                ) : (
+                    <>
+                        <CatTop category={calls.categoryDetails} color={mode.myMode} />
+                    </>
+                )}
 
-                <section>
-                    {calls.categoryDetails.length === 0 ? (
-                        <>
-                            <DummyCatTop />
-                        </>
-                    ) : (
-                        <>
-                            <CatTop category={calls.categoryDetails} color={mode.myMode} />
-                        </>
-                    )}
-                </section>
+
 
                 <section className='container-fluid row m-0'>
+                    <CareerSearch />
                     <div className='col-md-9'>
                         <div className='card-body row'>
                             {calls.careerCategory.length === 0 ? null : (
                                 <>
                                     {calls.careerCategory.map((category) => (
-                                        <div className='col-12 col-sm-5 col-md-4'>
+                                        <div className='col-12 col-sm-5 col-md-4 mt-3' key={category.career_category_id}>
                                             <div className="occupations-card-wrapper w-100">
                                                 <Link to={`/careers/${category.career_category_id}/${category.career_ref}`}>
                                                     <div
@@ -114,19 +115,17 @@ const CareerCategories = () => {
                             <>
                                 <ul className='m-0 p-0'>
                                     {calls.careerCategories.map((all_category) => (
-                                        <>
-                                            <Link
-                                                key={all_category.career_category_id}
-                                                to={`/careers/${all_category.career_category_id}`}
-                                                className={`
+                                        <Link
+                                            key={all_category.career_category_id}
+                                            to={`/careers/${all_category.career_category_id}`}
+                                            className={`
                                                 ${(color === "light") ? `${Style.lightDesign}` : `${Style.darkDesign}`} 
                                                 ${(all_category.career_category_id === thisCategory) ? `${Style.active}` : ``}
                                             `}>
-                                                <p>
-                                                    {all_category.career_category}
-                                                </p>
-                                            </Link>
-                                        </>
+                                            <p>
+                                                {all_category.career_category}
+                                            </p>
+                                        </Link>
                                     ))}
                                 </ul>
                             </>

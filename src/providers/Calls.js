@@ -11,6 +11,7 @@ export const Calls = ({ children }) => {
     const [careerCategory, setCareerCategory] = useState([]);
     const [careerDetail, setCareerDetail] = useState([]);
     const [categoryDetails, setCategoryDetails] = useState([]);
+    const [careerSearchResults, setCareerSearchResults] = useState([]);
 
     const getCourseCategories = async () => {
         try {
@@ -81,13 +82,24 @@ export const Calls = ({ children }) => {
         }
     }
 
+    const searchCareer = async (career) => {
+        setCareerSearchResults([]);
+        try {
+            const res = await axios.get(`${hook.endpoint}/search/career/${career}`);
+            setCareerSearchResults(res.data)
+        } catch (error) {
+            // Handle errors
+            setCareerSearchResults([])
+        }
+    }
+
 
     useEffect(() => {
         getCareerCategories();
         getCourseCategories();
     }, [])
     return (
-        <CallsContext.Provider value={{ courseCategories, careerCategories, categoryDetails, specificCareerCategory, careerCategory, getCareerDetail, careerDetail, getCareerCategory, careerCategoryDetails }}>
+        <CallsContext.Provider value={{ courseCategories, careerSearchResults, searchCareer, careerCategories, categoryDetails, specificCareerCategory, careerCategory, getCareerDetail, careerDetail, getCareerCategory, careerCategoryDetails }}>
             {children}
         </CallsContext.Provider>
     )

@@ -5,10 +5,10 @@ import Style from './cattop.module.css'
 const CatTop = ({ category, color }) => {
     const calls = useCalls();
     return (
-        <section className={`p-2 pt-0`}>
+        <section className={`p-0`}>
             <div className='row justify-content-start'>
-                <div className={`${color === "dark" ? `${Style.darkNav}` : `${Style.lightNav}`} d-flex p-3 col-md-12 text-center careerTop`}>
-                    <img src={category.details[0].header_image_url} alt={category.career_category} style={{ width: '300px' }} className={`img-responsive mt-4`} />
+                <div className={`${color === "dark" ? `${Style.darkNav}` : `${Style.lightNav}`} d-flex p-0 col-md-12 text-center careerTop`}>
+                    <img src={category.details[0].header_image_url} alt={category.career_category} style={{ width: '450px' }} className={`img-responsive m-0`} />
                     <div style={{ flexGrow: '1' }} className='p-3'>
                         <h2>
                             {category.career_category}
