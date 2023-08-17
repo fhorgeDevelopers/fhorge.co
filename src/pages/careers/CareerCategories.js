@@ -59,7 +59,7 @@ const CareerCategories = () => {
                 {/* <Top title={category_id} /> */}
                 {calls.categoryDetails.length === 0 ? (
                     <>
-                        <DummyCatTop />
+                        <DummyCatTop color={mode.myMode} />
                     </>
                 ) : (
                     <>
