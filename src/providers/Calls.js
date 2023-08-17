@@ -10,6 +10,8 @@ export const Calls = ({ children }) => {
     const [careerCategories, setCareerCategories] = useState([]);
     const [careerCategory, setCareerCategory] = useState([]);
     const [careerDetail, setCareerDetail] = useState([]);
+    const [categoryDetails, setCategoryDetails] = useState([]);
+    const [careerSearchResults, setCareerSearchResults] = useState([]);
 
     const getCourseCategories = async () => {
         try {
@@ -23,7 +25,7 @@ export const Calls = ({ children }) => {
 
     const getCareerCategories = async () => {
         try {
-            const res = await axios.get(`${hook.endpoint}/careers`);
+            const res = await axios.get(`${hook.endpoint}/career_categories`);
             setCareerCategories(res.data.response)
         } catch (error) {
             // Handle errors
@@ -31,14 +33,30 @@ export const Calls = ({ children }) => {
         }
     }
 
-    const specificCareerCategory = async (category) => {
+    const getCareerCategory = async (category) => {
         setCareerCategory([])
         try {
             const res = await axios.get(`${hook.endpoint}/careers/${category}`);
             setCareerCategory(res.data)
+            // setCareerCategory([])
+            // if(res.data.id) {
+            //     console.log("Here!");
+            // }
+            // console.log(res.data)
         } catch (error) {
             // Handle errors
             setCareerCategory([])
+        }
+    }
+
+    const specificCareerCategory = async (category) => {
+        // setCareerCategory([])
+        try {
+            const res = await axios.get(`${hook.endpoint}/career/${category}`);
+            // setCareerCategory(res.data)
+        } catch (error) {
+            // Handle errors
+            // setCareerCategory([])
         }
     }
 
@@ -53,13 +71,35 @@ export const Calls = ({ children }) => {
         }
     }
 
+    const careerCategoryDetails = async (category) => {
+        setCategoryDetails([])
+        try {
+            const res = await axios.get(`${hook.endpoint}/career/${category}/details`);
+            setCategoryDetails(res.data)
+        } catch (error) {
+            // Handle errors
+            setCategoryDetails([])
+        }
+    }
+
+    const searchCareer = async (career) => {
+        setCareerSearchResults([]);
+        try {
+            const res = await axios.get(`${hook.endpoint}/search/career/${career}`);
+            setCareerSearchResults(res.data)
+        } catch (error) {
+            // Handle errors
+            setCareerSearchResults([])
+        }
+    }
+
 
     useEffect(() => {
         getCareerCategories();
         getCourseCategories();
     }, [])
     return (
-        <CallsContext.Provider value={{ courseCategories, careerCategories, specificCareerCategory, careerCategory, getCareerDetail, careerDetail }}>
+        <CallsContext.Provider value={{ courseCategories, careerSearchResults, searchCareer, careerCategories, categoryDetails, specificCareerCategory, careerCategory, getCareerDetail, careerDetail, getCareerCategory, careerCategoryDetails }}>
             {children}
         </CallsContext.Provider>
     )

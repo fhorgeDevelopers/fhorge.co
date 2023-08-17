@@ -17,21 +17,7 @@ const AllCareers = () => {
             <main style={{ minHeight: '40vh' }} id="new_careers" className={`${mode.myMode === 'light' ? "" : ""}`}>
                 <Top title={'Career Guide'} />
                 <div className={`${mode.myMode === 'light' ? "textDark" : "textLight"} row search-bar`}>
-                    <div className='col-md-9 m-4'>
-                        <form className='d-inline-flex align-items-center w-100'>
-                            <label className='p-3'>
-                                Get started by selecting a career, or
-                            </label>
-                            <div className={`d-inline-flex ${Style.searchBox}`}>
-                                <input type={'text'} name={'careerSearch'} className={`${Style.searchInput}`} placeholder="Search for the career of your dreams" />
-                                <button className={`${Style.searchButton} p-2`} type="button">
-                                    <span className="material-symbols-outlined">
-                                        search
-                                    </span>
-                                </button>
-                            </div>
-                        </form>
-                    </div>
+                    
                     <div className='col-md-10'>
                         <div className='row'>
                             {calls.careerCategories.length === 0 ? null : (

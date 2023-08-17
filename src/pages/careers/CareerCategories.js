@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet';
 import { useParams } from 'react-router'
 import { Link } from 'react-router-dom';
@@ -7,14 +7,28 @@ import Footer from '../components/Footer/Footer';
 import Navigation from '../components/Navigation/Navigation';
 import Top from './parts/Top';
 import '../../css/occupations--categories.css';
+import DummyCatTop from './parts/DummyCatTop';
+import CatTop from './parts/CatTop';
+import { useMode } from '../../providers/Mode';
+import Style from './parts/cattop.module.css'
+import './career.css'
+import CareerSearch from './parts/CareerSearch';
+
 
 const CareerCategories = () => {
-    let { category_id } = useParams();
+    const { category_id } = useParams();
     const calls = useCalls();
+    const mode = useMode();
+    const color = mode.myMode;
+    const thisCategory = category_id;
+
+    const goNow = () => {
+        calls.careerCategoryDetails(category_id);
+        calls.getCareerCategory(category_id);
+    }
 
     useEffect(() => {
-        calls.specificCareerCategory(category_id);
-
+        goNow();
         return () => {
             return true;
         }
@@ -22,50 +36,102 @@ const CareerCategories = () => {
 
     return (
         <>
-            <Helmet>
-                <meta name="description" content={`${category_id}`} />
-            </Helmet>
+            {calls.categoryDetails.length === 0 ? (
+                <>
+                    <h1>
+                        <i>loading...</i>
+                    </h1>
+                </>
+            ) : (
+                <>
+                    <Helmet>
+                        <meta name="description" content={calls.categoryDetails.details[0].meta_description} />
+                        <meta name="keywords" content={calls.categoryDetails.details[0].meta_keywords} />
+                        <title>
+                            {calls.categoryDetails.details[0].meta_title}
+                        </title>
+                    </Helmet>
+                </>
+            )}
             <Navigation />
 
             <main style={{ minHeight: '40vh' }}>
-                <Top title={category_id} />
-                <section className='container row'>
-                    <div className='col-md-12'>
+                {/* <Top title={category_id} /> */}
+                {calls.categoryDetails.length === 0 ? (
+                    <>
+                        <DummyCatTop color={mode.myMode} />
+                    </>
+                ) : (
+                    <>
+                        <CatTop category={calls.categoryDetails} color={mode.myMode} />
+                    </>
+                )}
+
+
+
+                <section className='container-fluid row m-0'>
+                    <CareerSearch />
+                    <div className='col-md-9'>
                         <div className='card-body row'>
-                            <ol>
-                                {calls.careerCategory.length === 0 ? null : (
-                                    <>
-                                        {calls.careerCategory.map((category) => (
-                                            <div className='col-sm-5 col-md-4'>
-                                                <div className="occupations-card-wrapper">
+                            {calls.careerCategory.length === 0 ? null : (
+                                <>
+                                    {calls.careerCategory.map((category) => (
+                                        <div className='col-12 col-sm-5 col-md-4 mt-3' key={category.career_category_id}>
+                                            <div className="occupations-card-wrapper w-100">
+
+                                                <div
+                                                    className="occupations-card-top"
+                                                    style={{ background: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${category.career_image})` }}
+                                                >
+                                                    <div className="occupations-card-top-outer-wrap">
+                                                        <div className="occupations-card-top-inner-wrap">{category.career_name} </div>
+                                                    </div>
+                                                </div>
+                                                <div className="occ-card-base hidden">
                                                     <Link to={`/careers/${category.career_category_id}/${category.career_ref}`}>
-                                                        <div
-                                                            className="occupations-card-top"
-                                                            style={{ background: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${category.image_url})` }}
-                                                        >
-                                                            <div className="occupations-card-top-outer-wrap">
-                                                                <div className="occupations-card-top-inner-wrap">{category.career_name} </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="occ-card-base hidden">
-                                                            <span className="card-bottom-heading">{category.career_name}</span>
-                                                            <p>{category.career_description}...</p>
-                                                            <div className="row occ-card-base-el">
-                                                                <div className="col-xs-6 text-left"> {category.career_name}
-                                                                    <span className="material-symbols-outlined">
-                                                                        arrow_right_alt
-                                                                    </span>
-                                                                </div>
+                                                        <span className="card-bottom-heading">{category.career_name}</span>
+                                                        <p>{category.career_description}...</p>
+                                                        <div className="row occ-card-base-el">
+                                                            <div className="col-xs-6 text-left"> {category.career_name}
+                                                                <span className="material-symbols-outlined">
+                                                                    arrow_right_alt
+                                                                </span>
                                                             </div>
                                                         </div>
                                                     </Link>
+
                                                 </div>
                                             </div>
-                                        ))}
-                                    </>
-                                )}
-                            </ol>
+                                        </div>
+                                    ))}
+                                </>
+                            )}
                         </div>
+                    </div>
+
+                    <div className={`${color === "dark" ? "darkNav" : "lightNav"} p-2  col-md-3 text-center fmt-2`}>
+                        <h5 className='m-3 p-3 mb-0 pb-1 mt-0 pt-0'>
+                            CAREER CATEGORIES
+                        </h5>
+                        {calls.careerCategories.length === 0 ? "" : (
+                            <>
+                                <ul className='m-0 p-0'>
+                                    {calls.careerCategories.map((all_category) => (
+                                        <Link
+                                            key={all_category.career_category_id}
+                                            to={`/careers/${all_category.career_category_id}`}
+                                            className={`
+                                                ${(color === "light") ? `${Style.lightDesign}` : `${Style.darkDesign}`} 
+                                                ${(all_category.career_category_id === thisCategory) ? `${Style.active}` : ``}
+                                            `}>
+                                            <p>
+                                                {all_category.career_category}
+                                            </p>
+                                        </Link>
+                                    ))}
+                                </ul>
+                            </>
+                        )}
                     </div>
                 </section>
             </main>
