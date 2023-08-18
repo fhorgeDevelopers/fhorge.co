@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom'
 import {PiCertificateFill} from 'react-icons/pi'
 import {PiClockCountdown} from 'react-icons/pi'
 import {RiGraduationCapFill} from 'react-icons/ri'
+import {FaComment} from 'react-icons/fa'
 
 const AboutCourses = () => {
     return (
@@ -56,6 +57,22 @@ const AboutCourses = () => {
                         workplace safety and health, business management and entrepreneurship, food safety, nursing and patient care, customer service, and much more!
                         </p>
                         <button>See all certificate courses</button>
+                    </div>
+                </div>
+            </div>
+            <div className={style.outcomeContainer}>
+                    <p>To see why our learners enroll and certify in these courses, check out our main Graduate Outcomes, or read Testimonials directly from our graduates
+                    </p>
+                <div className={style.outcomeContent}>
+                    <div>
+                        <RiGraduationCapFill size={20} />
+                        <Link to='#'><p>Discover Graduate Outcomes</p></Link>
+                        <hr />
+                    </div>
+                    <div>
+                        <FaComment size={20} />
+                        <Link to='#'><p>Read Graduate Testimonials!</p></Link>
+                        <hr />
                     </div>
                 </div>
             </div>

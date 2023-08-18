@@ -1,0 +1,31 @@
+.cardContainer{
+    background-color:rgb(43, 73, 226) !important;
+    color: orange !important;
+    border-radius: 4px;
+    box-shadow:  0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    width: 300px;
+    padding: 15px 10px;
+    height: auto;
+    margin: 5x;
+    padding: 20px;
+}
+.cardHeader{
+    display: flex;
+    align-items: space-between;
+    justify-content: space-between;
+}
+.cardHeader h1{
+    font-size: 14px !important;
+    font-weight: bold;
+}
+.cardContainer p{
+    font-size: 12px !important;
+    line-height: 18px;
+    color: white;
+}
+@media screen and (max-width: 768px) {
+    .cardContainer{
+        width: auto;
+    }
+}

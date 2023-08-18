@@ -57,6 +57,8 @@
 button{
     background-color: rgb(43, 73, 226) !important;
     color: white !important;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 button:hover{
    background-color:  rgb(117, 138, 239) !important;;
@@ -78,7 +80,46 @@ button:hover{
 .middleIcon{
     margin-bottom: 40px;
 }
+.outcomeContainer{
+    padding: 20px;
+    margin: 0;
+    background-color: white;
 
+}
+.outcomeContainer p{
+    inline-size: 700px;
+    font-size: small;
+    color:rgb(43, 73, 226) !important ;
+    text-align: center;
+    margin: auto;
+}
+.outcomeContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   flex-direction: column;
+
+}
+hr{
+    color: red;
+   width: 10%;
+   height: 10%;
+}
+.outcomeContent div{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.outcomeContent div p{
+    color: orange !important;
+}
+
+.outcomeContent div hr{
+    color:rgb(43, 73, 226) !important ;
+}
 @media screen and (max-width: 768px){
     .aboutContent{
         display: flex;
@@ -92,7 +133,7 @@ button:hover{
     .aboutHeader p{
         text-align: center;
         font-size: small;
-        inline-size: 400px;
+        inline-size: 350px;
         overflow-wrap: break-word;
     }
     .ab
@@ -121,5 +162,12 @@ button:hover{
     
     .middleIcon{
         margin: 10px;
+    }
+    .outcomeContainer p{
+        inline-size: 350px;
+        font-size: small;
+        color:rgb(43, 73, 226) !important ;
+        text-align: center;
+        margin: auto;
     }
 }
