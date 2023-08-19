@@ -1,6 +1,7 @@
 import React from 'react'
 import Footer from '../components/Footer/Footer'
 import Navigation from '../components/Navigation/Navigation'
+import "./style/home.css";
 // import "../../css/all.css";
 // import "../../css/course-landing.css";
 // import "../../css/course-landing-lower.css";

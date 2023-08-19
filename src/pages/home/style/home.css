@@ -1,0 +1,119 @@
+h2 {
+    font: 200 1.625em Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 54px;
+    margin-bottom: 21px;
+    text-align: center;
+}
+@media only screen and (min-width: 768px){
+  .h2{
+   font-size: 1.875em;
+    line-height: 1.3333333333em;   
+    margin: 0 0 30px;
+  }
+    
+}
+
+.but {
+    background: #4460ef;
+    border: 1px solid #4460ef;
+    border-radius: 8px;
+    color: #fff;
+    display: inline-block;
+    font-weight: 500;
+    overflow: hidden;
+    padding: 12.5px 39px;
+    position: relative;
+    transition: all .3s ease-in-out
+}
+
+.but.but--outline {
+    background: #fff;
+    color: #4460ef;
+}
+
+.but.but--white {
+    background: #fff;
+    border-color: #fff;
+    color: #4460ef;
+}
+
+.but.but--white:hover {
+    color: #fff
+}
+
+.but:hover {
+    background: #fff;
+    border: 1px solid #fd7702;
+    color: #fff
+}
+
+.but:hover.but--outline {
+    background: #fd7702;
+    color: #fff
+}
+
+.but:focus {
+    outline: 0
+}
+
+.but:before {
+    background: hsla(0,0%,100%,.5);
+    filter: blur(30px);
+    left: -100px;
+    opacity: .5;
+    width: 60px
+}
+
+.but:after,.but:before {
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transform: skewX(-15deg)
+}
+
+.but:after {
+    background: hsla(0,0%,100%,.2);
+    filter: blur(5px);
+    left: -70px;
+    opacity: 0;
+    width: 30px
+}
+
+.but:hover {
+    background: #fd7702;
+    cursor: pointer
+}
+
+.but:hover:before {
+    opacity: .6
+}
+
+.but:hover:after,.but:hover:before {
+    left: 110%;
+    transform: skewX(-15deg);
+    transition: .7s
+}
+
+.but:hover:after {
+    opacity: 1
+}
+
+.blue {
+    color: #4460ef
+}
+
+.bold {
+    font-weight: 700
+}
+
+.medium {
+    font-weight: 500
+}
+
+.hide-on-desktop {
+    display: inline-block!important
+}
