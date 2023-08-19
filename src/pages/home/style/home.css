@@ -117,3 +117,15 @@ h2 {
 .hide-on-desktop {
     display: inline-block!important
 }
+.goals .hide-on-desktop {
+    display: none !important;
+}
+.goals.goals--upper .goal1 {
+    background-image: url(https://cdn01.alison-static.net/public/html/site/img/homepage/flag.svg);
+}
+.goals.goals--upper .goal2{
+    background-image: url(https://cdn01.alison-static.net/public/html/site/img/homepage/signpost.svg);
+}
+.goals.goals--upper .goal3{
+    background-image: url(https://cdn01.alison-static.net/public/html/site/img/homepage/jigsaw.svg);
+}
