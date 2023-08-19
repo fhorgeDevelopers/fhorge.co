@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useMode } from '../../../providers/Mode';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import { useCalls } from '../../../providers/Calls';
 import Preloader from '../../../Preloader';
@@ -11,7 +11,6 @@ const Navigation = () => {
     const mode = useMode();
     const [showMenu, setShowMenu] = useState(false);
     const location = useLocation();
-    const navigate = useNavigate();
     const [showSubjectMenu, setShowSubjectMenu] = useState(false);
     const [showCourseMenu, setShowCourseMenu] = useState(false);
     const [seeSearch, setSeeSearch] = useState(false);
@@ -116,7 +115,7 @@ const Navigation = () => {
         if (selected === "register") {
             var link = 'https://tutor-fhorge.netlify.app/info'
         } else {
-            var link = 'https://tutor-fhorge.netlify.app/' + selected
+            link = 'https://tutor-fhorge.netlify.app/' + selected
         }
         window.open(link, '_blank')
     }

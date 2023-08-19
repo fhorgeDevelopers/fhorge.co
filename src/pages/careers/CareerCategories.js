@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import { Helmet } from 'react-helmet';
 import { useParams } from 'react-router'
 import { Link } from 'react-router-dom';
 import { useCalls } from '../../providers/Calls';
 import Footer from '../components/Footer/Footer';
 import Navigation from '../components/Navigation/Navigation';
-import Top from './parts/Top';
 import '../../css/occupations--categories.css';
 import DummyCatTop from './parts/DummyCatTop';
 import CatTop from './parts/CatTop';
@@ -13,7 +12,6 @@ import { useMode } from '../../providers/Mode';
 import Style from './parts/cattop.module.css'
 import './career.css'
 import CareerSearch from './parts/CareerSearch';
-import ReactPaginate from 'react-paginate';
 import Pagination from './parts/Pagination';
 
 
