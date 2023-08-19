@@ -13,6 +13,8 @@ import { useMode } from '../../providers/Mode';
 import Style from './parts/cattop.module.css'
 import './career.css'
 import CareerSearch from './parts/CareerSearch';
+import ReactPaginate from 'react-paginate';
+import Pagination from './parts/Pagination';
 
 
 const CareerCategories = () => {
@@ -67,48 +69,17 @@ const CareerCategories = () => {
                     </>
                 )}
 
-
-
-                <section className='container-fluid row m-0'>
+                <section className='container-fluid row m-0 hstack '>
                     <CareerSearch />
                     <div className='col-md-9'>
                         <div className='card-body row'>
                             {calls.careerCategory.length === 0 ? null : (
                                 <>
-                                    {calls.careerCategory.map((category) => (
-                                        <div className='col-12 col-sm-5 col-md-4 mt-3' key={category.career_category_id}>
-                                            <div className="occupations-card-wrapper w-100">
-
-                                                <div
-                                                    className="occupations-card-top"
-                                                    style={{ background: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${category.career_image})` }}
-                                                >
-                                                    <div className="occupations-card-top-outer-wrap">
-                                                        <div className="occupations-card-top-inner-wrap">{category.career_name} </div>
-                                                    </div>
-                                                </div>
-                                                <div className="occ-card-base hidden">
-                                                    <Link to={`/careers/${category.career_category_id}/${category.career_ref}`}>
-                                                        <span className="card-bottom-heading">{category.career_name}</span>
-                                                        <p>{category.career_description}...</p>
-                                                        <div className="row occ-card-base-el">
-                                                            <div className="col-xs-6 text-left"> {category.career_name}
-                                                                <span className="material-symbols-outlined">
-                                                                    arrow_right_alt
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </Link>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    ))}
+                                    <Pagination items={calls.careerCategory} perpage={3} />
                                 </>
                             )}
                         </div>
                     </div>
-
                     <div className={`${color === "dark" ? "darkNav" : "lightNav"} p-2  col-md-3 text-center fmt-2`}>
                         <h5 className='m-3 p-3 mb-0 pb-1 mt-0 pt-0'>
                             CAREER CATEGORIES

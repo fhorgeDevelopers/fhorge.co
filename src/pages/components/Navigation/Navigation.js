@@ -137,7 +137,7 @@ const Navigation = () => {
         setTimeout(() => {
             setShowLoader(false)
         }, 1000);
-    }, [location]);
+    }, [location.key]);
 
     useEffect(() => {
         displayWindowSize();
@@ -152,14 +152,14 @@ const Navigation = () => {
         document.getElementsByTagName("body")[0].style.overflow = "";
 
         window.addEventListener("resize", displayWindowSize);
-    }, [location.pathname]);
+    }, [location.key]);
 
     return (
         <>
             <Helmet>
                 <link rel="icon" href={mode.changeIcon()} />
             </Helmet>
-            <div style={{ height: '60px', width: '100vw' }}></div>
+            <div style={{ height: '1px', width: '100vw', marginBottom: '65px' }}></div>
             <div className={seeSearch ? "row justify-content-center" : "d-none"}>
                 <div className='col-lg-8'>
                     <div className='searchBox'>
@@ -193,7 +193,7 @@ const Navigation = () => {
                     </div>
                 </div>
             </div>
-            <nav className={`${((mode.myMode === 'dark') ? "darkNav" : "lightNav")} navbar p-2 justify-content-start`} role="navigation" aria-label="main navigation">
+            <nav className={`${((mode.myMode === 'dark') ? "darkNav" : "lightNav")} navbar p-2 justify-content-start`} style={{ position: 'fixed' }} role="navigation" aria-label="main navigation">
                 <div className="navbar-brand">
                     <Link className={`${((mode.myMode === 'dark') ? "textLight" : "textDark")} navbar-item`} to={'/'} style={{ overflow: 'hidden' }} >
                         <img src={((mode.myMode === 'dark') ? "/logo_dark.png" : "/logo.png")} className={'site-icon'} alt={'Fhorge'} />
@@ -397,7 +397,7 @@ const Navigation = () => {
             </nav>
             <div
                 id="overlay"
-                // style={{ display: 'none' }}
+                style={{ display: 'none' }}
                 className={`overlay ${showMenu ? 'sm' : null}`}
                 onClick={() => {
                     setShowSubjectMenu(false)

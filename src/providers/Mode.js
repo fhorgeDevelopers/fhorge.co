@@ -33,6 +33,7 @@ export const Mode = ({ children }) => {
         if (mode === 'light') {
             document.body.style.backgroundColor = '#f3f3f3';
         } else {
+            document.body.style.color = '#002347 !important';
             document.body.style.backgroundColor = 'lightgrey';
         }
     }
