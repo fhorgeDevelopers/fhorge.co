@@ -16,7 +16,7 @@ import Goals from "./landing-page/Goals";
 import Courses from "./landing-page/Courses";
 import Publishers from "./landing-page/Publishers";
 import Careerss from "./landing-page/Careerss";
-import Test from "./landing-page/Testimonial";
+import Test from "./landing-page/Test";
 import Testimonial from "./landing-page/Testimonial";
 import Upskill from "./landing-page/Upskill";
 import App from "./landing-page/App";
