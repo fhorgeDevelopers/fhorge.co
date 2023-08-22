@@ -130,7 +130,6 @@ const Navigation = () => {
         window.open(link, '_blank')
     }
 
-
     useEffect(() => {
         setShowLoader(true)
         setTimeout(() => {
