@@ -191,7 +191,7 @@ const Navigation = () => {
                     </div>
                 </div>
             </div>
-            <nav className={`${((mode.myMode === 'dark') ? "darkNav" : "lightNav")} navbar p-2 justify-content-start`} style={{ position: 'fixed' }} role="navigation" aria-label="main navigation">
+            <nav className={`${((mode.myMode === 'dark') ? "darkNav" : "lightNav")} navbar p-2 justify-content-start`} style={{ position: 'fixed !important' }} role="navigation" aria-label="main navigation">
                 <div className="navbar-brand">
                     <Link className={`${((mode.myMode === 'dark') ? "textLight" : "textDark")} navbar-item`} to={'/'} style={{ overflow: 'hidden' }} >
                         <img src={((mode.myMode === 'dark') ? "/logo_dark.png" : "/logo.png")} className={'site-icon'} alt={'Fhorge'} />
