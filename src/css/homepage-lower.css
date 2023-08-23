@@ -1034,7 +1034,7 @@
         display: inline
     }
 }
-
+/* 
 .app {
     background: #0094c9;
     overflow: hidden;
@@ -1288,7 +1288,7 @@
     .app .inner .app__nav a:first-child {
         margin-right: 20px
     }
-}
+} */
 
 .goals {
     padding: 37px 0 38px
