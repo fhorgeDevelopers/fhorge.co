@@ -12,7 +12,9 @@ return(
                     <Link
                         target="_blank" to="#"><img width="176" height="50" className="lazyload" src="https://cdn01.alison-static.net/public/html/site/img/homepage/apple.png" alt="Download on the App Store" title="Download the Fhorge app on iPhone" /></Link>
                 </div>
-                <p className="learners"><span>1 million+</span> learning on the Fhorge App</p>
+               <div className="learn">
+               <p className="learners"><span>1 million+</span> learning on the Fhorge App</p>
+               </div>
             </div>
             <div className="app__img app-img"><img className="lazyload" src="https://grandapihub.org.ng/html/app.jpg" alt="Fhorge app on your mobile phone" title="Download the Fhorge app on Android or iPhone" /></div>
         </div>
