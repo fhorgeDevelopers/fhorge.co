@@ -120,13 +120,15 @@ h2 {
 .medium {
     font-weight: 500
 }
-
-.hide-on-desktop {
-    display: inline-block!important
+@media(min-width:769px){
+  .hide-on-desktop {
+    display: inline-block !important; 
 }
 .goals .hide-on-desktop {
     display: none !important;
+}  
 }
+
 .goals.goals--upper .goal1 {
     background-image: url(https://cdn01.alison-static.net/public/html/site/img/homepage/flag.svg) !important;
 }
@@ -134,7 +136,7 @@ h2 {
     background-image: url(https://cdn01.alison-static.net/public/html/site/img/homepage/signpost.svg) !important;
 }
 .goals.goals--upper .goal3{
-    background-image: url(https://cdn01.alison-static.net/public/html/site/img/homepage/jigsaw.svg)!important;
+    background-image: url(https://cdn01.alison-static.net/public/html/site/img/homepage/jigsaw.svg) !important;
 }
 
 .goals {
@@ -354,6 +356,19 @@ display: none;
 } 
 }
 @media(max-width: 769px){
+
+    .goalsbelow .goal1 {
+        background-image: url(https://cdn01.alison-static.net/public/html/site/img/homepage/flag.svg) !important;
+    }
+    .goalsbelow .goal2{
+        background-image: url(https://cdn01.alison-static.net/public/html/site/img/homepage/signpost.svg) !important;
+    }
+    .goalsbelow .goal3{
+        background-image: url(https://cdn01.alison-static.net/public/html/site/img/homepage/jigsaw.svg) !important;
+    }
+    
+
+
     .goalsbelow {
         padding: 37px 0 38px
     }
@@ -375,7 +390,7 @@ display: none;
         line-height: 1;
         margin-bottom: 43px;
         margin-top: 22px;
-        text-align: center
+        text-align: center !important;
     }
     
     .goalsbelow .goal {
