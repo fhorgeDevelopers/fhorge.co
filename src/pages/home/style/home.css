@@ -141,6 +141,23 @@ h2 {
     padding: 37px 0 38px
 }
 
+/* 
+@media(max-width: 750px){
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    main > *{
+        order: 0;
+    }
+    main .goals{
+        order: 2;
+    }
+    main .app{
+        order: 1;
+    }
+} */
+
 .goals.goals--upper {
     background-color: #f3f6f7;
     background-position: left 20px;
@@ -310,26 +327,26 @@ h2 {
         display: none
     }
 }
-
+/* Goalsbelow */
 @media(max-width:768px) {
-    .goals {
+    .goalsbelow {
         background-image: none;
         padding: 24px 0 40px
     }
-    .goals h2 {
+    .goalsbelow h2 {
         font-size: 20px;
         line-height: 28px;
         margin-bottom: 8px
     }
-    .goals h5 {
+    .goalsbelow h5 {
         font-size: 16px;
         margin: 0 0 24px
     }
-    .goals .goals__container {
+    .goalsbelow .goals__container {
         align-items: center;
         flex-direction: column
     }
-    .goals .goal {
+    .goalsbelow .goal {
         background-size: 64px !important;
         font-size: 16px;
         height: 92px;
@@ -337,16 +354,169 @@ h2 {
         margin: 0 0 20px;
         padding: 23px 0 0 24px
     }
-    .goals .goal br {
+    .goalsbelow .goal br {
         display: inline-block
     }
-    .goals .goal:nth-child(3) {
+    .goalsbelow .goal:nth-child(3) {
         margin-bottom: 0
     }
-    .goals .goal:nth-child(3)>span {
+    .goalsbelow .goal:nth-child(3)>span {
         display: inline
     }
 }
+@media(min-width: 770px){
+   .goalsbelow{
+display: none;
+} 
+}
+@media(max-width: 769px){
+    .goalsbelow {
+        padding: 37px 0 38px
+    }
+
+    .goalsbelow h2 {
+        color: #2d3941;
+        font-size: 24px;
+        margin-bottom: 38px
+    }
+    
+    .goalsbelow .goals__container {
+        display: flex;
+        justify-content: center
+    }
+    
+    .goalsbelow h5 {
+        color: #5d676e;
+        font-size: 22px;
+        line-height: 1;
+        margin-bottom: 43px;
+        margin-top: 22px;
+        text-align: center
+    }
+    
+    .goalsbelow .goal {
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 3px 6px rgba(5,5,5,.16);
+        color: #465159;
+        display: block;
+        font-size: 20px;
+        height: 80px;
+        letter-spacing: .4px;
+        line-height: 30px;
+        margin-right: 48.5px;
+        padding: 10px 0 0 30px;
+        width: 346px
+    }
+    
+    .goalsbelow .goal:last-child {
+        margin-right: 0
+    }
+    
+    .goalsbelow .goal:hover {
+        outline: 2px solid #002347
+    }
+    
+    .goalsbelow .goal:hover span {
+        color: #002347
+    }
+    
+    .goalsbelow .goal>span {
+        font-weight: 700;
+        max-width: 195px;
+        transition: color .3s ease-in-out
+    }
+    
+    .goalsbelow .goal>span span {
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 700;
+        height: 12px;
+        left: 2px;
+        overflow: hidden;
+        position: relative;
+        top: 2px;
+        width: 11px
+    }
+    
+    .goalsbelow .goal>span span:before {
+        left: -2px;
+        position: absolute;
+        top: -1px;
+        transition: color .3s ease-in-out
+    }
+    
+    .goalsbelow .goal:first-child {
+        background: no-repeat 100% 100%/71px
+    }
+    
+    .goalsbelow .goal:nth-child(2) {
+        background: no-repeat 100% 100%/80px
+    }
+    
+    .goalsbelow .goal:nth-child(3) {
+        background: no-repeat 100% 100%/70px
+    }
+    
+    .goalsbelow .goal .arrow {
+        position: relative;
+        right: -4px;
+        top: 2px
+    }
+    
+    .goalsbelow .goal .arrow:before {
+        color: #002347
+    }
+
+
+
+    .goalsbelow .goal .arrow {
+        display:none
+    }
+    .goalsbelow {
+        background-image:none;
+        padding: 24px 0 40px
+    }
+
+    .goalsbelow h2 {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 8px
+    }
+
+    .goalsbelow h5 {
+        font-size: 16px;
+        margin: 0 0 24px
+    }
+
+    .goalsbelow .goals__container {
+        align-items: center;
+        flex-direction: column
+    }
+
+    .goalsbelow .goal {
+        background-size: 64px!important;
+        font-size: 16px;
+        height: 92px;
+        line-height: 24px;
+        margin: 0 0 20px;
+        padding: 23px 0 0 24px
+    }
+
+    .goalsbelow .goal br {
+        display: inline-block
+    }
+
+    .goalsbelow .goal:nth-child(3) {
+        margin-bottom: 0
+    }
+
+    .goalsbelow .goal:nth-child(3)>span {
+        display: inline
+    }
+}
+
+
 /* Test */
 
 .tests {

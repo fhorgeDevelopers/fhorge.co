@@ -20,6 +20,7 @@ import Test from "./landing-page/Test";
 import Testimonial from "./landing-page/Testimonial";
 import Upskill from "./landing-page/Upskill";
 import App from "./landing-page/App";
+import Goalsbelow from "./landing-page/Goalsbelow";
 
 const Home = () => {
   return (
@@ -36,6 +37,7 @@ const Home = () => {
          <Testimonial />
          <Upskill />
          <App />
+         <Goalsbelow/>
       </main>
       <Footer />
     </>
