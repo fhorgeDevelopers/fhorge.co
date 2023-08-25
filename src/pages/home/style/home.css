@@ -128,35 +128,19 @@ h2 {
     display: none !important;
 }
 .goals.goals--upper .goal1 {
-    background-image: url(https://cdn01.alison-static.net/public/html/site/img/homepage/flag.svg);
+    background-image: url(https://cdn01.alison-static.net/public/html/site/img/homepage/flag.svg) !important;
 }
 .goals.goals--upper .goal2{
-    background-image: url(https://cdn01.alison-static.net/public/html/site/img/homepage/signpost.svg);
+    background-image: url(https://cdn01.alison-static.net/public/html/site/img/homepage/signpost.svg) !important;
 }
 .goals.goals--upper .goal3{
-    background-image: url(https://cdn01.alison-static.net/public/html/site/img/homepage/jigsaw.svg);
+    background-image: url(https://cdn01.alison-static.net/public/html/site/img/homepage/jigsaw.svg)!important;
 }
 
 .goals {
     padding: 37px 0 38px
 }
 
-/* 
-@media(max-width: 750px){
-    main{
-        display: flex;
-        flex-direction: column;
-    }
-    main > *{
-        order: 0;
-    }
-    main .goals{
-        order: 2;
-    }
-    main .app{
-        order: 1;
-    }
-} */
 
 .goals.goals--upper {
     background-color: #f3f6f7;
