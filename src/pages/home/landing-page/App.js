@@ -16,7 +16,7 @@ return(
                <p className="learners"><span>1 million+</span> learning on the Fhorge App</p>
                </div>
             </div>
-            <div className="app__img app-img"><img className="lazyload" src="https://grandapihub.org.ng/html/app.jpg" alt="Fhorge app on your mobile phone" title="Download the Fhorge app on Android or iPhone" /></div>
+            <div className="app__img app-img"><img  className="lazyload" src="https://grandapihub.org.ng/html/app.jpg" alt="Fhorge app on your mobile phone" title="Download the Fhorge app on Android or iPhone" /></div>
         </div>
     </div>
     

@@ -562,7 +562,7 @@ h2 {
 }
 
 /* APP */
- .app{
+.app{
   
     background: #0094c9;
     overflow: hidden;
@@ -574,14 +574,15 @@ h2 {
      width: 100%;
 }
 .app__intro{
-    width: 43%;
+    width: 45%;
     padding-top: 2rem;
 }
 .app__img{
-    width: 57%;
+    width: 55%;
 }
 .app__img img{
     width: 100%;
+    height: 100%;
 }
 .app h3 {
     color: #fff;
@@ -590,15 +591,14 @@ h2 {
     line-height: 60px;
     margin-bottom: 20px;
     text-align: left;
-    padding-left: 2rem;
+    padding-left: 1.5rem;
 }
 .app .sub {
     color: #fff;
     margin-bottom: 32px;
     text-align: left;
-    padding-left: 2rem;
+    padding-left: 1.5rem;
     padding-right: 1rem;
-
 }
 .app .app__nav{
     display: flex;
@@ -617,10 +617,6 @@ h2 {
     max-width: 100%
 } 
 
-/* .app .app__intro {
-    max-width: 440px
-} */
-
 .app .learners {
     background: #fff;
     border-radius: 6px;
@@ -628,9 +624,7 @@ h2 {
     font-size: 16px;
     margin-top: 25px;
     padding: 9px 18px 6px;
-    text-shadow: none;
-    /* width: 400px; */
-    
+    text-shadow: none;    
 }
 .app .learn{
     display: flex;
@@ -652,5 +646,120 @@ h2 {
     width: 12px
 } 
 
+@media(max-width: 900px){
+.app .inner{
+        height: 60vh;
+         
+}
+.app h3 {
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: 800;
+    line-height: 3rem;
+    margin-bottom: 15px;
+ 
+    padding-left: 1.5rem;
+}
+.app .learn{
+    margin-bottom: 2rem;
+}
+}
+@media(max-width: 860px){
+    .app .inner{
+            height: 50vh;
+             
+    }
+    .app h3 {
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: 700;
+        line-height: 1.3rem;
+        margin-bottom: 15px;
+        padding-left: 1.5rem;
+    }
+    .app .learn{
+        margin-bottom: 1.5rem;
+    }
+   
+    }
+    @media(max-width: 800px){
+        .app h3 {
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: 700;
+            line-height: 1.3rem;
+            margin-bottom: 15px;
+            padding-left: 1rem;
+        }
+        .app .sub p{
+            line-height: 1rem !important;
+        } 
+    }
+    @media(max-width: 770px){
+    
+    .app__intro{
+        width: 100%;
+        padding-top: 2rem;
+    }
+        .app .inner .app__nav {
+            display:flex;
+            justify-content: center
+        }
+    
+        .app .inner .app__nav a {
+            width: 147px
+        }
+    
+        .app .inner .app__nav a:first-child {
+            margin-right: 20px
+        }
+        .app .inner {
+            background:no-repeat bottom;
+            background-size: 125%;
+            display: block;
+            height: 60vh;
+            padding: 30px 15px 24px;
 
+        }
+    
+        .app .app__intro {
+            padding: 0;
+            text-shadow: none
+        }
+    
+        .app h3 {
+            font-size: 22px;
+            line-height: 32px;
+            margin-bottom: 16px;
+            text-align: center
+        }
+    
+        .app .sub {
+            font-size: 14px;
+            line-height: 20px;
+            margin: 0 auto 24px;
+            max-width: 320px;
+            text-align: center
+        }
+    
+        .app .app__img {
+            display: none
+        }
+    
+        .app .learners {
+            font-size: 14px;
+            height: 36px;
+            line-height: 37px;
+            margin: 20px auto 0;
+            max-width: 100%;
+            padding: 0 5px;
+            text-align: center;
+            width: 292px
+        }
 
+        .app .learners span:before {
+            margin-right: 8px
+        }
+    }
+    
+    
