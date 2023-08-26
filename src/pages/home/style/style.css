@@ -650,3 +650,401 @@
     margin-bottom: 37px;
     text-align: center
 }
+
+/* Goals */
+@media(min-width:769px){
+    .hide-on-desktop {
+      display: inline-block !important; 
+  }
+  .goals .hide-on-desktop {
+      display: none !important;
+  }  
+  }
+  
+  .goals.goals--upper .goal1 {
+      background-image: url(https://cdn01.alison-static.net/public/html/site/img/homepage/flag.svg) !important;
+  }
+  .goals.goals--upper .goal2{
+      background-image: url(https://cdn01.alison-static.net/public/html/site/img/homepage/signpost.svg) !important;
+  }
+  .goals.goals--upper .goal3{
+      background-image: url(https://cdn01.alison-static.net/public/html/site/img/homepage/jigsaw.svg) !important;
+  }
+  
+  .goals {
+      padding: 37px 0 38px
+  }
+  
+  
+  .goals.goals--upper {
+      background-color: #f3f6f7;
+      background-position: left 20px;
+      background-size: 111px auto;
+      height: 244px;
+      padding: 54px 0 40px
+  }
+  
+  .goals.goals--upper h2 {
+      font-weight: 700;
+      line-height: normal
+  }
+  
+  .goals.goals--upper h5 {
+      font-size: 18px;
+      margin: 0 0 23px
+  }
+  
+  .goals.goals--upper .goal {
+      background-color: #fff !important;
+      background-size: 65px auto;
+      font-size: 20px;
+      height: 84px;
+      line-height: 24px;
+      padding: 18px 0 0 20px
+  }
+  
+  .goals.goals--upper .goal:first-child {
+      background-size: 63px auto
+  }
+  
+  .goals.goals--upper .goal:nth-child(2) {
+      background-size: 69px auto
+  }
+  
+  .goals.goals--upper .goal:nth-child(3) {
+      background-size: 80px auto
+  }
+  
+  .goals.goals--upper .goal .arrow {
+      display: none
+  }
+  
+  @media(max-width:1250px) {
+      .goals.goals--upper {
+          padding-top: 60px
+      }
+  }
+  
+  @media(max-width:768px) {
+      .goals.goals--upper {
+          display: none
+      }
+  }
+  
+  .goals h2 {
+      color: #2d3941;
+      font-size: 24px;
+      margin-bottom: 38px
+  }
+  
+  .goals .goals__container {
+      display: flex;
+      justify-content: center
+  }
+  
+  .goals h5 {
+      color: #5d676e;
+      font-size: 22px;
+      line-height: 1;
+      margin-bottom: 43px;
+      margin-top: 22px;
+      text-align: center
+  }
+  
+  .goals .goal {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 3px 6px rgba(5, 5, 5, .16);
+      color: #465159;
+      display: block;
+      font-size: 20px;
+      height: 80px;
+      letter-spacing: .4px;
+      line-height: 30px;
+      margin-right: 48.5px;
+      padding: 10px 0 0 30px;
+      width: 346px
+  }
+  
+  .goals .goal:last-child {
+      margin-right: 0
+  }
+  
+  .goals .goal:hover {
+      outline: 2px solid #007646
+  }
+  
+  .goals .goal:hover span {
+      color: #007646
+  }
+  
+  .goals .goal>span {
+      font-weight: 700;
+      max-width: 195px;
+      transition: color .3s ease-in-out
+  }
+  
+  .goals .goal>span span {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      height: 12px;
+      left: 2px;
+      overflow: hidden;
+      position: relative;
+      top: 2px;
+      width: 11px
+  }
+  
+  .goals .goal>span span:before {
+      left: -2px;
+      position: absolute;
+      top: -1px;
+      transition: color .3s ease-in-out
+  }
+  
+  .goals .goal:first-child {
+      background: no-repeat 100% 100%/71px
+  }
+  
+  .goals .goal:nth-child(2) {
+      background: no-repeat 100% 100%/80px
+  }
+  
+  .goals .goal:nth-child(3) {
+      background: no-repeat 100% 100%/70px
+  }
+  
+  .goals .goal .arrow {
+      position: relative;
+      right: -4px;
+      top: 2px
+  }
+  
+  .goals .goal .arrow:before {
+      color: #007646
+  }
+  
+  @media(max-width:1170px) and (min-width:768px) {
+      .goals {
+          background-image: none
+      }
+      .goals .goals__container {
+          flex-wrap: wrap
+      }
+      .goals .goal {
+          background-size: 89px !important;
+          margin-bottom: 20px;
+          margin-right: 20px;
+          width: 242px
+      }
+  }
+  
+  @media(min-width:769px) {
+      .goals .goal .arrow {
+          display: none
+      }
+  }
+  /* Goalsbelow */
+  @media(max-width:768px) {
+      .goalsbelow {
+          background-image: none;
+          padding: 24px 0 40px
+      }
+      .goalsbelow h2 {
+          font-size: 20px;
+          line-height: 28px;
+          margin-bottom: 8px
+      }
+      .goalsbelow h5 {
+          font-size: 16px;
+          margin: 0 0 24px
+      }
+      .goalsbelow .goals__container {
+          align-items: center;
+          flex-direction: column
+      }
+      .goalsbelow .goal {
+          background-size: 64px !important;
+          font-size: 16px;
+          height: 92px;
+          line-height: 24px;
+          margin: 0 0 20px;
+          padding: 23px 0 0 24px
+      }
+      .goalsbelow .goal br {
+          display: inline-block
+      }
+      .goalsbelow .goal:nth-child(3) {
+          margin-bottom: 0
+      }
+      .goalsbelow .goal:nth-child(3)>span {
+          display: inline
+      }
+  }
+  @media(min-width: 770px){
+     .goalsbelow{
+  display: none;
+  } 
+  }
+  @media(max-width: 769px){
+  
+      .goalsbelow .goal1 {
+          background-image: url(https://cdn01.alison-static.net/public/html/site/img/homepage/flag.svg) !important;
+      }
+      .goalsbelow .goal2{
+          background-image: url(https://cdn01.alison-static.net/public/html/site/img/homepage/signpost.svg) !important;
+      }
+      .goalsbelow .goal3{
+          background-image: url(https://cdn01.alison-static.net/public/html/site/img/homepage/jigsaw.svg) !important;
+      }
+      
+  
+  
+      .goalsbelow {
+          padding: 37px 0 38px
+      }
+  
+      .goalsbelow h2 {
+          color: #2d3941;
+          font-size: 24px;
+          margin-bottom: 38px
+      }
+      
+      .goalsbelow .goals__container {
+          display: flex;
+          justify-content: center
+      }
+      
+      .goalsbelow h5 {
+          color: #5d676e;
+          font-size: 22px;
+          line-height: 1;
+          margin-bottom: 43px;
+          margin-top: 22px;
+          text-align: center !important;
+      }
+      
+      .goalsbelow .goal {
+          background: #fff;
+          border-radius: 12px;
+          box-shadow: 0 3px 6px rgba(5,5,5,.16);
+          color: #465159;
+          display: block;
+          font-size: 20px;
+          height: 80px;
+          letter-spacing: .4px;
+          line-height: 30px;
+          margin-right: 48.5px;
+          padding: 10px 0 0 30px;
+          width: 346px
+      }
+      
+      .goalsbelow .goal:last-child {
+          margin-right: 0
+      }
+      
+      .goalsbelow .goal:hover {
+          outline: 2px solid #002347
+      }
+      
+      .goalsbelow .goal:hover span {
+          color: #002347
+      }
+      
+      .goalsbelow .goal>span {
+          font-weight: 700;
+          max-width: 195px;
+          transition: color .3s ease-in-out
+      }
+      
+      .goalsbelow .goal>span span {
+          display: inline-block;
+          font-size: 12px;
+          font-weight: 700;
+          height: 12px;
+          left: 2px;
+          overflow: hidden;
+          position: relative;
+          top: 2px;
+          width: 11px
+      }
+      
+      .goalsbelow .goal>span span:before {
+          left: -2px;
+          position: absolute;
+          top: -1px;
+          transition: color .3s ease-in-out
+      }
+      
+      .goalsbelow .goal:first-child {
+          background: no-repeat 100% 100%/71px
+      }
+      
+      .goalsbelow .goal:nth-child(2) {
+          background: no-repeat 100% 100%/80px
+      }
+      
+      .goalsbelow .goal:nth-child(3) {
+          background: no-repeat 100% 100%/70px
+      }
+      
+      .goalsbelow .goal .arrow {
+          position: relative;
+          right: -4px;
+          top: 2px
+      }
+      
+      .goalsbelow .goal .arrow:before {
+          color: #002347
+      }
+  
+  
+  
+      .goalsbelow .goal .arrow {
+          display:none
+      }
+      .goalsbelow {
+          background-image:none;
+          padding: 24px 0 40px
+      }
+  
+      .goalsbelow h2 {
+          font-size: 20px;
+          line-height: 28px;
+          margin-bottom: 8px
+      }
+  
+      .goalsbelow h5 {
+          font-size: 16px;
+          margin: 0 0 24px
+      }
+  
+      .goalsbelow .goals__container {
+          align-items: center;
+          flex-direction: column
+      }
+  
+      .goalsbelow .goal {
+          background-size: 64px!important;
+          font-size: 16px;
+          height: 92px;
+          line-height: 24px;
+          margin: 0 0 20px;
+          padding: 23px 0 0 24px
+      }
+  
+      .goalsbelow .goal br {
+          display: inline-block
+      }
+  
+      .goalsbelow .goal:nth-child(3) {
+          margin-bottom: 0
+      }
+  
+      .goalsbelow .goal:nth-child(3)>span {
+          display: inline
+      }
+  }
+  
+  
