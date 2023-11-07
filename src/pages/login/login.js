@@ -16,7 +16,17 @@ return(
     <a href="" class="flex"><img src="img/facebook.png" alt="" class="facebook"></img>  Login with Facebook</a>
     </div>
     <div class="or">OR</div>
-
+    <div class="form flex">
+    <form action="">
+        <div class="page-col col-up">
+            <input class="page-field email" type="email" name="email" id="" placeholder="Enter your Email"> </input>
+        </div>
+        <div class="page-col">
+            <input class="page-field password" type="password" name="password" id="" placeholder="Create a password"> </input>
+            <img src="img/icon_hide.svg" alt="" class="page-toggle"></img>
+        </div>
+    </form>
+</div>
         </div>
         </div>
     </div>
