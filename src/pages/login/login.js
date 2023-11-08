@@ -27,6 +27,14 @@ return(
         </div>
     </form>
 </div>
+<div  class="forgot flex">
+    <a href="">Forgot your password ?</a>
+</div>
+
+<p class="click">By clicking “Get Started”, you agree to our Terms of Use and our Privacy Policy</p>
+
+<button href="" class="start-btn">Get Started</button>
+<p>Don’t have an account, <a href="" class="create-one">Create one</a></p>
         </div>
         </div>
     </div>
