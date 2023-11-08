@@ -99,3 +99,46 @@ font-size: 2rem;
     top: 50%;
     transform: translateY(-50%);
 }
+
+.or::before {
+    left: 0;
+}
+
+.or::after {
+    right: 0;
+}
+.form{
+    justify-content: center;
+    width: 100%;
+    margin-bottom: .6rem;
+}
+form{
+    width: 80%;
+}
+.page-col input{
+    width: 100%;
+    padding: .7rem 0 .7rem .6rem;
+}
+.col-up{
+    margin-bottom: 1.5rem;
+}
+.page-col input{
+ 
+padding-left: .4rem;
+}
+ .page-col {
+    position: relative;
+}
+.page-toggle {
+    position: absolute;
+    top: 25%;
+    right: 0;
+    cursor: pointer;
+    transform: translateX(-10px);
+    
+}
+.forgot{
+    justify-content: flex-start ;
+    width: 80%;
+    margin-bottom: 1.5rem;
+}
