@@ -46,3 +46,56 @@ font-size: 2rem;
 .login-head h3{
     padding: .8rem 0;
 }
+
+.sign{
+    background: #002AFF24;
+    border-radius: 0 .2rem .2rem 0;
+    width: 50%;
+    justify-content: center;
+}
+.log{
+    width: 50%;
+    position: relative;
+    justify-content: center;
+}
+
+.log::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    border-bottom: 2px solid #4460EF;
+    width: 50%;
+    transform: translateX(-50%);
+}
+.sign-with{
+    margin-bottom: 1.5rem;
+    gap: 2rem;
+}
+.sign-with a{
+   padding: .3rem 1.5rem;
+   border: 1px solid rgb(201, 201, 201);
+   border-radius: .3rem;
+   color: black;
+   align-items: center;
+   gap: .7rem;
+}
+.sign-with img{
+    width: 1.5rem;
+}
+.or {
+    position: relative;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.or::before,
+.or::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    display: block;
+    background-color: #6200EE;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
