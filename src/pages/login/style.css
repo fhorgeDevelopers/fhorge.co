@@ -86,12 +86,14 @@ font-size: 2rem;
 .or {
     position: relative;
     text-align: center;
-    margin-bottom: 1rem;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 1.5em;
 }
 .or::before,
 .or::after {
     content: "";
-    width: 30%;
+    width: 35%;
     height: 2px;
     display: block;
     background-color: #6200EE;
@@ -101,11 +103,11 @@ font-size: 2rem;
 }
 
 .or::before {
-    left: 0;
+    left: 2rem;
 }
 
 .or::after {
-    right: 0;
+    right: 2rem;
 }
 .form{
     justify-content: center;
@@ -141,4 +143,38 @@ padding-left: .4rem;
     justify-content: flex-start ;
     width: 80%;
     margin-bottom: 1.5rem;
+}
+
+.forgot > a {
+    color: #4460EF;
+
+}
+
+.click {
+    max-width: 350px;
+    text-align: center;
+    color: #151515;
+}
+
+.start-btn {
+    padding: 0.75em 1.5em;
+    background-color: #4460EF;
+    color: #FFFFFF;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+}
+
+.create-one {
+    color: #4460EF;
+    text-decoration: underline;
+}
+
+.terms,
+.privacy {
+    color: #303030;
+    text-decoration: underline;
+}
+
+.new-user {
+    color: #151515;
 }
