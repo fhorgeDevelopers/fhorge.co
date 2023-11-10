@@ -1,7 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+button {
+    font-size: inherit;
+    font-family: inherit;
+    border: none;
+    outline-style: none;
+    cursor: pointer;
 }
 .flex{
     display: flex;
@@ -10,7 +20,6 @@
 a{
     text-decoration: none;
 }
-
 .login-section{
     justify-content: center;
     margin-top: 2rem;
@@ -20,9 +29,10 @@ a{
     width: 90%;
     justify-content: center;
     max-width: 800px;
+    border-radius: 1rem;
 }
 .login-inner{
-    margin:3rem 0 ;
+    margin:2rem 0 ;
     flex-direction: column;
     background: #fff;
     border-radius: 5px;
@@ -46,7 +56,6 @@ font-size: 2rem;
 .login-head h3{
     padding: .8rem 0;
 }
-
 .sign{
     background: #002AFF24;
     border-radius: 0 .2rem .2rem 0;
@@ -71,6 +80,8 @@ font-size: 2rem;
 .sign-with{
     margin-bottom: 1.5rem;
     gap: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 .sign-with a{
    padding: .3rem 1.5rem;
