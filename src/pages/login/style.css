@@ -55,6 +55,7 @@ font-size: 2rem;
 }
 .login-head h3{
     padding: .8rem 0;
+    font-weight: 500;
 }
 .sign{
     background: #002AFF24;
@@ -90,6 +91,7 @@ font-size: 2rem;
    color: black;
    align-items: center;
    gap: .7rem;
+
 }
 .sign-with img{
     width: 1.5rem;
@@ -105,7 +107,7 @@ font-size: 2rem;
 .or::after {
     content: "";
     width: 35%;
-    height: 2px;
+    height: 1px;
     display: block;
     background-color: #6200EE;
     position: absolute;
@@ -173,6 +175,7 @@ padding-left: .4rem;
     color: #FFFFFF;
     border-radius: 4px;
     margin-bottom: 0.5rem;
+    align-items: center;
 }
 
 .create-one {
@@ -188,4 +191,98 @@ padding-left: .4rem;
 
 .new-user {
     color: #151515;
+}
+.lock{
+margin-left: .5rem;
+width: 1.3rem;
+}
+
+/* Media Queries */
+@media(max-width: 670px){
+    .login {
+       
+        width: 100%;
+}
+}
+@media(max-width: 570px){
+.login-head h3 {
+    font-size: .8rem;
+}
+.login-info h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+.login-info p {
+   font-size: .9rem;
+}
+.sign-with a {
+font-size: .9rem;
+}
+.sign-with img {
+    width: 1.2rem;
+}
+.or{
+    font-size: .9rem;
+}
+.forgot{
+    font-size: .9rem;
+}
+}
+@media(max-width: 400px){
+    .login-inner {
+        margin: 1rem 0;
+       
+    }
+    .login{
+        border-radius: 0px
+        
+    }
+    .login-head h3 {
+        padding: 0.6rem 0;
+    }
+    .login-head {
+        margin-bottom: 1.5rem;
+    }
+    .login-info h2 {
+        margin-bottom: .6rem;
+    }
+    .login-info p {
+        margin-bottom: 1rem;
+    }
+    .sign-with a {
+        font-size: .8rem;
+        gap: .3rem; 
+         padding: 0.3rem .5rem;
+    }
+    .sign-with {
+        gap: .5rem;
+        /* flex-wrap: wrap; */
+    }
+    .or {
+        font-size: .8rem;
+    }
+    .login-info p {
+        font-size: 0.8rem;
+    }
+    .start-btn {
+        font-size: .8rem;
+    }
+    .lock {
+        width: 1.1rem;
+    }
+}
+@media(max-width: 320px){
+    .sign-with a {
+        gap: .2rem;
+        padding: 0.3rem 0.2rem;
+    }
+    .sign-with {
+        margin-bottom: 1rem;
+        gap: .5rem;
+        margin-left: .5rem;
+        margin-right: .5rem;
+    }
+    .click{
+        margin: 0 1rem
+    }
 }
