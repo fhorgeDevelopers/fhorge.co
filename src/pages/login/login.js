@@ -7,45 +7,45 @@ import Show from '../../img/icon_show.svg'
 import { Link } from "react-router-dom";
 
 const Login = () => {
-return(
-    <div className="login-section flex">
-      <div className="login flex">
-        <div className="login-inner flex">
-      <div className="login-head flex">
-     <h3 className="sign flex">SIGN UP</h3>
-       <h3 className="log flex">LOGIN</h3>
-    </div>
-    <div className="login-info flex">
-    <h2>Welcome Back!</h2>
-    <p>Let's get you logged in</p>
-    <div className="sign-with flex">
-    <Link to=" " className="flex"><img src={Google} alt="" className="google"/>Login with Google</Link>
-    <Link to="" className="flex"><img src={Facebook} alt="" className="facebook"/>  Login with Facebook</Link>
-    </div>
-    <div className="or">OR</div>
-    <div className="form flex">
-    <form action="">
-        <div className="page-col col-up">
-            <input className="page-field email" type="email" name="email" id="" placeholder="Enter your Email"/>
-        </div>
-        <div className="page-col">
-            <input className="page-field password" type="password" name="password" id="" placeholder="Create a password" />
-            <img src={Hide} alt="" className="page-toggle"/>
-        </div>
-    </form>
-</div>
-<div  className="forgot flex">
-    <Link to="">Forgot your password ?</Link>
-</div>
+    return (
+        <div className="login-section flex">
+            <div className="login flex">
+                <div className="login-inner flex">
+                    <div className="login-head flex">
+                        <h3 className="sign flex">SIGN UP</h3>
+                        <h3 className="log flex">LOGIN</h3>
+                    </div>
+                    <div className="login-info flex">
+                        <h2>Welcome Back!</h2>
+                        <p>Let's get you logged in</p>
+                        <div className="sign-with flex">
+                            <Link to=" " className="flex"><img src={Google} alt="" className="google" />Login with Google</Link>
+                            <Link to="" className="flex"><img src={Facebook} alt="" className="facebook" />  Login with Facebook</Link>
+                        </div>
+                        <div className="or">OR</div>
+                        <div className="form flex">
+                            <form action="">
+                                <div className="page-col col-up">
+                                    <input className="page-field email" type="email" name="email" id="" placeholder="Enter your Email" />
+                                </div>
+                                <div className="page-col">
+                                    <input className="page-field password" type="password" name="password" id="" placeholder="Create a password" />
+                                    <img src={Hide} alt="" className="page-toggle" />
+                                </div>
+                            </form>
+                        </div>
+                        <div className="forgot flex">
+                            <Link to="">Forgot your password ?</Link>
+                        </div>
 
-<p className="click">By clicking “Get Started”, you agree to our Terms of Use and our Privacy Policy</p>
+                        <p className="click">By clicking “Get Started”, you agree to our Terms of Use and our Privacy Policy</p>
 
-<button href="" className="start-btn flex">Login<img src={Lock} alt="" className="lock"/></button>
-<p>Don’t have an account, <Link to="" className="create-one">Create one</Link></p>
+                        <button href="" className="start-btn flex">Login<img src={Lock} alt="" className="lock" /></button>
+                        <p>Don’t have an account, <Link to="" className="create-one">Create one</Link></p>
+                    </div>
+                </div>
+            </div>
         </div>
-        </div>
-    </div>
-    </div>
-)
+    )
 }
 export default Login;
