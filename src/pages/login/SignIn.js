@@ -2,8 +2,7 @@ import "./style.css";
 import Google from "../../img/google.png";
 import Facebook from "../../img/facebook.png";
 import Lock from "../../img/lock.png";
-import Hide from '../../img/icon_hide.svg'
-import Show from '../../img/icon_show.svg'
+import Hide from '../../img/icon_hide.svg';
 import { Link } from "react-router-dom";
 
 const SignIn = () => {
