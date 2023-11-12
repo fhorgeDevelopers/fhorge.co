@@ -6,9 +6,13 @@
     font-family: 'Mulish', sans-serif;
 }
 
+input,
 button {
     font-size: inherit;
     font-family: inherit;
+}
+
+button {
     border: none;
     outline-style: none;
     cursor: pointer;
@@ -17,7 +21,8 @@ button {
     display: flex;
    
 }
-Link{
+
+a {
     text-decoration: none;
 }
 .login-section{
@@ -34,7 +39,7 @@ Link{
 .login-inner{
     margin:2rem 0 ;
     flex-direction: column;
-    background: #fff;
+    background: #fafafa;
     border-radius: 5px;
     box-shadow: 4px 4px 5px hsl(0, 0%, 50%, 0.5);
 }
@@ -84,7 +89,7 @@ font-size: 2rem;
     margin-left: 2rem;
     margin-right: 2rem;
 }
-.sign-with a{
+.sign-with  a {
    padding: .3rem 1.5rem;
    border: 1px solid rgb(201, 201, 201);
    border-radius: .3rem;
@@ -158,7 +163,7 @@ padding-left: .4rem;
     margin-bottom: 1.5rem;
 }
 
-.forgot >  Link {
+.forgot >  a  {
     color: #4460EF;
 
 }
@@ -167,6 +172,7 @@ padding-left: .4rem;
     max-width: 350px;
     text-align: center;
     color: #151515;
+    padding: 0 0.5em;
 }
 
 .start-btn {
@@ -203,6 +209,12 @@ width: 1.3rem;
        
         width: 100%;
 }
+
+.or::before,
+.or::after {
+    width: 28%;
+}
+
 }
 @media(max-width: 570px){
 .login-head h3 {
@@ -215,7 +227,7 @@ width: 1.3rem;
 .login-info p {
    font-size: .9rem;
 }
-.sign-with Link{
+.sign-with a {
 font-size: .9rem;
 }
 .sign-with img {
@@ -249,7 +261,7 @@ font-size: .9rem;
     .login-info p {
         margin-bottom: 1rem;
     }
-    .sign-with Link{
+    .sign-with a {
         font-size: .8rem;
         gap: .3rem; 
          padding: 0.3rem .5rem;
@@ -272,7 +284,7 @@ font-size: .9rem;
     }
 }
 @media(max-width: 320px){
-    .sign-with a {
+    .sign-with a  {
         gap: .2rem;
         padding: 0.3rem 0.2rem;
     }
@@ -285,4 +297,4 @@ font-size: .9rem;
     .click{
         margin: 0 1rem
     }
-}
+}     
