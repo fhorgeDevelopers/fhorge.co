@@ -25,40 +25,40 @@ button {
 a {
     text-decoration: none;
 }
-.login-section{
+.SignIn-section{
     justify-content: center;
     margin-top: 2rem;
 }
-.login{
+.SignIn{
     background: #002AFF24;
     width: 90%;
     justify-content: center;
     max-width: 800px;
     border-radius: 1rem;
 }
-.login-inner{
+.SignIn-inner{
     margin:2rem 0 ;
     flex-direction: column;
     background: #fafafa;
     border-radius: 5px;
     box-shadow: 4px 4px 5px hsl(0, 0%, 50%, 0.5);
 }
-.login-info{
+.SignIn-info{
     flex-direction: column;
     align-items: center;
 }
-.login-info h2{
+.SignIn-info h2{
 margin-bottom: 1rem;
 font-size: 2rem;
 }
-.login-info p{
+.SignIn-info p{
     margin-bottom: 2rem;
     }
-.login-head{
+.SignIn-head{
     margin-bottom: 2.5rem;
     width: 100%;
 }
-.login-head h3{
+.SignIn-head h3{
     padding: .8rem 0;
     font-weight: 500;
 }
@@ -205,7 +205,7 @@ width: 1.3rem;
 
 /* Media Queries */
 @media(max-width: 670px){
-    .login {
+    .SignIn {
        
         width: 100%;
 }
@@ -217,14 +217,14 @@ width: 1.3rem;
 
 }
 @media(max-width: 570px){
-.login-head h3 {
+.SignIn-head h3 {
     font-size: .8rem;
 }
-.login-info h2 {
+.SignIn-info h2 {
     margin-bottom: 1rem;
     font-size: 1.5rem;
 }
-.login-info p {
+.SignIn-info p {
    font-size: .9rem;
 }
 .sign-with a {
@@ -241,24 +241,24 @@ font-size: .9rem;
 }
 }
 @media(max-width: 400px){
-    .login-inner {
+    .SignIn-inner {
         margin: 1rem 0;
        
     }
-    .login{
+    .SignIn{
         border-radius: 0px
         
     }
-    .login-head h3 {
+    .SignIn-head h3 {
         padding: 0.6rem 0;
     }
-    .login-head {
+    .SignIn-head {
         margin-bottom: 1.5rem;
     }
-    .login-info h2 {
+    .SignIn-info h2 {
         margin-bottom: .6rem;
     }
-    .login-info p {
+    .SignIn-info p {
         margin-bottom: 1rem;
     }
     .sign-with a {
@@ -273,7 +273,7 @@ font-size: .9rem;
     .or {
         font-size: .8rem;
     }
-    .login-info p {
+    .SignIn-info p {
         font-size: 0.8rem;
     }
     .start-btn {
