@@ -12,8 +12,8 @@ const Login = () => {
             <div className="SignIn flex">
                 <div className="SignIn-inner flex">
                     <div className="SignIn-head flex">
-                        <h3 className="sign flex">SIGN UP</h3>
-                        <h3 className="log flex">LOGIN</h3>
+                        <h3 className="null-btn flex">SIGN UP</h3>
+                        <h3 className="curr-btn flex">LOGIN</h3>
                     </div>
                     <div className="SignIn-info flex">
                         <h2>Welcome Back!</h2>

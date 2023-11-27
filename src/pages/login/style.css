@@ -63,19 +63,20 @@ font-size: 2rem;
     font-weight: 500;
     font-size: 1rem !important;
 }
-.sign{
+.curr-btn{
     background: #002AFF24;
     border-radius: 0 .2rem .2rem 0;
     width: 50%;
     justify-content: center;
 }
-.log{
+
+.null-btn{
     width: 50%;
     position: relative;
     justify-content: center;
 }
 
-.log::before {
+.null-btn::before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -202,6 +203,14 @@ padding-left: .4rem;
 .lock{
 margin-left: .5rem;
 width: 1.3rem;
+}
+
+/* For signup */
+.btn_below{
+    margin-bottom: 2rem;
+}
+.click-up{
+    margin-top: 1rem;
 }
 
 /* Media Queries */

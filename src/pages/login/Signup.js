@@ -11,43 +11,38 @@ const Signup = () => {
             <div className="SignIn flex">
                 <div className="SignIn-inner flex">
                     <div className="SignIn-head flex">
-                        <h3 className="sign flex">SIGN UP</h3>
-                        <h3 className="log flex">LOGIN</h3>
+                        <h3 className="curr-btn flex">SIGN UP</h3>
+                        <h3 className="null-btn flex">LOGIN</h3>
                     </div>
                     <div className="SignIn-info flex">
                         <h2>Create your account!</h2>
                         <p>Build skills, grade your skills and get employed</p>
                         <div className="sign-with flex">
                             <Link to=" " className="flex"><img src={Google} alt="" className="google" />Sign up with Google</Link>
-                            <Link to="" className="flex"><img src={Facebook} alt="" className="facebook" />Sign Up with Facebook</Link>
+                            <Link to="" className="flex"><img src={Facebook} alt="" className="facebook" />Sign up with Facebook</Link>
                         </div>
                         <div className="or">OR</div>
                         <div className="form flex">
                             <form action="">
                                 <div className="page-col col-up">
-                                    <input className="page-field email" type="first-name" name="textl
-                                    " id="" placeholder="Enter your first name" />
+                                    <input className="page-field email" type="text" name="first-name"
+                                    id="" placeholder="Enter your first name" required/>
                                 </div>
                                 <div className="page-col col-up">
-                                    <input className="page-field textl" type="textl" name="textl" id="" placeholder="Enter your last name" />
+                                    <input className="page-field textl" type="text" name="last-name" id="" placeholder="Enter your last name" />
                                 </div>
                                 <div className="page-col col-up">
-                                    <input className="page-field textl" type="textl" name="textl" id="" placeholder="Enter your email" />
+                                    <input className="page-field textl" type="email" name="email" id="" placeholder="Enter your email" />
                                 </div>
                                 <div className="page-col">
-                                    <input className="page-field password" type="password" name="password" id="" placeholder="Enter your Last Name" />
+                                    <input className="page-field password" type="password" name="password" id="" placeholder="Create a password" />
                                     <img src={Hide} alt="" className="page-toggle" />
                                 </div>
                             </form>
                         </div>
-                        <div className="forgot flex">
-                            <Link to="">Forgot your password ?</Link>
-                        </div>
+                        <p className="click click-up">By clicking “Get Started”, you agree to our Terms of Use and our Privacy Policy</p>
 
-                        <p className="click">By clicking “Get Started”, you agree to our Terms of Use and our Privacy Policy</p>
-
-                        <button href="" className="start-btn flex">SignIn<img src={Lock} alt="" className="lock" /></button>
-                        <p>Don’t have an account, <Link to="" className="create-one">Create one</Link></p>
+                        <button href="" className="start-btn btn_below flex">Get Started<img src={Lock} alt="" className="lock" /></button>
                     </div>
                 </div>
             </div>
