@@ -61,6 +61,7 @@ font-size: 2rem;
 .SignIn-head h3{
     padding: .8rem 0;
     font-weight: 500;
+    font-size: 1rem !important;
 }
 .sign{
     background: #002AFF24;
@@ -114,7 +115,7 @@ font-size: 2rem;
     width: 35%;
     height: 1px;
     display: block;
-    background-color: #6200EE;
+    background-color: #383838;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -218,7 +219,7 @@ width: 1.3rem;
 }
 @media(max-width: 570px){
 .SignIn-head h3 {
-    font-size: .8rem;
+    font-size: .8rem !important;
 }
 .SignIn-info h2 {
     margin-bottom: 1rem;

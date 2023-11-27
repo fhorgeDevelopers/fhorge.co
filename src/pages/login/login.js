@@ -8,28 +8,28 @@ import { Link } from "react-router-dom";
 
 const Login = () => {
     return (
-        <div className="login-section flex">
-            <div className="login flex">
-                <div className="login-inner flex">
-                    <div className="login-head flex">
+        <div className="SignIn-section flex">
+            <div className="SignIn flex">
+                <div className="SignIn-inner flex">
+                    <div className="SignIn-head flex">
                         <h3 className="sign flex">SIGN UP</h3>
                         <h3 className="log flex">LOGIN</h3>
                     </div>
-                    <div className="login-info flex">
+                    <div className="SignIn-info flex">
                         <h2>Welcome Back!</h2>
                         <p>Let's get you logged in</p>
                         <div className="sign-with flex">
                             <Link to=" " className="flex"><img src={Google} alt="" className="google" />Login with Google</Link>
-                            <Link to="" className="flex"><img src={Facebook} alt="" className="facebook" />  Login with Facebook</Link>
+                            <Link to="" className="flex"><img src={Facebook} alt="" className="facebook" />Login with Facebook</Link>
                         </div>
                         <div className="or">OR</div>
                         <div className="form flex">
                             <form action="">
                                 <div className="page-col col-up">
-                                    <input className="page-field email" type="email" name="email" id="" placeholder="Enter your Email" />
+                                    <input className="page-field email" type="email" name="email" id="" placeholder="Enter your Email Address" />
                                 </div>
                                 <div className="page-col">
-                                    <input className="page-field password" type="password" name="password" id="" placeholder="Create a password" />
+                                    <input className="page-field password" type="password" name="password" id="" placeholder="Enter your password" />
                                     <img src={Hide} alt="" className="page-toggle" />
                                 </div>
                             </form>
